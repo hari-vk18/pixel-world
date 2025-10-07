@@ -11,7 +11,7 @@ export default function Footer() {
       {/* Background Logo/Graphic */}
       <div className="absolute right-7 top-0 w-full max-w-2xl h-full opacity-80">
         <img
-          src="./public/IOTC Real Asset logo blue 1 (1).png"
+          src="/IOTC Real Asset logo blue 1 (1).png"
           alt="IOTC Logo Background"
           width={642}
           height={779}
@@ -25,7 +25,7 @@ export default function Footer() {
           {/* Main CTA Section */}
           <div className="mb-10 sm:mb-16">
             <div className="max-w-2xl sm:max-w-3xl md:max-w-4xl text-start">
-              <h2 className="text-white font-sf-pro text-2xl sm:text-4xl md:text-5xl lg:text-[48px] font-medium leading-tight sm:leading-[48px] md:leading-[80px] tracking-[-1.12px] mb-6 sm:mb-12"
+              <h2 className="text-white font-sf-pro text-2xl sm:text-4xl md:text-5xl lg:text-[48px] font-[500] leading-tight sm:leading-[48px] md:leading-[70px] tracking-[-1.12px] mb-6 sm:mb-12"
                 style={{
                   cursor: 'default',
                   letterSpacing: '-0.02em',
@@ -89,12 +89,12 @@ export default function Footer() {
 
 
           {/* Footer Bottom */}
-          <div className="border-t border-gray-600 pt-6 sm:pt-10">
+          <div className="border-t border-gray-600 pt-6 sm:pt-10 pb-2">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
               {/* Logo */}
               <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/90edf53339fc047cfd5fec42fd7b81c0921f640c?width=76"
+                  src="/IOTC Real Asset logo white 2.svg"
                   alt="IOTC Real Asset"
                   className="w-8 h-10 sm:w-10 sm:h-[69px]"
                 />

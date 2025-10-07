@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const navItems = [
     { label: 'Company', href: '/company' },
@@ -16,25 +18,29 @@ export default function Header() {
 
   return (
     <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
-      <nav className="flex items-center justify-between px-4 md:px-16 py-8">
+      <nav className="flex items-center justify-between pl-[65px] py-8 pr-8 lg:pr-8">
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/">
             <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/08b4218cc6239436957b2019106ea4277697958b?width=96" 
+              src={isHomePage ? "../public/IOTC Real Asset logo white 2.svg" : "../public/IOTC Real Asset logo blue 1.svg"} 
               alt="IOTC Real Asset" 
-              className="w-12 h-[87px] flex-shrink-0"
+              className="w-[48px] h-[87px] flex-shrink-0"
             />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center space-x-10">
+        <div className="hidden lg:flex items-start gap-8 mb-6">
           {navItems.map((item, index) => (
             <Link
               key={index}
               to={item.href}
-              className="text-white font-sf-pro text-base font-medium hover:text-iotc-gold transition-colors duration-200"
+              className={`font-sf-pro text-base leading-[150%] hover:text-iotc-gold transition-colors duration-200 ${
+                index === 0 ? 'font-medium' : 'font-normal'
+              } ${
+                isHomePage ? 'text-white' : 'text-iotc-text'
+              }`}
             >
               {item.label}
             </Link>
@@ -63,22 +69,24 @@ export default function Header() {
       </nav>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden bg-iotc-dark/95 backdrop-blur-sm">
-          <div className="px-4 py-6 space-y-4">
+      <div className={`lg:hidden bg-iotc-dark/95 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden ${
+        isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+      }`}>
+        <div className="px-4 py-6 space-y-4">
             {navItems.map((item, index) => (
               <Link
                 key={index}
                 to={item.href}
-                className="block text-white font-sf-pro text-base font-medium hover:text-iotc-gold transition-colors duration-200"
+                className={`block font-sf-pro text-base font-medium hover:text-iotc-gold transition-colors duration-200 ${
+                  isHomePage ? 'text-white' : 'text-iotc-text'
+                }`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
-          </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

@@ -22,7 +22,7 @@ export default function InvestmentHorizons() {
               </h3>
               <p className="text-iotc-text font-sf-pro text-lg font-normal w-[80%]"
                 style={{
-                  letterSpacing: '-0.06em',
+                  letterSpacing: '-0.03em',
                   lineHeight: '1.7',
                   cursor: 'default',
                 }}>
@@ -38,7 +38,7 @@ export default function InvestmentHorizons() {
             <div className="flex items-center w-full justify-start mb-8 relative">
               <h2 className="text-iotc-text font-sf-pro text-[3rem] md:text-8x8 font-normal leading-tight bg-white relative z-10 whitespace-nowrap"
                 style={{
-                  letterSpacing: '-0.06em',
+                  letterSpacing: '-0.03em',
                   cursor: 'default',
                 }}>
                 Investment Horizons
@@ -63,14 +63,14 @@ export default function InvestmentHorizons() {
             <div className="text-lg font-sf-pro text-gray-700 font-normal mb-4">01</div>
             <h3 className="text-iotc-text font-sf-pro text-2xl md:text-[32px] font-normal leading-tight mb-1"
               style={{
-                letterSpacing: '-0.06em',
+                letterSpacing: '-0.03em',
                 cursor: 'default',
               }}>
               European Real Asset
             </h3>
             <p className="text-iotc-text font-sf-pro text-lg font-normal leading-7 max-w-xs mt-8"
               style={{
-                letterSpacing: '-0.06em',
+                letterSpacing: '-0.03em',
                 lineHeight: '1.7',
                 cursor: 'default',
               }}>
@@ -93,7 +93,7 @@ export default function InvestmentHorizons() {
             <div className="text-lg font-sf-pro text-gray-700 font-normal mb-4">02</div>
             <h3 className="text-iotc-text font-sf-pro text-2xl md:text-[32px] font-normal leading-tight tracking-tight mb-1"
               style={{
-                letterSpacing: '-0.06em',
+                letterSpacing: '-0.03em',
                 lineHeight: '1.5',
                 cursor: 'default',
               }}>
@@ -101,7 +101,7 @@ export default function InvestmentHorizons() {
             </h3>
             <p className="text-iotc-text font-sf-pro text-lg font-normal leading-7 max-w-xs"
               style={{
-                letterSpacing: '-0.06em',
+                letterSpacing: '-0.03em',
                 lineHeight: '1.7',
                 cursor: 'default',
               }}>

@@ -33,8 +33,21 @@ export default function AnimatedSections() {
   }, [isInView, currentSection, pathControls]);
 
   return (
-    <section ref={ref} className="relative h-[839px] w-full overflow-hidden bg-gradient-to-r from-iotc-primary via-iotc-primary to-iotc-dark">
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1280 839" fill="none" preserveAspectRatio="xMidYMid slice">
+  <section ref={ref} className="relative w-full overflow-hidden bg-gradient-to-r from-iotc-primary via-iotc-primary to-iotc-dark h-[400px] sm:h-[600px] md:h-[700px] lg:h-[839px]">
+    <svg 
+      className="absolute inset-0 w-full h-full"
+      viewBox="0 0 1280 839"
+      fill="none"
+      preserveAspectRatio="none"
+      style={{
+        width: '100vw',
+        height: '100%',
+        minHeight: '250px',
+        maxHeight: '839px',
+        objectFit: 'cover',
+        objectPosition: 'center',
+      }}
+    >
         <rect width="1280" height="839" fill="url(#paint0_linear)"/>
         
         {currentSection === 0 && (
@@ -42,7 +55,7 @@ export default function AnimatedSections() {
             <motion.path 
               d="M142 576H1484.93V468.297L1673 359.837V576H1767.03V305.419L1673 251L1579.72 305.419V576H1976" 
               stroke="url(#paint1_linear)" 
-              strokeWidth="1.5"
+                strokeWidth={window.innerWidth < 640 ? 0.8 : window.innerWidth < 1024 ? 1.2 : 1.5}
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
               exit={{ pathLength: 0 }}
@@ -64,7 +77,7 @@ export default function AnimatedSections() {
             <motion.path 
               d="M388 576L388 494.48L526.812 412.384V576H597.208V370.04L526.812 330L455.569 370.04V576H1193.5" 
               stroke="url(#paint2_linear)" 
-              strokeWidth="2.2"
+                strokeWidth={window.innerWidth < 640 ? 1.2 : window.innerWidth < 1024 ? 1.7 : 2.2}
               initial={{ pathLength: 0 }}
               animate={pathControls}
               exit={{ pathLength: 0 }}
@@ -72,7 +85,7 @@ export default function AnimatedSections() {
             <motion.path 
               d="M-157 576H105.935V468.297L293.997 359.837V576H388.028V305.419L293.997 251L200.721 305.419V576H1976" 
               stroke="url(#paint2_linear)" 
-              strokeWidth="2.2"
+                strokeWidth={window.innerWidth < 640 ? 1.2 : window.innerWidth < 1024 ? 1.7 : 2.2}
               initial={{ pathLength: 0 }}
               animate={pathControls}
               exit={{ pathLength: 0 }}
@@ -91,7 +104,8 @@ export default function AnimatedSections() {
               transition={{ duration: 1.5, ease: "easeInOut" }}
             />
             <motion.circle 
-              cx="762.5" cy="563.5" r="6.5" 
+              cx="762.5" cy="563.5"
+              r={window.innerWidth < 640 ? 3.5 : window.innerWidth < 1024 ? 5 : 6.5}
               fill="#B89B7A"
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
@@ -128,15 +142,15 @@ export default function AnimatedSections() {
           style={{
             fontFamily: 'Inter, Arial, sans-serif',
             fontWeight: 200,
-            fontSize: '60px',
-            right: '8%',
+            fontSize: '2rem', // base mobile
+            right: '4%',
             ...(currentSection === 1
               ? { bottom: '12%' }
               : { top: '50%', transform: 'translateY(-50%)' }
             ),
             width: 'auto',
             minWidth: 0,
-            maxWidth: '60vw',
+            maxWidth: '90vw',
             whiteSpace: 'nowrap',
             backgroundImage: 'linear-gradient(90deg, #B89B7A 0%, #B89B7A 45%, #e8dbc8 75%)',
             WebkitBackgroundClip: 'text',
@@ -148,7 +162,7 @@ export default function AnimatedSections() {
           exit={{ opacity: 0, y: -50 }}
           transition={{ duration: 0.8, delay: 1.8 }}
         >
-          {sections[currentSection].title}
+          <span className="text-2xl sm:text-4xl md:text-5xl lg:text-[60px]">{sections[currentSection].title}</span>
         </motion.h2>
       </div>
     </section>

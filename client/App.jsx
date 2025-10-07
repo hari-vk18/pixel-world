@@ -26,12 +26,12 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/company" element={<Company />} />
-          <Route path="/investment-management" element={<InvestmentManagement />} />
-          <Route path="/real-estate-service" element={<RealEstateService />} />
-          <Route path="/projects-investment" element={<ProjectsInvestment />} />
+          <Route path="/company/*" element={<Company />} />
+          <Route path="/investment-management/*" element={<InvestmentManagement />} />
+          <Route path="/real-estate-service/*" element={<RealEstateService />} />
+          <Route path="/projects-investment/*" element={<ProjectsInvestment />} />
           <Route path="/news" element={<News />} />
-          <Route path="/investor-portal" element={<InvestorPortal />} />
+          <Route path="/investor-portal/*" element={<InvestorPortal />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
