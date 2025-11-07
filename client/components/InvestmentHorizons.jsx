@@ -3,23 +3,23 @@ import { motion } from "framer-motion";
 
 export default function InvestmentHorizons() {
   return (
-    <section className="bg-white py-16 md:py-32">
+    <section className="bg-white py-8 md:py-32">
       <div className="max-w-8xl mx-auto px-16 sm:px-6 lg:px-16">
         {/* Top Row */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 items-start mt-10 mb-10 relative">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-start md:mt-10 md:mb-10 relative">
           {/* Left Image */}
-          <FadeOnScroll direction="left" duration={1000} delay={100} distance={40}>
+          <FadeOnScroll className="3xs:hidden lg:block" direction="left" duration={1000} delay={100} distance={40}>
             <div className="flex justify-center lg:justify-start">
               <img
                 src="/image (1).png"
                 alt="Investment property"
-                className="w-40 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover"
+                className="w-72 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover"
               />
             </div>
           </FadeOnScroll>
 
           {/* Center Investment Text */}
-          <FadeOnScroll direction="up" duration={500} delay={200} distance={30}>
+          <FadeOnScroll className="3xs:hidden lg:block" direction="up" duration={500} delay={200} distance={30}>
             <div className="flex flex-col justify-center text-center lg:text-left">
               <motion.div
                 className="lg:mt-5 absolute top-1 left-[30%] lg:w-[400px] 2xl:w-[800px]"
@@ -51,7 +51,7 @@ export default function InvestmentHorizons() {
           <FadeOnScroll direction="right" duration={1000} delay={300} distance={50}>
             <div className="flex flex-col justify-center items-center lg:items-start">
               <h2
-                className="text-iotc-text font-sf-pro lg:text-4xl md:text-5xl 
+                className="text-iotc-text font-sf-pro 3xs:text-2xl lg:text-4xl md:text-5xl 
                 font-normal 2xl:font-bold leading-tight mb-6 text-center 2xl:text-7xl lg:text-left 3xs:mt-10 md:mt-0"
               >
                 Investment Horizons
@@ -59,7 +59,7 @@ export default function InvestmentHorizons() {
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/c875ffef857fbc15d6df44d4cc6547916746ac90"
                 alt="Investment opportunity"
-                className="w-40 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover lg:mt-10 lg:ml-8"
+                className="w-72 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover lg:mt-10 lg:ml-8"
               />
             </div>
           </FadeOnScroll>
@@ -80,12 +80,12 @@ export default function InvestmentHorizons() {
         <div className="grid grid-cols-1 lg:grid-cols-3">
           {/* Left: European Real Asset */}
           <FadeOnScroll direction="left" duration={1000} delay={100}>
-            <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-              <div className="text-lg 2xl:text-4xl text-gray-700 mb-2">01</div>
+            <div className="flex flex-col justify-center md:items-center lg:items-start md:text-center  lg:text-left">
+              <div className="text-lg 2xl:text-4xl text-gray-700 mb-2 3xs:mt-8 sm:mt-0">01</div>
               <h3 className="text-iotc-text text-2xl md:text-3xl 2xl:text-5xl font-normal 2xl:font-bold mb-4">
                 European Real Asset
               </h3>
-              <p className="text-iotc-text text-lg 2xl:text-4xl leading-relaxed md:max-w-xs 2xl:max-w-lg">
+              <p className="text-iotc-text text-lg 2xl:text-4xl 3xs:text-justify leading-relaxed md:max-w-xs 2xl:max-w-lg">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                 praesentium voluptatum deleniti atque corrupti quos dolores.
               </p>
@@ -98,14 +98,14 @@ export default function InvestmentHorizons() {
               <img
                 src="/image.png"
                 alt="Real estate development"
-                className="w-40 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover"
+                className="w-72 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover"
               />
             </div>
           </FadeOnScroll>
 
           {/* Right: Real Asset Opportunities */}
           <FadeOnScroll direction="right" duration={1000} delay={300}>
-            <div className="flex flex-col items-center lg:mt-32 3xs:mt-10 md:items-start lg:text-left">
+            <div className="flex flex-col md:items-center 3xs:item-right 3xs:text-right 3xs:text-justify lg:mt-32 3xs:mt-10 md:items-start lg:text-left">
               <div className="text-lg 2xl:text-4xl text-gray-700 mb-2">02</div>
               <h3 className="text-iotc-text text-2xl md:text-3xl 2xl:text-5xl font-normal 2xl:font-bold mb-4 md:w-[40%] lg:w-full">
                 Real Asset Opportunities in Emerging Countries

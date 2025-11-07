@@ -46,7 +46,7 @@ export default function InvestorPortal() {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
                     {/* Left Content */}
                     <div className="">
-                      <FadeOnScroll direction="top" distance={40} duration={800}>
+                      <FadeOnScroll direction="top" distance={30} duration={800}>
                         <h1 className="text-iotc-text font-sf-pro lg:text-[300%] 3xs:text-[200%] 2xl:text-[450%] font-normal lg:mb-8 2xl:mb-16 3xs:mb-4 leading-tight">
                           Investor Portal
                         </h1>

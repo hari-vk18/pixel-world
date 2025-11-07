@@ -90,13 +90,13 @@ export default function Footer() {
 
           {/* Footer Bottom */}
           <div className="border-t border-gray-600 pt-6 sm:pt-10 ">
-            <div className="flex lg:flex-col md:flex-row 3xs:flex-row justify-between items-center space-y-6 md:space-y-0 mb-2 3xs:mb-6">
+            <div className="flex lg:flex-col md:flex-row 3xs:flex-row justify-between items-center space-y-6 md:space-y-0 mb-2">
               <img
                 src="/IOTC Real Asset logo white 2.svg"
                 alt="IOTC Real Asset"
                 className="w-8 h-10 sm:w-10 sm:h-[69px] 2xl:w-12 2xl:h-[83px] md:hidden relative right-0 mt-12"
               />
-              <div className="flex lg:flex-row 3xs:flex-col justify-between w-full">
+              <div className="flex lg:flex-row 3xs:flex-col justify-between w-full md:block 3xs:hidden">
                 {/* Logo */}
                 <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
                   <img
@@ -117,6 +117,31 @@ export default function Footer() {
                   </div>
 
                 </div>
+              </div>
+              <div className="flex lg:flex-row 3xs:flex-col justify-between w-full md:hidden ">
+                {/* Logo */}
+
+                 {/* Social Media & Legal Links */}
+                <div className="flex flex-col sm:flex-row items-right sm:space-y-0 sm:space-x-8">
+                  {/* Legal Links */}
+                  <div className="text-white font-inter text-xs sm:text-sm 2xl:text-lg font-normal leading-[22px] sm:leading-[26px] text-right sm:text-right">
+                    Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;Terms & Conditions
+                  </div>
+
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-right space-y-2 sm:space-y-0 sm:space-x-6">
+                  <img
+                    src="/IOTC Real Asset logo white 2.svg"
+                    alt="IOTC Real Asset"
+                    className="w-8 h-10 sm:w-10 sm:h-[69px] 2xl:w-12 2xl:h-[83px] 3xs:hidden md:block"
+                  />
+                  <div className="text-white font-inter text-xs sm:text-base 2xl:text-lg font-normal leading-[22px] sm:leading-[26px] text-right sm:text-left">
+                    © Copyright 2025, All Rights Reserved
+                  </div>
+                </div>
+
+               
               </div>
             </div>
           </div>

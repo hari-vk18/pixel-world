@@ -121,14 +121,14 @@ export default function AboutUs() {
                 className="object-cover h-auto ml-0 md:ml-2 lg:ml-5 w-[90vw] md:w-[80vw] xl:w-[96vw] 2xl:w-[105vw]" />
             </div>
           </div>
-          <div className="flex md:justify-center 2xl:justify-start lg:w-[70%] xl:w-[80%] lg:mt-[20%] lg:mb-8 2xs:mb-4">
+          <div className="flex md:justify-center 2xl:justify-start lg:w-[70%] xl:w-[80%] 3xs:mt-[50%] lg:mt-[20%] lg:mb-8 2xs:mb-4">
             <p
-              className="text-white font-sf-pro text-xl  lg:-mt-[20%] 2xl:-mt-[10%] md:text-2xl 2xl:text-5xl font-normal italic leading-9 2xs:leading-6 tracking-[-0.5px] w-35%"
+              className="text-white font-sf-pro text-xl 3xs:-mt-[45%] lg:-mt-[20%] 2xl:-mt-[10%] md:text-2xl 2xl:text-5xl font-normal italic leading-9 2xs:leading-6 tracking-[-0.5px] w-35%"
               style={{ cursor: "default" }}
             >
               ESG focus ensures every project drives value not just for investors, but also for society and the environment.
             </p>
-            <div className="absolute lg:bottom-32 2xs:bottom-2 right-10">
+            <div className="absolute lg:bottom-32 2xs:bottom-[15%] right-10">
               <button className="group flex items-center space-x-3 text-white font-sf-pro text-xl md:text-2xl 2xl:text-4xl font-light hover:text-iotc-gold transition-colors duration-300">
                 <span>Know more</span>
                 <svg

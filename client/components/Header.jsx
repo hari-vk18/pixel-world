@@ -17,7 +17,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
+    <header className="absolute top-0 left-0 w-full z-50 bg-transparent absolute">
       <nav className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] py-8 pr-8">
         
         {/* Logo */}
@@ -95,11 +95,11 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden bg-iotc-dark/95 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`relative -mt-4 lg:hidden bg-iotc-dark/95 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden ${
           isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="px-4 py-6 space-y-4">
+        <div className="px-4 py-6  space-y-4">
           {navItems.map((item, index) => (
             <FadeOnScroll key={index} direction="up" delay={index * 120} duration={900}>
               <Link

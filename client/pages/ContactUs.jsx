@@ -102,8 +102,8 @@ export default function ContactUs() {
 
           {/* Netherlands */}
           <div
-            className="absolute 3xs:hidden lg:block"
-            style={{ top: "30.6%", left: "47.6%" }}
+            className="absolute 3xs:hidden xl:block"
+            style={{ top: "30.8%", left: "47.6%" }}
             onClick={() => handleCountrySelect("Netherlands")}
           >
             <HexagonWithPopup
@@ -114,8 +114,32 @@ export default function ContactUs() {
             />
           </div>
           <div
-            className="absolute lg:hidden 3xs:block"
-            style={{ top: "29%", left: "47.6%" }}
+            className="absolute md:hidden 3xs:block"
+            style={{ top: "24.3%", left: "47.6%" }}
+            onClick={() => handleCountrySelect("Netherlands")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset B.V."
+              content={<span>Netherlands</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+          <div
+            className="absolute xl:hidden 3xs:hidden lg:block"
+            style={{ top: "29.5%", left: "47.7%" }}
+            onClick={() => handleCountrySelect("Netherlands")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset B.V."
+              content={<span>Netherlands</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+          <div
+            className="absolute lg:hidden 3xs:hidden md:block"
+            style={{ top: "28%", left: "47.7%" }}
             onClick={() => handleCountrySelect("Netherlands")}
           >
             <HexagonWithPopup
@@ -128,8 +152,8 @@ export default function ContactUs() {
 
           {/* India */}
           <div
-            className="absolute lg:block 3xs:hidden"
-            style={{ top: "45.6%", left: "65.9%" }}
+            className="absolute xl:block 3xs:hidden"
+            style={{ top: "45.8%", left: "65.9%" }}
             onClick={() => handleCountrySelect("India")}
           >
             <HexagonWithPopup
@@ -140,8 +164,32 @@ export default function ContactUs() {
             />
           </div>
           <div
-            className="absolute lg:hidden 3xs:block"
-            style={{ top: "44%", left: "65.9%" }}
+            className="absolute md:hidden 3xs:block"
+            style={{ top: "39.3%", left: "66%" }}
+            onClick={() => handleCountrySelect("India")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset B.V."
+              content={<span>India</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+          <div
+            className="absolute xl:hidden 3xs:hidden lg:block"
+            style={{ top: "44.5%", left: "66%" }}
+            onClick={() => handleCountrySelect("India")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset B.V."
+              content={<span>India</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+          <div
+            className="absolute lg:hidden 3xs:hidden md:block"
+            style={{ top: "43.5%", left: "66%" }}
             onClick={() => handleCountrySelect("India")}
           >
             <HexagonWithPopup
@@ -154,8 +202,8 @@ export default function ContactUs() {
 
           {/* Sri Lanka */}
           <div
-            className="absolute lg:block 3xs:hidden"
-            style={{ top: "57.2%", left: "67.6%" }}
+            className="absolute xl:block 3xs:hidden"
+            style={{ top: "57.4%", left: "67.6%" }}
             onClick={() => handleCountrySelect("SriLanka")}
           >
             <HexagonWithPopup
@@ -166,13 +214,37 @@ export default function ContactUs() {
             />
           </div>
           <div
-            className="absolute lg:hidden 3xs:block"
-            style={{ top: "55.6%", left: "67.6%" }}
+            className="absolute xl:hidden 3xs:hidden lg:block"
+            style={{ top: "56.3%", left: "67.6%" }}
+            onClick={() => handleCountrySelect("India")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset B.V."
+              content={<span>Sri langa</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+          <div
+            className="absolute md:hidden 3xs:block"
+            style={{ top: "51%", left: "67.7%" }}
             onClick={() => handleCountrySelect("SriLanka")}
           >
             <HexagonWithPopup
               title="IOTC Real Asset B.V."
               content={<span>Sri Lanka</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+          <div
+            className="absolute lg:hidden 3xs:hidden md:block"
+            style={{ top: "55%", left: "67.8%" }}
+            onClick={() => handleCountrySelect("India")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset B.V."
+              content={<span>Sri langa</span>}
               size={size}
               cardPosition="top"
             />

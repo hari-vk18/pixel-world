@@ -32,7 +32,7 @@ export default function RealEstateService() {
                     {/* 📝 Left Content */}
                     <div>
 
-                      <FadeOnScroll direction="top" distance={40} duration={800}>
+                      <FadeOnScroll direction="top" distance={30} duration={800}>
                         <h1 className="text-iotc-text font-sf-pro 2xl:text-[450%] lg:text-[300%] 3xs:text-[200%] font-normal lg:mb-8 2xl:mb-16 3xs:mb-4">
                           Real Estate Services
                         </h1>

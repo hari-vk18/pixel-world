@@ -54,7 +54,7 @@ export default function DesigningToday() {
               Discover what we do, why it matters, and how we're creating value through
               sustainable, smart investments.
             </p>
-            <div className="absolute lg:bottom-40 2xs:bottom-32 right-10">
+            <div className="absolute lg:bottom-40 2xs:bottom-24 right-10">
               <button className="group flex items-center space-x-3 text-white font-sf-pro text-xl md:text-2xl 2xl:text-4xl font-light hover:text-iotc-gold transition-colors duration-300">
                 <span>Know more</span>
                 <svg
