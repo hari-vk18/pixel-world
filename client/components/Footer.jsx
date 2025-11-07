@@ -96,7 +96,7 @@ export default function Footer() {
                 alt="IOTC Real Asset"
                 className="w-8 h-10 sm:w-10 sm:h-[69px] 2xl:w-12 2xl:h-[83px] md:hidden relative right-0 mt-12"
               />
-              <div className="flex lg:flex-row 3xs:flex-col justify-between w-full md:block 3xs:hidden">
+              <div className="flex sm:flex-row 3xs:flex-row justify-between w-full 3xs:hidden md:flex">
                 {/* Logo */}
                 <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
                   <img

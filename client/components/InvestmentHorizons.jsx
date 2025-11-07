@@ -22,7 +22,7 @@ export default function InvestmentHorizons() {
           <FadeOnScroll className="3xs:hidden lg:block" direction="up" duration={500} delay={200} distance={30}>
             <div className="flex flex-col justify-center text-center lg:text-left">
               <motion.div
-                className="lg:mt-5 absolute top-1 left-[30%] lg:w-[400px] 2xl:w-[800px]"
+                className="lg:mt-5 absolute top-1 left-[30%] sm:w-[300px] lg:w-[300px] 2xl:w-[800px]"
                 style={{
                   height: "3px",
                   backgroundColor: "gray",
@@ -32,7 +32,7 @@ export default function InvestmentHorizons() {
                 animate={{ scaleX: 1 }}
                 transition={{
                   duration: 1.5,     // animation speed
-                  delay: 0.8,        // wait before starting
+                  delay: 2.8,        // wait before starting
                   ease: "easeInOut", // smooth in/out
                 }}
               />
