@@ -21,13 +21,13 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-8">
+    <div className=" flex items-center justify-center py-8 3xs:px-8">
       <div className="w-full max-w-6xl">
         {/* Top Row - Three Input Fields */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Name Field */}
           <div>
-            <label className="block text-xl font-normal mb-4">
+            <label className="block text-xl font-normal lg:mb-4">
               Your Name
             </label>
             <input
@@ -41,7 +41,7 @@ export default function ContactForm() {
 
           {/* Email Field */}
           <div>
-            <label className="block text-xl font-normal mb-4">
+            <label className="block text-xl font-normal lg:mb-4">
               Email Address
             </label>
             <input
@@ -55,7 +55,7 @@ export default function ContactForm() {
 
           {/* Phone Field */}
           <div>
-            <label className="block text-xl font-normal mb-4">
+            <label className="block text-xl font-normal lg:mb-4">
               Phone Number (optional)
             </label>
             <input
@@ -70,7 +70,7 @@ export default function ContactForm() {
 
         {/* Message Field */}
         <div className="mb-8">
-          <label className="block text-xl font-normal mb-2">
+          <label className="block text-xl font-normal mb-2 ">
             Message
           </label>
           <textarea
@@ -78,7 +78,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             rows="4"
-            className="w-full border-b-2 border-gray-300 bg-transparent py-2 focus:outline-none focus:border-gray-600 transition-colors resize-none"
+            className="w-full border-b-2 border-gray-300 bg-transparent py-2  focus:outline-none focus:border-gray-600 transition-colors resize-none"
           />
         </div>
 
@@ -86,11 +86,11 @@ export default function ContactForm() {
         <button
           type="button"
           onClick={handleSubmit}
-          className="bg-slate-800 text-white px-12 py-4 rounded-full text-2xl font-normal hover:bg-slate-700 transition-colors flex items-center gap-2"
+          className="bg-slate-800 text-white lg:px-12 3xs:px-4 lg:py-4 3xs:py-2 rounded-full lg:text-2xl font-normal hover:bg-slate-700 transition-colors flex items-center gap-2"
         >
           Leave us a Message
           <svg 
-            className="w-5 h-5" 
+            className="lg:w-5 lg:h-5 3xs:w-4 3xs:h-4" 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24"

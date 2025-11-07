@@ -9,16 +9,16 @@ import Footer from "@/components/Footer";
 
 const Projects = () => (
     <div className="company-Projects-page">
-        <section className="">
+        <section className="2xl:pb-16">
             <div className="ml-[4%]">
-                <div className="flex flex-row">
-                    <p className="text-[450%]  font-[300] font-sf-pro mb-8 mt-[1%]"
+                <div className="flex lg:flex-row 3xs:flex-col">
+                    <p className="2xl:text-[450%] lg:text-[380%] 3xs:text-[200%] font-[300] font-sf-pro lg:mb-8 3xs:mb-4 mt-[1%]"
                         style={{
                             cursor: "default",
                             lineHeight: "1.2",
                         }}>Projects & Investment</p>
-                    <div className="mb-8 w-[84%] mr-[4%]">
-                        <h2 className="text-[130%] text-[#6C6C6C] font-normal mt-8 mb-4"
+                    <div className="mb-8 lg:w-[84%] mr-[4%]">
+                        <h2 className="2xl:text-[240%] lg:text-[130%] 3xs:text-[110%] text-[#6C6C6C] font-normal lg:mt-8 mb-4 lg:text-left 3xs:text-justify"
                             style={{
                                 cursor: "default",
                                 lineHeight: "1.5",

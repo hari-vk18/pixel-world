@@ -1,4 +1,5 @@
 import { useState } from "react";
+import FadeOnScroll from "./FadeOnScroll";
 
 export default function InvestorSpotlight() {
   const [page, setPage] = useState(1);
@@ -68,14 +69,15 @@ export default function InvestorSpotlight() {
   };
 
   return (
-    <section className="bg-white py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+  <FadeOnScroll direction="up" duration={1200} delay={100} distance={28} once={false} repeat={true} className="w-full">
+      <section className="bg-white lg:py-16 md:py-24 3xs:pt-8">
+        <div className="max-w-7xl mx-auto px-4 md:px-0">
         {/* Section Header */}
-        <div className="flex justify-between items-end mb-8">
+        <div className="flex justify-between items-center lg:mb-8">
           <h2 className="text-iotc-text font-sf-pro text-3xl ml-8 md:text-[35px] font-normal leading-[52px] tracking-[-0.7px]">
             Investor Spotlight
           </h2>
-          <button className="group flex items-center space-x-2 pr-6 text-iotc-text font-sf-pro text-xl md:text-2xl font-light hover:text-iotc-gold transition-colors duration-300">
+          <button className="group flex items-center justify-center space-x-2 pr-6 text-iotc-text font-sf-pro text-xl md:text-2xl font-light hover:text-iotc-gold transition-colors duration-300">
             <span>View all</span>
             <svg 
               className="w-3 h-3 transform group-hover:translate-x-1 transition-transform duration-300" 
@@ -94,11 +96,11 @@ export default function InvestorSpotlight() {
         {/* Slider Container */}
         <div className="relative overflow-hidden">
           <div
-            className="flex transition-transform duration-700 ease-in-out py-10"
+            className="flex transition-transform duration-700 ease-in-out py-10 px-5"
             style={{ transform: `translateX(-${(page - 1) * 100}%)` }}
           >
             {Array.from({ length: totalPages }).map((_, i) => (
-              <div key={i} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-14 flex-shrink-0 w-full">
+              <div key={i} className={`${i>0 ? "ml-6" :""} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-14 flex-shrink-0 w-full`}>
                 {blogPosts
                   .slice(i * postsPerPage, (i + 1) * postsPerPage)
                   .map((post) => (
@@ -134,7 +136,7 @@ export default function InvestorSpotlight() {
         </div>
 
         {/* Pagination Dots */}
-        <div className="flex justify-center space-x-2 mt-12">
+        <div className="flex justify-center space-x-2 lg:mt-12 3xs:mb-6">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((dot) => (
             <button
               key={dot}
@@ -146,7 +148,8 @@ export default function InvestorSpotlight() {
             />
           ))}
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </FadeOnScroll>
   );
 }

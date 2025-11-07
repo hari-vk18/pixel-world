@@ -2,21 +2,22 @@ import Footer from "../components/Footer";
 import BgPattern from "../../public/Group 1000001906.png";
 import Header from "../components/Header";
 import Login from "./investor/Login";
-import { Link, Routes, Route, Outlet } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
+import FadeOnScroll from "../components/FadeOnScroll"; // ✅ added
 
 export default function InvestorPortal() {
   const navItems = [
-    { label: 'Company', path: '/company' },
-    { label: 'Investment Management', path: '/investment-management' },
-    { label: 'Real Estate Service', path: '/real-estate-service' },
-    { label: 'Projects and Investment', path: '/projects-investment' },
-    { label: 'News', path: '/news' },
-    { label: 'Investor Portal', path: '/investor-portal', active: true },
-    { label: 'Contact Us', path: '/contact-us' },
+    { label: "Company", path: "/company" },
+    { label: "Investment Management", path: "/investment-management" },
+    { label: "Real Estate Service", path: "/real-estate-service" },
+    { label: "Projects and Investment", path: "/projects-investment" },
+    { label: "News", path: "/news" },
+    { label: "Investor Portal", path: "/investor-portal", active: true },
+    { label: "Contact Us", path: "/contact-us" },
   ];
 
   const portalLinks = [
-    { title: "Investor Login", path: "login" },
+    { title: "Investor Login", path: "#" },
     { title: "Private Wealth Solution", path: "#" },
   ];
 
@@ -26,7 +27,7 @@ export default function InvestorPortal() {
       <Header />
 
       {/* Main Content */}
-      <main className="pt-[11%] h-full">
+      <main className="lg:pt-40 2xl:pt-60 3xs:pt-[25%] h-full">
         <Routes>
           <Route
             index
@@ -34,42 +35,63 @@ export default function InvestorPortal() {
               <>
                 {/* Background Pattern */}
                 <div
-                  className="absolute inset-0 ml-[2%] bg-no-repeat bg-[length:300px] bg-left-bottom opacity-15 pointer-events-none mt-20"
+                  className="absolute inset-0 ml-[2%] bg-no-repeat bg-[length:300px] 2xl:bg-[length:500px] bg-left-bottom opacity-15 pointer-events-none mt-20"
                   style={{ backgroundImage: `url(${BgPattern})` }}
                 ></div>
 
-                <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+                {/* ✅ Animation Wrapper */}
+                <div
+                  className="max-w-8xl mx-auto px-5 md:px-8 relative z-10"
+                >
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
                     {/* Left Content */}
-                    <div className="max-w-lg">
-                      <h1 className="text-iotc-text font-sf-pro text-5xl font-normal mb-8 leading-tight">
-                        Investor Portal
-                      </h1>
-                      <p className="text-iotc-gray font-sf-pro text-lg leading-relaxed">
-                        Gain secure access to a personalized dashboard to track investments, monitor performance, and receive insights while our private wealth solutions offer tailored strategies, exclusive opportunities, and long-term portfolio growth through sustainable real estate investments.
-                      </p>
+                    <div className="">
+                      <FadeOnScroll direction="top" distance={40} duration={800}>
+                        <h1 className="text-iotc-text font-sf-pro lg:text-[300%] 3xs:text-[200%] 2xl:text-[450%] font-normal lg:mb-8 2xl:mb-16 3xs:mb-4 leading-tight">
+                          Investor Portal
+                        </h1>
+                      </FadeOnScroll>
+
+                      <FadeOnScroll direction="up" delay={150} distance={30} duration={900}>
+                        <p className="text-iotc-gray font-sf-pro text-lg 2xl:text-[220%] leading-relaxed lg:text-left 3xs:text-justify">
+                          Gain secure access to a personalized dashboard to track investments, monitor performance, and receive insights while our private wealth solutions offer tailored strategies, exclusive opportunities, and long-term portfolio growth through sustainable real estate investments.
+                        </p>
+                      </FadeOnScroll>
                     </div>
 
                     {/* Right Navigation */}
                     <div className="space-y-0">
                       {portalLinks.map((link, index) => (
-                        <Link
+                        <FadeOnScroll
                           key={index}
-                          to={link.path}
-                          className="flex items-center justify-between p-4 border-b border-gray-200 hover:bg-gray-50 transition-colors group"
+                          direction="right"
+                          delay={index * 150}
+                          distance={40}
+                          duration={800}
                         >
-                          <span className="text-iotc-text font-sf-pro text-lg group-hover:text-iotc-gold">
-                            {link.title}
-                          </span>
-                          <svg
-                            className="w-5 h-5 text-gray-400 group-hover:text-iotc-gold"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
+                          <Link
+                            key={index}
+                            to={link.path}
+                            className="flex items-center justify-between p-4 2xl:p-8 border-b border-gray-200 hover:bg-gray-50 transition-colors group"
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </Link>
+                            <span className="text-iotc-text font-sf-pro text-lg 2xl:text-[220%] group-hover:text-iotc-gold">
+                              {link.title}
+                            </span>
+                            <svg
+                              className="w-5 h-5 text-gray-400 group-hover:text-iotc-gold"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </Link>
+                        </FadeOnScroll>
                       ))}
                     </div>
                   </div>
@@ -78,10 +100,6 @@ export default function InvestorPortal() {
             }
           />
           <Route path="login" element={<Login />} />
-          {/* <Route path="meet-the-team" element={<MeetTheTeam />} />
-          <Route path="esg" element={<ESG />} />
-          <Route path="insights" element={<Insights />} />
-          <Route path="careers" element={<Careers />} /> */}
         </Routes>
       </main>
     </div>

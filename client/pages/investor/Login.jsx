@@ -16,7 +16,7 @@ export default function Login() {
     };
 
     return (
-        <div className="grid grid-cols-2 min-h-screen bg-white">
+        <div className="grid lg:grid-cols-2 3xs-col-1 min-h-screen bg-white">
             {/* Left Panel - Hero Section */}
             <div className="hidden lg:flex rounded-l-lg justify-between">
                 <div className='m-8 w-full rounded-2xl bg-gradient-to-b from-gray-100 to-gray-300'>
@@ -48,10 +48,10 @@ export default function Login() {
             <div className="flex-1 flex items-center justify-center p-8">
                 <div className="w-full max-w-md">
                     {/* Mobile Logo */}
-                    <div className="lg:hidden mb-8 text-center">
-                        <img src="/IOTC Real Asset logo blue 1 (1).svg" alt="" />
-                        <div className="text-xl font-bold text-gray-800">IOTC</div>
-                        <div className="text-xs text-gray-600 uppercase tracking-wide">Real Asset</div>
+                    <div className="lg:hidden mb-8 text-center item-center">
+                        <div className='flex justify-center item-center'>
+                            <img src="/IOTC Real Asset logo blue 1.svg" alt="" />
+                        </div>
                     </div>
 
                     {/* Header */}

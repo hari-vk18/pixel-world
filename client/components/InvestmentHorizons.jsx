@@ -1,122 +1,145 @@
+import FadeOnScroll from "./FadeOnScroll"
+import { motion } from "framer-motion";
+
 export default function InvestmentHorizons() {
   return (
     <section className="bg-white py-16 md:py-32">
-      <div className="w-[71rem] mx-auto">
-        {/* Top Row: 2-column grid, right column split for title/line and investment block+image */}
+      <div className="max-w-8xl mx-auto px-16 sm:px-6 lg:px-16">
+        {/* Top Row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 items-start mt-10 mb-10 relative">
-          {/* Left: Main image */}
-          <div className="flex flex-col justify-start w-[70%]">
-            <img
-              src="./public/image (1).png"
-              alt="Investment property"
-              className="w-full h-72 md:h-80 object-cover"
-            />
-          </div>
-          {/* Center: Title, line, and Investment block */}
-          <div className="flex flex-col h-full mt-[48%]  w-[97%]">
+          {/* Left Image */}
+          <FadeOnScroll direction="left" duration={1000} delay={100} distance={40}>
+            <div className="flex justify-center lg:justify-start">
+              <img
+                src="/image (1).png"
+                alt="Investment property"
+                className="w-40 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover"
+              />
+            </div>
+          </FadeOnScroll>
 
-            {/* Investment block */}
-            <div className="flex flex-col">
-              <h3 className="text-iotc-text text-2xl md:text-[32px] font-normal leading-tight tracking-normal mb-5" style={{ fontFamily: 'Inter, Arial, sans-serif' }}>
+          {/* Center Investment Text */}
+          <FadeOnScroll direction="up" duration={500} delay={200} distance={30}>
+            <div className="flex flex-col justify-center text-center lg:text-left">
+              <motion.div
+                className="lg:mt-5 absolute top-1 left-[30%] lg:w-[400px] 2xl:w-[800px]"
+                style={{
+                  height: "3px",
+                  backgroundColor: "gray",
+                  transformOrigin: "left center", // makes it draw from left
+                }}
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{
+                  duration: 1.5,     // animation speed
+                  delay: 0.8,        // wait before starting
+                  ease: "easeInOut", // smooth in/out
+                }}
+              />
+              <h3 className="text-iotc-text text-2xl md:text-3xl 2xl:text-5xl lg:mt-40 3xs:mt-10 font-normal 2xl:font-bold mb-4">
                 Investment
               </h3>
-              <p className="text-iotc-text font-sf-pro text-lg font-normal w-[80%]"
-                style={{
-                  letterSpacing: '-0.03em',
-                  lineHeight: '1.7',
-                  cursor: 'default',
-                }}>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+              <p className="text-iotc-text font-sf-pro text-lg 2xl:text-4xl leading-relaxed md:max-w-xs 2xl:max-w-lg mx-auto lg:mx-0">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores.
               </p>
             </div>
-          </div>
-          <div className="hidden md:block absolute left-[46%] -translate-x-1/2 top-[6%] w-[36%] border-t-2 border-black-200" style={{ zIndex: 0 }}></div>
+          </FadeOnScroll>
 
-          {/* Right: Side image */}
-          <div className="flex flex-col justify-center">
-            {/* Title and horizontal line */}
-            <div className="flex items-center w-full justify-start mb-8 relative">
-              <h2 className="text-iotc-text font-sf-pro text-[3rem] md:text-8x8 font-normal leading-tight bg-white relative z-10 whitespace-nowrap"
-                style={{
-                  letterSpacing: '-0.03em',
-                  cursor: 'default',
-                }}>
+
+          {/* Right Title + Image */}
+          <FadeOnScroll direction="right" duration={1000} delay={300} distance={50}>
+            <div className="flex flex-col justify-center items-center lg:items-start">
+              <h2
+                className="text-iotc-text font-sf-pro lg:text-4xl md:text-5xl 
+                font-normal 2xl:font-bold leading-tight mb-6 text-center 2xl:text-7xl lg:text-left 3xs:mt-10 md:mt-0"
+              >
                 Investment Horizons
               </h2>
-            </div>
-            <div className="flex justify-center mt-[23%]">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/c875ffef857fbc15d6df44d4cc6547916746ac90"
                 alt="Investment opportunity"
-                className="w-[70%] h-72 md:h-80 object-cover"
+                className="w-40 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover lg:mt-10 lg:ml-8"
               />
             </div>
-          </div>
+          </FadeOnScroll>
         </div>
-        <div className="relative mt-0">
-          <img src="/Vector 3313.svg" alt="Vector 3313" className="absolute" style={{ top: '-36px', left: '657.5px' }} />
-        </div>
-        {/* Bottom Row: Two columns, number, title, text, image above */}
-        <div className="flex flex-row flex-wrap justify-center gap-2 mx-auto">
-          {/* Left: European Real Asset */}
-          <div className="flex-1 max-w-xs flex flex-col items-start">
-            <div className="text-lg font-sf-pro text-gray-700 font-normal mb-4">01</div>
-            <h3 className="text-iotc-text font-sf-pro text-2xl md:text-[32px] font-normal leading-tight mb-1"
-              style={{
-                letterSpacing: '-0.03em',
-                cursor: 'default',
-              }}>
-              European Real Asset
-            </h3>
-            <p className="text-iotc-text font-sf-pro text-lg font-normal leading-7 max-w-xs mt-8"
-              style={{
-                letterSpacing: '-0.03em',
-                lineHeight: '1.7',
-                cursor: 'default',
-              }}>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-            </p>
-          </div>
 
-          {/* Center: Image */}
-          <div className="flex-1 flex flex-col justify-start mt-[7%] items-center"
-            style={{ width: '261px', height: '321px' }}>
+        {/* Vector */}
+        <FadeOnScroll direction="fade" duration={1200} delay={400}>
+          <div className="relative mt-0 hidden lg:block">
             <img
-              src="./public/image.png"
-              alt="Real estate development"
-              className="object-cover mt-6"
-              style={{ width: '261px', height: '321px' }}
+              src="/Vector 3313.svg"
+              alt="Vector 3313"
+              className="absolute xl:left-[56.2%] xl:top-[-0.8rem] lg:left-[62.3%] lg:top-[-0.8rem] 2xl:top-[-0.8rem] 2xl:left-[40.3rem]"
             />
           </div>
+        </FadeOnScroll>
+
+        {/* Bottom Row */}
+        <div className="grid grid-cols-1 lg:grid-cols-3">
+          {/* Left: European Real Asset */}
+          <FadeOnScroll direction="left" duration={1000} delay={100}>
+            <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+              <div className="text-lg 2xl:text-4xl text-gray-700 mb-2">01</div>
+              <h3 className="text-iotc-text text-2xl md:text-3xl 2xl:text-5xl font-normal 2xl:font-bold mb-4">
+                European Real Asset
+              </h3>
+              <p className="text-iotc-text text-lg 2xl:text-4xl leading-relaxed md:max-w-xs 2xl:max-w-lg">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores.
+              </p>
+            </div>
+          </FadeOnScroll>
+
+          {/* Center: Image */}
+          <FadeOnScroll direction="up" duration={1000} delay={200}>
+            <div className="flex md:justify-center lg:justify-start lg:mt-32 3xs:mt-10 3xs:justify-center">
+              <img
+                src="/image.png"
+                alt="Real estate development"
+                className="w-40 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover"
+              />
+            </div>
+          </FadeOnScroll>
+
           {/* Right: Real Asset Opportunities */}
-          <div className="flex-1 max-w-lg flex flex-col items-start mt-36">
-            <div className="text-lg font-sf-pro text-gray-700 font-normal mb-4">02</div>
-            <h3 className="text-iotc-text font-sf-pro text-2xl md:text-[32px] font-normal leading-tight tracking-tight mb-1"
-              style={{
-                letterSpacing: '-0.03em',
-                lineHeight: '1.5',
-                cursor: 'default',
-              }}>
-              Real Asset Opportunities in Emerging countries
-            </h3>
-            <p className="text-iotc-text font-sf-pro text-lg font-normal leading-7 max-w-xs"
-              style={{
-                letterSpacing: '-0.03em',
-                lineHeight: '1.7',
-                cursor: 'default',
-              }}>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-            </p>
-          </div>
+          <FadeOnScroll direction="right" duration={1000} delay={300}>
+            <div className="flex flex-col items-center lg:mt-32 3xs:mt-10 md:items-start lg:text-left">
+              <div className="text-lg 2xl:text-4xl text-gray-700 mb-2">02</div>
+              <h3 className="text-iotc-text text-2xl md:text-3xl 2xl:text-5xl font-normal 2xl:font-bold mb-4 md:w-[40%] lg:w-full">
+                Real Asset Opportunities in Emerging Countries
+              </h3>
+              <p className="text-iotc-text text-lg 2xl:text-4xl leading-relaxed md:max-w-xs 2xl:max-w-lg md:w-[40%] lg:w-full">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores.
+              </p>
+            </div>
+          </FadeOnScroll>
         </div>
 
-        {/* Architectural Line Graphics - Vector SVGs as absolute images */}
-        <div className="relative mt-0">
-          <img src="/Vector 3313.svg" alt="Vector 3313" className="absolute" style={{ top: '-80px', left: '250px' }} />
-        </div>
-        <div className="relative mt-0">
-          <img src="/Vector 3312.svg" alt="Vector 3312" className="absolute" style={{ top: '-150px' }} />
-        </div>
+        {/* Extra Vectors */}
+        <FadeOnScroll direction="fade" duration={1000} delay={400}>
+          <div className="relative mt-0 hidden lg:block">
+            <img
+              src="/Vector 3313.svg"
+              alt="Vector 3313"
+              className="absolute"
+              style={{ top: "-80px", left: "250px" }}
+            />
+          </div>
+        </FadeOnScroll>
+
+        <FadeOnScroll direction="fade" duration={1000} delay={500}>
+          <div className="relative mt-0 hidden lg:block">
+            <img
+              src="/Vector 3312.svg"
+              alt="Vector 3312"
+              className="absolute"
+              style={{ top: "-150px" }}
+            />
+          </div>
+        </FadeOnScroll>
       </div>
     </section>
   );

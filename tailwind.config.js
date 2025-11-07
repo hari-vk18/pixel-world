@@ -3,11 +3,19 @@ export default {
   content: ["./client/**/*.{js,jsx}"],
   prefix: "",
   theme: {
-    container: {
+      container: {
       center: true,
       padding: "2rem",
       screens: {
+        '3xs': '320px',  // very small phones (iPhone SE, older Androids)
+        '2xs': '375px',  // small phones (iPhone 12 mini, Pixel 4a)
+        'xs':  '475px',
+        'sm': "640px",
+        'md': "768px",
+        'lg': "1024px",
+        'xl': "1260px",
         "2xl": "1400px",
+        '3xl': '2000px',
       },
     },
     extend: {
@@ -109,6 +117,18 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      screens: {
+        '3xs': '320px',  // very small phones (iPhone SE, older Androids)
+        '2xs': '375px',  // small phones (iPhone 12 mini, Pixel 4a)
+        'xs':  '475px',  // slightly larger phones before sm (640px)
+        // existing defaults continue...
+        'sm':  '640px',
+        'md':  '768px',
+        'lg':  '1024px',
+        'xl':  '1280px',
+        '2xl': '1536px',
+        '3xl': '2000px',
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
