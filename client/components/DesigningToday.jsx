@@ -34,7 +34,7 @@ export default function DesigningToday() {
             <div className="flex lg:mt-[16%] overflow-visible">
               <div className="relative w-full overflow-visible">
                 <img
-                  src="/image (2).png"
+                  src="./image (2).png"
                   alt="Modern building design"
                   className="object-cover h-auto ml-0 md:ml-2 lg:ml-5 w-[90vw] md:w-[80vw] xl:w-[96vw] 2xl:w-[105vw]"
                 />
@@ -46,7 +46,7 @@ export default function DesigningToday() {
 
         {/* Description & Button */}
         <FadeOnScroll direction="up" duration={1000} delay={400} distance={30}>
-        <div className="flex md:justify-center 2xl:justify-start lg:w-[70%] xl:w-[80%] 3xs:mt-[50%] lg:mt-[20%]  2xl:mb-16 lg:mb-8 2xs:mb-4">
+          <div className="flex md:justify-center 2xl:justify-start lg:w-[70%] xl:w-[80%] 3xs:mt-[50%] lg:mt-[20%]  2xl:mb-16 lg:mb-8 2xs:mb-4">
             <p
               className="text-white font-sf-pro text-xl md:text-2xl 2xl:text-5xl 3xs:-mt-[48%] lg:-mt-[20%] 2xl:-mt-[10%] font-normal italic leading-9 2xs:leading-6 tracking-[-0.5px] w-35%"
               style={{ cursor: "default" }}
@@ -69,7 +69,7 @@ export default function DesigningToday() {
                 </svg>
               </button>
             </div>
-        </div>
+          </div>
         </FadeOnScroll>
       </div>
     </section>

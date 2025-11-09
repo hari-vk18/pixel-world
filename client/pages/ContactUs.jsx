@@ -40,9 +40,9 @@ export default function ContactUs() {
     const handleResize = () => {
       if (window.innerWidth < 640) {
         setSize(3.5);
-      }else if (window.innerWidth <= 768) {
+      } else if (window.innerWidth <= 768) {
         setSize(6);
-      } 
+      }
       else if (window.innerWidth <= 1024) {
         setSize(7.5);
       } else {
@@ -97,7 +97,7 @@ export default function ContactUs() {
 
         {/* 🌍 World Map Section */}
         <div className=" w-full max-w-[1600px] mx-auto mb-16 aspect-[3/1.4] relative">
-          <img className="absolute top-0 left-0 w-full h-full object-contain" src="/world.svg" alt=""
+          <img className="absolute top-0 left-0 w-full h-full object-contain" src="./world.svg" alt=""
           />
 
           {/* Netherlands */}

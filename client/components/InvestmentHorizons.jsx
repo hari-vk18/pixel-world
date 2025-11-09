@@ -11,7 +11,7 @@ export default function InvestmentHorizons() {
           <FadeOnScroll className="3xs:hidden lg:block" direction="left" duration={1000} delay={100} distance={40}>
             <div className="flex justify-center lg:justify-start">
               <img
-                src="/image (1).png"
+                src="./image (1).png"
                 alt="Investment property"
                 className="w-72 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover"
               />
@@ -69,7 +69,7 @@ export default function InvestmentHorizons() {
         <FadeOnScroll direction="fade" duration={1200} delay={400}>
           <div className="relative mt-0 hidden lg:block">
             <img
-              src="/Vector 3313.svg"
+              src="./Vector 3313.svg"
               alt="Vector 3313"
               className="absolute xl:left-[56.2%] xl:top-[-0.8rem] lg:left-[62.3%] lg:top-[-0.8rem] 2xl:top-[-0.8rem] 2xl:left-[40.3rem]"
             />
@@ -96,7 +96,7 @@ export default function InvestmentHorizons() {
           <FadeOnScroll direction="up" duration={1000} delay={200}>
             <div className="flex md:justify-center lg:justify-start lg:mt-32 3xs:mt-10 3xs:justify-center">
               <img
-                src="/image.png"
+                src="./image.png"
                 alt="Real estate development"
                 className="w-72 sm:w-56 md:w-64 lg:w-64 xl:w-64 2xl:w-[34rem] h-auto object-cover"
               />
@@ -122,7 +122,7 @@ export default function InvestmentHorizons() {
         <FadeOnScroll direction="fade" duration={1000} delay={400}>
           <div className="relative mt-0 hidden lg:block">
             <img
-              src="/Vector 3313.svg"
+              src="./Vector 3313.svg"
               alt="Vector 3313"
               className="absolute"
               style={{ top: "-80px", left: "250px" }}
@@ -133,7 +133,7 @@ export default function InvestmentHorizons() {
         <FadeOnScroll direction="fade" duration={1000} delay={500}>
           <div className="relative mt-0 hidden lg:block">
             <img
-              src="/Vector 3312.svg"
+              src="./Vector 3312.svg"
               alt="Vector 3312"
               className="absolute"
               style={{ top: "-150px" }}
