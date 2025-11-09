@@ -3,7 +3,13 @@ import { motion } from "framer-motion";
 
 export default function InvestmentHorizons() {
   return (
-    <section className="bg-white py-8 md:py-32">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 1.2, ease: "easeInOut" }}
+      className="relative z-20 bg-white py-8 md:py-32 transition-all duration-700"
+    >
       <div className="max-w-8xl mx-auto sm:px-6 lg:px-8 xl:pr-8 xl:pl-16 3xs:pl-8">
         {/* Top Row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 items-start md:mt-10 md:mb-10 relative">
@@ -28,6 +34,7 @@ export default function InvestmentHorizons() {
                   whileInView={{ scaleX: 1 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{
+                    delay: 0.5,
                     duration: 1.2,
                     ease: "easeInOut",
                   }}
@@ -159,6 +166,6 @@ export default function InvestmentHorizons() {
           </div>
         </FadeOnScroll>
       </div>
-    </section>
+    </motion.section>
   );
 }
