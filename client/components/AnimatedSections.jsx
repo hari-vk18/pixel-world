@@ -40,8 +40,9 @@ export default function AnimatedSections() {
       const containerHeight = containerRef.current.offsetHeight;
       const scrollY = window.scrollY;
       const scrollIntoContainer = scrollY - containerTop;
+      const scrollMultiplier = isMobile ? 1.5 : 1;
       const progress = Math.min(
-        Math.max(scrollIntoContainer / containerHeight, 0),
+        Math.max((scrollIntoContainer * scrollMultiplier) / containerHeight, 0),
         1
       );
 
@@ -134,7 +135,7 @@ export default function AnimatedSections() {
     <section
       ref={containerRef}
       className="relative w-full"
-      style={{ height: isMobile ? "300svh" : "400vh" }}
+      style={{ height: isMobile ? "200svh" : "400vh" }}
     >
       <div className="sticky top-0 h-[100svh] w-full bg-gradient-to-r from-[#0B2442] via-[#021123] to-[#0B2442]">
         <svg
