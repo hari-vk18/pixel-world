@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import FadeOnScroll from '../components/FadeOnScroll';
 
@@ -6,6 +6,27 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+
+  // Effect to handle body scroll lock
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+      document.body.style.height = '100%';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.height = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+      document.body.style.height = '';
+    };
+  }, [isMobileMenuOpen]);
 
   const navItems = [
     { label: 'Investment Management', href: '/investment-management' },
@@ -17,7 +38,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="absolute top-0 left-0 w-full z-50 bg-transparent absolute">
+    <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
       <nav className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] py-8 pr-8">
 
         {/* Logo */}
@@ -95,10 +116,35 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`relative -mt-4 lg:hidden bg-iotc-dark/95 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        className={`fixed top-0 left-0 right-0 bottom-0 z-[60] lg:hidden bg-iotc-dark/95 backdrop-blur-sm transition-all duration-300 ease-in-out flex flex-col overflow-hidden ${isMobileMenuOpen
+          ? 'opacity-100 visible pointer-events-auto'
+          : 'opacity-0 invisible pointer-events-none'
           }`}
       >
-        <div className="px-4 py-6  space-y-4">
+        <div className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] py-8 pr-8">
+          <a href="/pixel-world/">
+            <img
+              src="/pixel-world/IOTC Real Asset logo white 2.svg"
+              alt="IOTC Real Asset"
+              className="xl:w-[100%] xl:h-[150%] lg:w-[96%] lg:h-[100%] 3xs:w-[50%] 3xs:h-[50%] flex-shrink-0"
+            />
+          </a>
+          <button
+            className="text-white p-2"
+            onClick={() => setIsMobileMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div className="px-4 py-6 space-y-6 flex-grow overflow-hidden">
           {navItems.map((item, index) => (
             <FadeOnScroll key={index} direction="up" delay={index * 120} duration={900}>
               <Link

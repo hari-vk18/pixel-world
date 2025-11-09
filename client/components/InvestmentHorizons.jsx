@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function InvestmentHorizons() {
   return (
     <section className="bg-white py-8 md:py-32">
-      <div className="max-w-8xl mx-auto sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto sm:px-6 lg:px-8 xl:pr-8 xl:pl-16 3xs:pl-8">
         {/* Top Row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 items-start md:mt-10 md:mb-10 relative">
           {/* Left Image */}
@@ -51,17 +51,23 @@ export default function InvestmentHorizons() {
 
           {/* Right Title + Image */}
           <FadeOnScroll direction="right" duration={1000} delay={300} distance={50}>
-            <div className="flex flex-col justify-center items-center lg:items-start">
+            <div className="flex flex-col justify-center items-left  lg:items-start">
               <h2
                 className="text-iotc-text font-sf-pro 3xs:text-2xl lg:text-4xl md:text-5xl 
-                font-normal 2xl:font-bold leading-tight mb-6 text-center 2xl:text-7xl lg:text-left 3xs:mt-10 md:mt-0"
+                font-normal 2xl:font-bold leading-tight mb-6 text-center 2xl:text-7xl lg:text-left 3xs:mt-10 md:mt-0 3xs:hidden sm:block"
+              >
+                Investment Horizons
+              </h2>
+              <h2
+                className="text-iotc-blue-bg font-sf-pro 3xs:text-[250%] font-normal 2xl:font-bold leading-tight 
+                 text-left 2xl:text-7xl lg:text-left 3xs:mt-10 sm:hidden ml-4"
               >
                 Investment Horizons
               </h2>
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/c875ffef857fbc15d6df44d4cc6547916746ac90"
                 alt="Investment opportunity"
-                className="w-72 sm:w-56 md:w-64 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover lg:mt-10 lg:ml-8"
+                className="w-72 sm:w-56 md:w-64 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover lg:mt-10 lg:ml-8 3xs:hidden sm:block"
               />
             </div>
           </FadeOnScroll>
@@ -116,6 +122,16 @@ export default function InvestmentHorizons() {
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                 praesentium voluptatum deleniti atque corrupti quos dolores.
               </p>
+            </div>
+          </FadeOnScroll>
+
+          <FadeOnScroll className="sm:hidden" direction="up" duration={1000} delay={200}>
+            <div className="flex md:justify-center lg:justify-start lg:mt-32 3xs:mt-10 3xs:justify-center">
+              <img
+                src="/pixel-world/image (1).png"
+                alt="Investment property"
+                className="w-72 sm:w-56 md:w-56 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover"
+              />
             </div>
           </FadeOnScroll>
         </div>

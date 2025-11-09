@@ -3,13 +3,13 @@ export default {
   content: ["./client/**/*.{js,jsx}"],
   prefix: "",
   theme: {
-      container: {
+    container: {
       center: true,
       padding: "2rem",
       screens: {
         '3xs': '320px',  // very small phones (iPhone SE, older Androids)
         '2xs': '375px',  // small phones (iPhone 12 mini, Pixel 4a)
-        'xs':  '475px',
+        'xs': '475px',
         'sm': "640px",
         'md': "768px",
         'lg': "1024px",
@@ -72,6 +72,7 @@ export default {
         'iotc-gray': '#555',
         'iotc-light-gray': '#777',
         'iotc-card-bg': '#F6F8FB',
+        'iotc-blue-bg': '#052a82ff',
       },
       fontFamily: {
         'sf-pro': ['SF Pro Display', '-apple-system', 'Roboto', 'Helvetica', 'sans-serif'],
@@ -120,12 +121,12 @@ export default {
       screens: {
         '3xs': '320px',  // very small phones (iPhone SE, older Androids)
         '2xs': '375px',  // small phones (iPhone 12 mini, Pixel 4a)
-        'xs':  '475px',  // slightly larger phones before sm (640px)
+        'xs': '475px',  // slightly larger phones before sm (640px)
         // existing defaults continue...
-        'sm':  '640px',
-        'md':  '768px',
-        'lg':  '1024px',
-        'xl':  '1280px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
         '2xl': '1536px',
         '3xl': '2000px',
       }
