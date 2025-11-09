@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col overflow-x-hidden">
       <div className="flex-grow relative">
         {/* Header Navigation */}
         <Header />
