@@ -82,14 +82,14 @@ export default function AnimatedSections() {
       className="relative w-full"
       style={{ height: isMobile ? '100vh' : '400vh' }} // ⬅️ 3 full viewport scrolls
     >
-      <div className="sticky top-0 lg:h-screen 3xs:h-[50vh] pt- w-full overflow-hidden bg-gradient-to-r from-[#0B2442] via-[#021123] to-[#0B2442]">
+      <div className="sticky top-0 lg:h-screen 3xs:h-[50vh] w-full bg-gradient-to-r from-[#0B2442] via-[#021123] to-[#0B2442]">
         <svg
           className="absolute inset-0 2xl:max-h-[100%] 3xs:max-h-[100%] lg:max-h-[100%]"
           viewBox="0 0 1280 839"
           fill="none"
           preserveAspectRatio="none"
           style={{
-            width: '100vw',
+            width: '100%',
             height: '100vh',
             maxWidth: '100%',
             objectFit: 'contain',
