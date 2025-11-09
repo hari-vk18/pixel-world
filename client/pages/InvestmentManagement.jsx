@@ -8,10 +8,10 @@ import FadeOnScroll from "@/components/FadeOnScroll"; // ✅ adjust import path 
 export default function InvestmentManagement() {
   const investmentLinks = [
     { title: "Overview", path: "overview" },
-    { title: "Strategic Differentiation", path: "strategic-differentiation" },
-    { title: "Integrated Investment Structure", path: "integrated-investment-structure" },
-    { title: "Revenue Model & Growth Engine", path: "revenue-model-growth-engine" },
-    { title: "Real Estate Investment and Asset Management", path: "real-estate-investment-asset-management" },
+    { title: "Strategic Differentiation", path: "#" },
+    { title: "Integrated Investment Structure", path: "#" },
+    { title: "Revenue Model & Growth Engine", path: "#" },
+    { title: "Real Estate Investment and Asset Management", path: "#" },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function InvestmentManagement() {
                 {/* ✅ Main Content */}
                 <div className="max-w-8xl mx-auto px-4 md:px-8 relative z-10 overflow-hidden">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                    
+
                     {/* LEFT SIDE */}
                     <div>
                       <FadeOnScroll direction="top" distance={30} duration={800}>

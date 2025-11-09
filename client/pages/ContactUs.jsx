@@ -74,7 +74,7 @@ export default function ContactUs() {
         <div className="lg:px-12 3xs:px-5 lg:pb-14">
           <div className="flex lg:flex-row 3xs:flex-col justify-between">
             <p
-              className="lg:text-[350%] 3xs:text-[200%] font-[300] font-sf-pro lg:mb-8 3xs:mb-4 mt-[3%]"
+              className="2xl:text-[500%] lg:text-[350%] 3xs:text-[200%] font-[300] font-sf-pro lg:mb-8 3xs:mb-4 mt-[3%] xl:mt-[1%]"
               style={{
                 cursor: "default",
                 lineHeight: "1.2",
@@ -84,7 +84,7 @@ export default function ContactUs() {
             </p>
             <div className="mb-8 lg:w-[60%] lg:text-left 3xs:text-justify">
               <h2
-                className="lg:text-[150%] 3xs:text-[100%] text-[#6C6C6C] font-normal lg:mt-8 mb-4"
+                className="2xl:text-[250%] lg:text-[150%] 3xs:text-[100%] text-[#6C6C6C] font-normal lg:mt-8 mb-4"
                 style={{
                   cursor: "default",
                   lineHeight: "1.5",
