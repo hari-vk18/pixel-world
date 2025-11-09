@@ -23,7 +23,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={ref} className="relative w-full overflow-hidden h-[400px] sm:h-[500px] md:h-[650px] lg:h-[832px]">
+    <section ref={ref} className="relative w-full overflow-hidden h-screen sm:h-[500px] md:h-[650px] lg:h-[832px]">
       {/* Background Images */}
       <img
         src="/pixel-world/modern-multistory-residential-building-with-balconies-greenery.png"
