@@ -37,10 +37,10 @@ export default function AboutUs() {
             className="absolute inset-0 ml-[14%] bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[4%] opacity-100 pointer-events-none"
             style={{ backgroundImage: `url(${BgPattern2})` }}
           ></div>
-          <img src={back} alt="About building" className="w-full 2xl:h-[716px] xl:h-[412px] lg:h-[316px] 3xs:h-[110px]"
+          <img src={back} alt="About building" className="w-full 2xl:h-[716px] xl:h-[412px] lg:h-[316px] 3xs:h-[120px]"
             style={{
             }} />
-          <img src={aboutBuilding} alt="About building" className="absolute w-[60%] 3xs:h-[120%] xl:h-[142%] lg:h-[132%] 3xs:w-[50%] object-cover inset-0 lg:left-[40%] 3xs:left-[40%] xl:top-[-42%] lg:top-[-32%] 3xs:top-[-20%]"
+          <img src={aboutBuilding} alt="About building" className="absolute w-[60%] 3xs:h-[140%] xl:h-[142%] lg:h-[132%] 3xs:w-[50%] object-cover inset-0 lg:left-[40%] 3xs:left-[40%] xl:top-[-42%] lg:top-[-32%] 3xs:top-[-40%]"
             style={{
               width: "60%",
             }} />
