@@ -7,7 +7,7 @@ import MeetTheTeam from "./company/MeetTheTeam";
 import ESG from "./company/ESG";
 import Insights from "./company/Insights";
 import Careers from "./company/Careers";
-import FadeOnScroll from "../components/FadeOnScroll"; // ✅ Import animation component
+import FadeOnScroll from "../components/FadeOnScroll";
 
 export default function Company() {
   const companyLinks = [
