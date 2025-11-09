@@ -15,7 +15,7 @@ export default function ProjectsInvestment() {
     <div className="min-h-screen bg-white">
       <Header />
 
-      <main className="lg:pt-40 2xl:pt-60 3xs:pt-28">
+      <main className="lg:pt-40 2xl:pt-60 3xs:pt-28 h-full">
         <Routes>
           <Route
             index

@@ -22,17 +22,17 @@ export default function Header() {
 
         {/* Logo */}
         <FadeOnScroll direction="down" duration={1000}>
-          <Link to="/">
+          <a href="/pixel-world/">
             <img
               src={
                 isHomePage
-                  ? "./IOTC Real Asset logo white 2.svg"
-                  : "./IOTC Real Asset logo blue 1.svg"
+                  ? "/pixel-world/IOTC Real Asset logo white 2.svg"
+                  : "/pixel-world/IOTC Real Asset logo blue 1.svg"
               }
               alt="IOTC Real Asset"
               className="xl:w-[100%] xl:h-[150%] lg:w-[96%] lg:h-[100%] 3xs:w-[50%] 3xs:h-[50%] flex-shrink-0"
             />
-          </Link>
+          </a>
         </FadeOnScroll>
 
         {/* Desktop Navigation */}

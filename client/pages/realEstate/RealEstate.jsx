@@ -6,11 +6,11 @@ import FadeOnScroll from "@/components/FadeOnScroll"; // ✅ added import
 
 const RealEstate = () => (
     <div className="company-Overview-page">
-        <section className="lg:pt-8">
+        <section className="">
             <div className="ml-[5%] lg:mt-4 mr-[4%]">
                 <div className="flex lg:flex-row 3xs:flex-col">
                     <FadeOnScroll direction="left" distance={40} duration={800}>
-                        <p className="2xl:text-[500%] lg:text-[380%] 3xs:text-[200%] font-[400] lg:mb-8 3xs:mb-4">
+                        <p className="2xl:text-[500%] lg:text-[300%] 3xs:text-[200%] font-[400] lg:mb-8 3xs:mb-4">
                             Real Estate Sevices
                         </p>
                     </FadeOnScroll>
@@ -39,7 +39,7 @@ const RealEstate = () => (
             <FadeOnScroll direction="up" distance={60}>
                 <div className="lg:mt-20 relative">
                     <img
-                        src="/image (19).png"
+                        src="/pixel-world/image (19).png"
                         alt="ESG building"
                         className="w-full object-cover"
                         style={{
@@ -49,15 +49,15 @@ const RealEstate = () => (
                     />
                     <div
                         className="absolute inset-0 z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom opacity-100 pointer-events-none"
-                        style={{ backgroundImage: 'url("/Vector 3306.svg")' }}
+                        style={{ backgroundImage: 'url("/pixel-world/Vector 3306.svg")' }}
                     ></div>
                     <div
                         className="absolute inset-0 ml-[4.7%] z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[8.7%] opacity-100 pointer-events-none"
-                        style={{ backgroundImage: 'url("/Vector 3304.svg")' }}
+                        style={{ backgroundImage: 'url("/pixel-world/Vector 3304.svg")' }}
                     ></div>
                     <div
                         className="absolute inset-0 ml-[14%] z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[4%] opacity-100 pointer-events-none"
-                        style={{ backgroundImage: 'url("/Vector 3304.svg")' }}
+                        style={{ backgroundImage: 'url("/pixel-world/Vector 3304.svg")' }}
                     ></div>
                 </div>
             </FadeOnScroll>
@@ -95,7 +95,7 @@ const RealEstate = () => (
             <section className="lg:px-[1%] 3xs:px-[5%] lg:pb-0 3xs:pb-[5%]">
                 <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-1">
                     <div className="bg-white">
-                        <img className="2xl:w-[80%]" src="/image (20).png" alt="" />
+                        <img className="2xl:w-[80%]" src="/pixel-world/image (20).png" alt="" />
                     </div>
                     <div className="lg:pt-8 lg:pr-16">
                         <p

@@ -8,13 +8,13 @@ import back from "../../../public/image (5).png"; // Corrected path
 import Footer from "@/components/Footer";
 
 const Insights = () => (
-  <div className="company-insights-page">
-    <section className="lg:py-24 3xs:py-6">
+  <div className="company-insights-page min-h-screen flex flex-col">
+    <section className="lg:py-8 3xs:py-6 flex-grow">
       <div className="ml-[5%]">
         <div className="flex lg:flex-row 3xs:flex-col">
-          <p className="lg:text-[400%] 3xs:text-[200%] font-extralight font-sf-pro lg:mb-8 3xs:mb-4">Insights</p>
+          <p className="2xl:text-[500%] lg:text-[400%] 3xs:text-[200%] font-extralight font-sf-pro lg:mb-8 3xs:mb-4">Insights</p>
           <div className="mb-8 lg:w-[60%] lg:ml-[16%]">
-            <h2 className="lg:text-[130%] 3xs:text-[100%] text-[#6C6C6C] font-normal lg:mb-4"
+            <h2 className="2xl:text-[230%] lg:text-[130%] 3xs:text-[100%] text-[#6C6C6C] font-normal lg:mb-4"
               style={{
                 cursor: "default",
                 lineHeight: "1.5",
@@ -25,7 +25,7 @@ const Insights = () => (
           </div>
         </div>
       </div>
-      <div className="flex mt-[17.3%] rounded-2xl relative w-full">
+      <div className="flex lg:mt-[17.3%] 3xs:mt-10 rounded-2xl relative w-full">
         <div
           className="absolute inset-0 bg-no-repeat bg-[length:4.8%] bg-left-bottom opacity-100 pointer-events-none"
           style={{ backgroundImage: `url(${BgPattern1})` }}
@@ -38,9 +38,10 @@ const Insights = () => (
           className="absolute inset-0 ml-[14%] bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[4%] opacity-100 pointer-events-none"
           style={{ backgroundImage: `url(${BgPattern2})` }}
         ></div>
-        <img src={back} alt="About building" className="w-full lg:h-[416px] 3xs:h-[200px]"
-           />
-        <img src={aboutBuilding} alt="About building" className="absolute w-[60%] 3xs:h-[120%] lg:h-[142%] 3xs:w-[50%] object-cover inset-0 lg:left-[40%] 3xs:left-[40%] lg:top-[-42%] 3xs:top-[-20%]"
+        <img src={back} alt="About building" className="w-full 2xl:h-[816px] lg:h-[416px] 3xs:h-[200px]"
+          style={{
+          }} />
+        <img src={aboutBuilding} alt="About building" className="absolute w-[60%] 3xs:h-[120%] lg:h-[132%] 3xs:w-[50%] object-cover inset-0 lg:left-[40%] 3xs:left-[40%] lg:top-[-32%] 3xs:top-[-20%]"
           style={{
             width: "60%",
           }} />

@@ -27,7 +27,7 @@ export default function InvestorPortal() {
       <Header />
 
       {/* Main Content */}
-      <main className="lg:pt-40 2xl:pt-60 3xs:pt-[25%] h-full">
+      <main className="lg:pt-40 2xl:pt-60 3xs:pt-[25%] h-full overflow-hidden">
         <Routes>
           <Route
             index

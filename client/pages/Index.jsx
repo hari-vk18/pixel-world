@@ -9,24 +9,26 @@ import Footer from "../components/Footer";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header Navigation */}
-      <Header />
+    <div className="min-h-screen bg-white flex flex-col">
+      <div className="flex-grow">
+        {/* Header Navigation */}
+        <Header />
 
-      {/* Hero Section */}
-      <HeroSection />
+        {/* Hero Section */}
+        <HeroSection />
 
-      {/* Animated Sections (Bridging Purpose, Building Communities, Sustaining Future) */}
-      <AnimatedSections />
+        {/* Animated Sections (Bridging Purpose, Building Communities, Sustaining Future) */}
+        <AnimatedSections />
 
-      {/* Investment Horizons Content Section */}
-      <InvestmentHorizons />
+        {/* Investment Horizons Content Section */}
+        <InvestmentHorizons />
 
-      {/* Designing for Today Feature Section */}
-      <DesigningToday />
+        {/* Designing for Today Feature Section */}
+        <DesigningToday />
 
-      {/* Investor Spotlight Blog Cards */}
-      {/* <InvestorSpotlight /> */}
+        {/* Investor Spotlight Blog Cards */}
+        {/* <InvestorSpotlight /> */}
+      </div>
 
       {/* Footer */}
       <div className="-mt-24 relative z-20">

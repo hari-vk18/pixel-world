@@ -16,7 +16,7 @@ export default function AboutUs() {
       {/* About Section */}
       <section className="w-full  px-0 md:px-0 lg:pt-8 3xs:pt-5 lg:pb-16 3xs:pb-10">
         <div className="flex lg:flex-row 3xs:flex-col px-[6%] justify-between items-start space-y-2">
-          <p className="text-[50%] font-sf-pro 2xl:text-[500%] md:text-[400%] 3xs:text-[200%] font-thin"
+          <p className="text-[50%] font-sf-pro 2xl:text-[500%] md:text-[300%] 3xs:text-[200%] font-thin"
             style={{ cursor: "default" }}>About us</p>
           <p className="2xl:text-[250%] lg:text-[130%] 3xs:text-[100%] font-sf-pro text-gray-600 lg:text-left 3xs:text-justify lg:leading-16 lg:max-w-2xl 2xl:max-w-7xl tracking-tight"
             style={{ cursor: "default" }}>
@@ -40,7 +40,7 @@ export default function AboutUs() {
           <img src={back} alt="About building" className="w-full 2xl:h-[816px] lg:h-[416px] 3xs:h-[200px]"
             style={{
             }} />
-          <img src={aboutBuilding} alt="About building" className="absolute w-[60%] 3xs:h-[120%] lg:h-[142%] 3xs:w-[50%] object-cover inset-0 lg:left-[40%] 3xs:left-[40%] lg:top-[-42%] 3xs:top-[-20%]"
+          <img src={aboutBuilding} alt="About building" className="absolute w-[60%] 3xs:h-[120%] lg:h-[132%] 3xs:w-[50%] object-cover inset-0 lg:left-[40%] 3xs:left-[40%] lg:top-[-32%] 3xs:top-[-20%]"
             style={{
               width: "60%",
             }} />
@@ -57,7 +57,7 @@ export default function AboutUs() {
               color: "444444"
             }
             }>Strategic Allocation</h2>
-          <p className="text-gray-600 font-sf-pro text-lg 2xl:text-[250%] lg:text-left 3xs:text-justify leading-relaxed">
+          <p className="text-gray-600 font-sf-pro text-lg 2xl:text-[250%] xl:text-[180%] lg:text-left 3xs:text-justify leading-relaxed">
             Our strategic allocation enables us to capitalize on jurisdictional advantages, regulatory efficiencies,
             and market-specific growth dynamics, enabling us to maximize value and create sustainable opportunities.
           </p>
@@ -67,11 +67,11 @@ export default function AboutUs() {
       {/* Assets Under Management */}
       <section className="lg:py-20 flex flex-col md:flex-row gap-0 items-stretch mx-[6%] ">
         <div className="lg:pt-0 3xs:pt-5 flex flex-col justify-center lg:w-[55%]">
-          <h2 className="2xl:text-[500%] lg:text-[2.80rem] 3xs:text-[1.80rem] font-normal lg:mb-6"
+          <h2 className="2xl:text-[500%] xl:text-[300%] lg:text-[2rem] 3xs:text-[1.80rem] font-normal lg:mb-6"
             style={{
               cursor: "default",
             }}>Assets Under Management</h2>
-          <p className="text-gray-600 2xl:text-[250%] lg:text-[130%] 3xs:text-[100%] lg:text-left 3xs:text-justify lg:max-w-[75%] leading-relaxed "
+          <p className="text-gray-600 2xl:text-[250%] xl:text-[180%] lg:text-[130%] 3xs:text-[100%] lg:text-left 3xs:text-justify xl:max-w-[90%] lg:max-w-[90%] leading-relaxed "
             style={{
               cursor: "default",
             }}>
@@ -99,7 +99,7 @@ export default function AboutUs() {
       </section>
 
       {/* ESG Section */}
-      <section className="relative pt-20 flex w-full overflow-hidden">
+      <section className="relative pt-20 flex w-full overflow-hidden md:pb-16 lg:pb-0 xl:pb-0 2xl:pb-0">
         <div className="absolute inset-0">
           <img
             src={Building}
@@ -121,7 +121,7 @@ export default function AboutUs() {
                 className="object-cover h-auto ml-0 md:ml-2 lg:ml-5 w-[90vw] md:w-[80vw] xl:w-[96vw] 2xl:w-[105vw]" />
             </div>
           </div>
-          <div className="flex md:justify-center 2xl:justify-start lg:w-[70%] xl:w-[80%] 3xs:mt-[50%] lg:mt-[20%] lg:mb-8 2xs:mb-4">
+          <div className="flex md:justify-center 2xl:justify-start lg:w-[70%] xl:w-[80%] 3xs:mt-[50%] lg:mt-[20%] lg:mb-8 xl:mb-0 2xs:mb-4">
             <p
               className="text-white font-sf-pro text-xl 3xs:-mt-[45%] lg:-mt-[20%] 2xl:-mt-[10%] md:text-2xl 2xl:text-5xl font-normal italic leading-9 2xs:leading-6 tracking-[-0.5px] w-35%"
               style={{ cursor: "default" }}

@@ -21,7 +21,7 @@ export default function Company() {
   return (
     <div className="min-h-screen bg-white relative">
       <Header />
-      <main className="lg:pt-40 2xl:pt-60 3xs:pt-20">
+      <main className="lg:pt-40 2xl:pt-60 3xs:pt-20 overflow-hidden">
         <Routes>
           <Route
             index
@@ -92,13 +92,13 @@ export default function Company() {
               </>
             }
           />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="meet-the-team" element={<MeetTheTeam />} />
-          <Route path="esg" element={<ESG />} />
-          <Route path="insights" element={<Insights />} />
-          <Route path="careers" element={<Careers />} />
-        </Routes>
-      </main>
-    </div>
+          < Route path="about-us" element={< AboutUs />} />
+          < Route path="meet-the-team" element={< MeetTheTeam />} />
+          < Route path="esg" element={< ESG />} />
+          < Route path="insights" element={< Insights />} />
+          < Route path="careers" element={< Careers />} />
+        </Routes >
+      </main >
+    </div >
   );
 }

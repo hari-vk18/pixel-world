@@ -41,21 +41,21 @@ const Overview = () => (
       <FadeOnScroll direction="up" distance={20} duration={1000}>
         <div className="lg:mt-20 relative">
           <img
-            src="/image (14).png"
+            src="/pixel-world/image (14).png"
             alt="ESG building"
             className="w-full object-cover"
           />
           <div
             className="absolute inset-0 z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom opacity-100 pointer-events-none"
-            style={{ backgroundImage: 'url("/Vector 3306.svg")' }}
+            style={{ backgroundImage: 'url("/pixel-world/Vector 3306.svg")' }}
           ></div>
           <div
             className="absolute inset-0 ml-[4.7%] z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[8.7%] opacity-100 pointer-events-none"
-            style={{ backgroundImage: 'url("/Vector 3304.svg")' }}
+            style={{ backgroundImage: 'url("/pixel-world/Vector 3304.svg")' }}
           ></div>
           <div
             className="absolute inset-0 ml-[14%] z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[4%] opacity-100 pointer-events-none"
-            style={{ backgroundImage: 'url("/Vector 3304.svg")' }}
+            style={{ backgroundImage: 'url("/pixel-world/Vector 3304.svg")' }}
           ></div>
         </div>
       </FadeOnScroll>
@@ -103,7 +103,7 @@ const Overview = () => (
       </FadeOnScroll>
       <FadeOnScroll direction="up" delay={150} distance={30} duration={800}>
         <p className="ml-[4%] mr-[4%] mt-[2%] 2xl:text-[300%] lg:text-[130%] 3xs:text-[100%] text-[#6C6C6C] lg:text-left 3xs:text-justify font-light font-sf-pro">
-                IOTC Real Asset aims to create an entire spectrum of investment products in real estate, we are launching first investment product focused in Residential, Commercial, Industrial and Warehouse across Europe, APAC (Sri Lanka and India) and Middle East (UAE and Saudi Arabia) to deliver the best performance to our investors.
+          IOTC Real Asset aims to create an entire spectrum of investment products in real estate, we are launching first investment product focused in Residential, Commercial, Industrial and Warehouse across Europe, APAC (Sri Lanka and India) and Middle East (UAE and Saudi Arabia) to deliver the best performance to our investors.
         </p>
       </FadeOnScroll>
     </section>
@@ -115,7 +115,7 @@ const Overview = () => (
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-1">
         <FadeOnScroll direction="right" distance={40} duration={900}>
           <div className="bg-white ">
-            <img className="2xl:w-[150%]" src="/image (15).png" alt="" />
+            <img className="2xl:w-[150%]" src="/pixel-world/image (15).png" alt="" />
           </div>
         </FadeOnScroll>
 
