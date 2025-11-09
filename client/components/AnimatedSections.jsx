@@ -130,17 +130,17 @@ export default function AnimatedSections() {
         >
           <div className="relative w-full h-full">
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-[#0B2442] via-[#021123] to-[#0B2442]"
+              className="absolute inset-0 bg-[#0B2442]"
               style={{ opacity: 1 - Math.max(progress - 0.8, 0) * 5 }}
               transition={{ duration: 0.6 }}
             />
 
             <svg
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 w-full h-full 3xs:h-auto 3xs:mt-[50%] sm:mt-0"
               viewBox="0 0 1280 839"
               fill="none"
               preserveAspectRatio="none"
-              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              style={{ width: "100%", objectFit: "contain" }}
             >
               <rect width="1280" height="839" fill="url(#paint0_linear)" />
 

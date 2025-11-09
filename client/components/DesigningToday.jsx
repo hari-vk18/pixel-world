@@ -64,7 +64,7 @@ export default function DesigningToday() {
         >
           <p
             className="text-white font-sf-pro text-xl md:text-2xl 2xl:text-5xl 
-            font-normal italic leading-9 tracking-[-0.5px] w-[80%]"
+            font-normal italic leading-9 tracking-[-0.5px] md:w-[80%] 3x2l:w-[100%]"
           >
             Discover what we do, why it matters, and how we're creating value through
             sustainable, smart investments.
