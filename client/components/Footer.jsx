@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-iotc-section rounded-t-[40px] md:rounded-t-[100px] overflow-hidden">
       {/* Background Logo/Graphic */}
-      <div className="absolute right-7 top-2 bottom-0 w-full max-w-2xl h-full opacity-80">
+      <div className="absolute right-7 top-24 bottom-0 w-full max-w-2xl h-full opacity-80">
         <img
           src="/pixel-world/IOTC Real Asset logo blue 1 (1).png"
           alt="IOTC Logo Background"
