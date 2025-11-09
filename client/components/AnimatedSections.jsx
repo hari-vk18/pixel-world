@@ -51,7 +51,9 @@ export default function AnimatedSections() {
 
     const scrollable = Math.max(containerHeight - viewportHeight, 1);
     const scrolledInto = Math.min(Math.max(-rect.top, 0), scrollable);
-    const p = Math.min(Math.max(scrolledInto / scrollable, 0), 1);
+    const multiplier = isMobile ? 0.6 : 1; // smaller = slower progress
+    const p = Math.min(Math.max((scrolledInto / scrollable) * multiplier, 0), 1);
+
 
     setProgress(p);
 
@@ -108,7 +110,7 @@ export default function AnimatedSections() {
     return () => window.removeEventListener("resize", setVh);
   }, []);
 
-  const sectionHeight = isMobile ? "200svh" : "400vh";
+  const sectionHeight = isMobile ? "350svh" : "400vh";
 
   return (
     <section ref={containerRef} className="relative w-full" style={{ height: sectionHeight }}>
