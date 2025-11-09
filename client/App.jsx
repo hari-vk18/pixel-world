@@ -23,7 +23,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/pixel-world">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/company/*" element={<Company />} />
