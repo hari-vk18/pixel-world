@@ -19,15 +19,15 @@ export default function Header() {
   return (
     <header className="absolute top-0 left-0 w-full z-50 bg-transparent absolute">
       <nav className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] py-8 pr-8">
-        
+
         {/* Logo */}
         <FadeOnScroll direction="down" duration={1000}>
           <Link to="/">
             <img
               src={
                 isHomePage
-                  ? "../public/IOTC Real Asset logo white 2.svg"
-                  : "../public/IOTC Real Asset logo blue 1.svg"
+                  ? "./IOTC Real Asset logo white 2.svg"
+                  : "./IOTC Real Asset logo blue 1.svg"
               }
               alt="IOTC Real Asset"
               className="xl:w-[100%] xl:h-[150%] lg:w-[96%] lg:h-[100%] 3xs:w-[50%] 3xs:h-[50%] flex-shrink-0"
@@ -95,9 +95,8 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`relative -mt-4 lg:hidden bg-iotc-dark/95 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden ${
-          isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        }`}
+        className={`relative -mt-4 lg:hidden bg-iotc-dark/95 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}
       >
         <div className="px-4 py-6  space-y-4">
           {navItems.map((item, index) => (
