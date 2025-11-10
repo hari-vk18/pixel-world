@@ -54,6 +54,13 @@ export default function AnimatedSections() {
     const multiplier = isMobile ? 0.6 : 1; // smaller = slower progress
     const p = Math.min(Math.max((scrolledInto / scrollable) * multiplier, 0), 1);
 
+    // Only trigger transition after third animation is complete
+    if (p >= 0.55 && currentSection === 2) {
+      const pathAnimationComplete = document.querySelector('path[stroke="#B89B7A"]')?.getAttribute('style')?.includes('pathLength: 1');
+      if (pathAnimationComplete) {
+        document.dispatchEvent(new CustomEvent('animationComplete', { detail: { progress: p } }));
+      }
+    }
 
     setProgress(p);
 
@@ -131,8 +138,8 @@ export default function AnimatedSections() {
           <div className="relative w-full h-full">
             <motion.div
               className="absolute inset-0 bg-[#0B2442]"
-              style={{ opacity: 1 - Math.max(progress - 0.8, 0) * 5 }}
-              transition={{ duration: 0.6 }}
+              style={{ opacity: currentSection === 2 && progress > 0.95 ? 0 : 1 - Math.max(progress - 0.8, 0) * 5 }}
+              transition={{ duration: 0.3 }}
             />
 
             <svg

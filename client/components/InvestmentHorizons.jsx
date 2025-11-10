@@ -1,14 +1,38 @@
 import FadeOnScroll from "./FadeOnScroll"
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function InvestmentHorizons() {
+  const [isFullScreen, setIsFullScreen] = useState(false);
+
+  useEffect(() => {
+    const handleAnimationComplete = (event) => {
+      if (event.detail.progress >= 0.55) {
+        // Add a small delay to ensure the third animation is fully complete
+        setTimeout(() => {
+          setIsFullScreen(true);
+        }, 300);
+      }
+    };
+
+    document.addEventListener('animationComplete', handleAnimationComplete);
+    return () => document.removeEventListener('animationComplete', handleAnimationComplete);
+  }, []);
+
   return (
     <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.3 }}
+      initial={{ opacity: 0, height: "auto" }}
+      animate={{
+        opacity: 1,
+        height: isFullScreen ? "100vh" : "auto",
+      }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 1.2, ease: "easeInOut" }}
-      className="relative z-20 bg-white py-8 md:py-32 transition-all duration-700"
+      className={`relative z-40 bg-white transition-all duration-700 ${isFullScreen ? 'fixed top-0 left-0 w-full overflow-y-auto' : 'py-8 md:py-32'
+        }`}
+      style={{
+        backgroundColor: 'white'
+      }}
     >
       <div className="max-w-8xl mx-auto sm:px-6 lg:px-8 xl:pr-8 xl:pl-16 3xs:pl-8">
         {/* Top Row */}
