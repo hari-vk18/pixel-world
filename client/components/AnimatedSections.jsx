@@ -32,16 +32,17 @@ export default function AnimatedSections() {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          setIsActive(entry.isIntersecting && entry.intersectionRatio > 0.05);
+          setIsActive(entry.isIntersecting && entry.intersectionRatio > 0.1);
         });
       },
-      { threshold: [0, 0.05, 0.25, 0.5] }
+      {
+        threshold: [0, 0.1, 0.2, 0.5],
+        rootMargin: '0px'
+      }
     );
     io.observe(el);
     return () => io.disconnect();
-  }, []);
-
-  // Scroll tracking with RAF for smooth updates
+  }, []);  // Scroll tracking with RAF for smooth updates
   const handleScroll = useCallback(() => {
     if (!containerRef.current) return;
 
@@ -120,11 +121,13 @@ export default function AnimatedSections() {
   const sectionHeight = isMobile ? "350svh" : "400vh";
 
   return (
-    <section ref={containerRef} className="relative w-full" style={{ height: sectionHeight }}>
+    <section
+      ref={containerRef}
+      className="relative w-full"
+      style={{ height: sectionHeight }}
+    >
       {/* Placeholder to maintain layout height */}
-      <div aria-hidden="true" style={{ height: sectionHeight }} />
-
-      {/* Fixed visual layer */}
+      <div aria-hidden="true" style={{ height: sectionHeight }} />      {/* Fixed visual layer */}
       {isActive && (
         <motion.div
           className="fixed top-0 left-0 w-full h-screen z-30 pointer-events-none"
