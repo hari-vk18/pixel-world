@@ -97,12 +97,12 @@ const Overview = () => (
     {/* ============================= */}
     <section className="bg-white">
       <FadeOnScroll direction="left" distance={30} duration={800}>
-        <p className="ml-[4%] 2xl:text-[500%] lg:text-[280%] 3xs:text-[160%] font-light font-sf-pro">
+        <p className="ml-[4%] 2xl:text-[500%] lg:text-[200%] 3xs:text-[160%] font-light font-sf-pro">
           Strategic Differentiation
         </p>
       </FadeOnScroll>
       <FadeOnScroll direction="up" delay={150} distance={30} duration={800}>
-        <p className="ml-[4%] mr-[4%] mt-[2%] 2xl:text-[300%] lg:text-[130%] 3xs:text-[100%] text-[#6C6C6C] lg:text-left 3xs:text-justify font-light font-sf-pro">
+        <p className="ml-[4%] mr-[4%] mt-[2%] 2xl:text-[300%] lg:text-[110%] 3xs:text-[100%] text-[#6C6C6C] lg:text-left 3xs:text-justify font-light font-sf-pro">
           IOTC Real Asset aims to create an entire spectrum of investment products in real estate, we are launching first investment product focused in Residential, Commercial, Industrial and Warehouse across Europe, APAC (Sri Lanka and India) and Middle East (UAE and Saudi Arabia) to deliver the best performance to our investors.
         </p>
       </FadeOnScroll>
@@ -161,7 +161,7 @@ const Overview = () => (
     {/* ============================= */}
     <section className="px-[4%]">
       <FadeOnScroll direction="up" distance={30} duration={900}>
-        <p className="2xl:text-[510%] lg:text-[280%] 3xs:text-[160%] font-[300] font-sf-pro">
+        <p className="2xl:text-[510%] lg:text-[200%] 3xs:text-[160%] font-[300] font-sf-pro">
           Integrated Investment Structure
         </p>
       </FadeOnScroll>
@@ -175,7 +175,7 @@ const Overview = () => (
           "This structure ensures full alignment with both unitholders and capital partners transparency and trust.",
         ].map((text, i) => (
           <FadeOnScroll key={i} direction="up" delay={i * 150}>
-            <li className="custom-bullet 2xl:text-[300%] lg:text-[180%] text-[#6C6C6C] font-sf-pro mt-6 mb-4">
+            <li className="custom-bullet 2xl:text-[300%] lg:text-[120%] text-[#6C6C6C] font-sf-pro mt-6 mb-4">
               {text}
             </li>
           </FadeOnScroll>
@@ -189,12 +189,12 @@ const Overview = () => (
     <section className="bg-white lg:pb-24 3xs:py-10 3xs:px-5">
       <div className="lg:ml-[3%]">
         <FadeOnScroll direction="left" distance={40}>
-          <h1 className="2xl:text-[500%] lg:text-[280%] 3xs:text-[160%] font-[400] font-sf-pro">
+          <h1 className="2xl:text-[500%] lg:text-[200%] 3xs:text-[160%] font-[400] font-sf-pro">
             Real Estate Investment and Asset Management
           </h1>
         </FadeOnScroll>
         <FadeOnScroll direction="up" delay={200}>
-          <p className="2xl:text-[250%] lg:text-2xl 3xs:text-lg font-normal mt-2 2xl:mt-8">
+          <p className="2xl:text-[250%] lg:text-xl 3xs:text-lg font-normal mt-2 2xl:mt-8">
             We specialize in building and managing high-performing real estate
             portfolios across residential, commercial, and industrial sectors.
           </p>

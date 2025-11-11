@@ -67,11 +67,10 @@ export default function HexagonWithPopup({
 
       {/* Popup Card */}
       <div
-        className={`absolute z-10 ${posClasses[cardPosition]} transition-all duration-300 ${
-          open
+        className={`absolute z-10 ${posClasses[cardPosition]} transition-all duration-300 ${open
             ? 'opacity-100 scale-100 pointer-events-auto'
             : 'opacity-0 scale-95 pointer-events-none'
-        }`}
+          }`}
       >
         <div className="bg-white shadow-lg border border-gray-200 rounded-lg p-3 w-44 sm:w-52 text-left">
           <h3 className="font-semibold text-gray-900 text-sm mb-1">{title}</h3>

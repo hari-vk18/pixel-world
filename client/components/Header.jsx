@@ -43,15 +43,11 @@ export default function Header() {
 
         {/* Logo */}
         <FadeOnScroll direction="down" duration={1000}>
-          <a href="/pixel-world/">
+          <a href="/pixel-world/" className="inline-block">
             <img
-              src={
-                isHomePage
-                  ? "/pixel-world/IOTC Real Asset logo white 2.svg"
-                  : "/pixel-world/IOTC Real Asset logo blue 1.svg"
-              }
+              src={isHomePage ? "/pixel-world/IOTC Real Asset Logo_White.png" : "/pixel-world/IOTC Real Asset Logo_Blue.png"}
               alt="IOTC Real Asset"
-              className="xl:w-[100%] xl:h-[150%] lg:w-[96%] lg:h-[100%] 3xs:w-[50%] 3xs:h-[50%] flex-shrink-0"
+              className="w-8 sm:w-8 md:w-4 lg:w-10 xl:w-12 2xl-w-16 h-auto"
             />
           </a>
         </FadeOnScroll>

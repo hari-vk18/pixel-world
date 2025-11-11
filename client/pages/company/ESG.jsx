@@ -10,7 +10,7 @@ const ESG = () => (
         <div className="flex lg:flex-row 3xs:flex-col">
           <p className="2xl:text-[500%] lg:text-[400%] 3xs:text-[200%] font-normal font-sf-pro lg:mt-3">ESG</p>
           <div className="mb-8 lg:w-[70%] 3xs:w-[100%] lg:ml-[16%] lg:mt-0 3xs:mt-3">
-            <h2 className="2xl:text-3xl lg:text-2xl 3xs:text-1xl text-[#6C6C6C] font-normal lg:text-left 3xs:text-justify mb-4"
+            <h2 className="2xl:text-3xl lg:text-xl 3xs:text-1xl text-[#6C6C6C] font-normal lg:text-left 3xs:text-justify mb-4"
               style={{
                 cursor: "default",
                 lineHeight: "1.5",
@@ -23,10 +23,10 @@ const ESG = () => (
       </div>
 
       <div className="lg:mt-12 3xs:mt-3 relative">
-        <img src="/pixel-world/image (6).png" alt="ESG building" className="w-full object-cover relative z-0"
+        <img src="/pixel-world/ESG Cover.jpg" alt="ESG building" className="w-full object-cover relative z-0"
           style={{
             width: "100%",
-            height: "auto",
+            height: "50%",
           }} />
         <div
           className="absolute inset-0 z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom opacity-100 pointer-events-none"
@@ -61,7 +61,7 @@ const ESG = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
         <img src="/pixel-world/Group lang.png" alt="" className="absolute right-0 top-0 3xs:h-[650px]" />
         <div className="bg-white p-2 rounded-lg">
-          <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
+          <img className="lg:w-[20%] xl:w-[20%]" src="/pixel-world/Green Certified.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -81,7 +81,7 @@ const ESG = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
+          <img className="lg:w-[20%] xl:w-[20%]" src="/pixel-world/Integrated Waste Treatment.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -101,7 +101,7 @@ const ESG = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
+          <img className="lg:w-[20%] xl:w-[20%]" src="/pixel-world/Smart Energy Systems.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -123,7 +123,7 @@ const ESG = () => (
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%]">
         <div className="bg-white p-2 rounded-lg">
-          <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
+          <img className="lg:w-[20%] xl:w-[20%]" src="/pixel-world/Green Energy powered.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -143,7 +143,7 @@ const ESG = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
+          <img className="lg:w-[20%] xl:w-[20%]" src="/pixel-world/Rooftop Solar.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -163,7 +163,7 @@ const ESG = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
+          <img className="lg:w-[20%] xl:w-[20%]" src="/pixel-world/EV Enabled.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -186,10 +186,10 @@ const ESG = () => (
     </section>
     <section>
       <div>
-        <img src="/pixel-world/image (7).png" alt="ESG building" className="w-full object-cover"
+        <img src="/pixel-world/Socil Cover.jpg" alt="ESG building" className="w-full object-cover"
           style={{
             width: "100%",
-            height: "auto",
+            height: "50%",
           }} />
       </div>
     </section>
@@ -210,7 +210,7 @@ const ESG = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
         <div className="bg-white p-2 rounded-lg">
-          <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
+          <img className="lg:w-[20%] xl:w-[20%]" src="/pixel-world/Talent Centric Workplace.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -218,7 +218,7 @@ const ESG = () => (
             style={{
               cursor: "default",
             }}>
-            Green-Certified Development
+            Talent-Centric Workplace
           </p>
           <p className="text-md 2xl:text-3xl font-dm-sans font-normal lg:mt-4 mr-8"
             style={{
@@ -226,11 +226,11 @@ const ESG = () => (
               cursor: "default",
               lineHeight: "1.7",
             }}>
-            Adherence to recognized sustainability standards across design and construction.
+            Designed to attract, retain, and nurture top-tier professionals.
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
+          <img className="lg:w-[20%] xl:w-[20%]" src="/pixel-world/Health and Safety.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -238,7 +238,7 @@ const ESG = () => (
             style={{
               cursor: "default",
             }}>
-            Integrated Waste Treatment
+            Health & Safety Standards
           </p>
           <p className="text-md 2xl:text-3xl font-dm-sans font-normal lg:mt-4 mr-8"
             style={{
@@ -246,11 +246,11 @@ const ESG = () => (
               cursor: "default",
               lineHeight: "1.7",
             }}>
-            Includes composting and waste diversion to minimize landfill impact.
+            Robust implementation of site-level safety protocols and wellness initiatives.
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
+          <img className="lg:w-[20%] xl:w-[20%]" src="/pixel-world/Ethical vendor Engagement.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -258,7 +258,7 @@ const ESG = () => (
             style={{
               cursor: "default",
             }}>
-            Demand Response Technology
+            Ethical Vendor Engagement
           </p>
           <p className="text-md 2xl:text-3xl font-dm-sans font-normal lg:mt-4 mr-8"
             style={{
@@ -266,7 +266,7 @@ const ESG = () => (
               cursor: "default",
               lineHeight: "1.7",
             }}>
-            Smart energy systems to optimize consumption and reduce peak load.
+            Contracts awarded to vendors compliant with labor laws and fair employment practices.
           </p>
         </div>
       </div>
@@ -291,7 +291,7 @@ const ESG = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-3 glg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
         <div className="bg-white p-2 rounded-lg">
-          <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
+          <img className="lg:w-[20%] xl:w-[20%]" src="/pixel-world/Strong Governance FRamework.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -299,7 +299,7 @@ const ESG = () => (
             style={{
               cursor: "default",
             }}>
-            Green-Certified Development
+            Strong Governance Framework
           </p>
           <p className="text-md 2xl:text-3xl font-dm-sans font-normal lg:mt-4 mr-8"
             style={{
@@ -307,10 +307,10 @@ const ESG = () => (
               cursor: "default",
               lineHeight: "1.7",
             }}>
-            Adherence to recognized sustainability standards across design and construction.
+            Transparent decision-making, compliance oversight, and ethical business conduct.
           </p>
         </div>
-        <div className="bg-white p-2 rounded-lg">
+        {/* <div className="bg-white p-2 rounded-lg">
           <img className="xl:w-[20%]" src="/pixel-world/f1.svg.png" alt=""
             style={{
               cursor: "default",
@@ -349,7 +349,7 @@ const ESG = () => (
             }}>
             Smart energy systems to optimize consumption and reduce peak load.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
     <Footer />

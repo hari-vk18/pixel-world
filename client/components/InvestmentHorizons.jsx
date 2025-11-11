@@ -74,13 +74,7 @@ export default function InvestmentHorizons() {
 
             {/* Right Title + Image */}
             <FadeOnScroll direction="right" duration={1000} delay={300} distance={50}>
-              <div className="flex flex-col justify-right items-end  lg:items-right">
-                <h2
-                  className="text-iotc-text font-sf-pro 3xs:text-2xl lg:text-4xl md:text-5xl 
-                font-normal 2xl:font-bold leading-tight mb-6 text-center 2xl:text-7xl lg:text-left 3xs:mt-10 md:mt-0 3xs:hidden sm:block"
-                >
-                  Investment Horizons
-                </h2>
+              <div className="flex flex-col justify-right items-start">
                 <h2
                   className="text-iotc-blue-bg font-sf-pro 3xs:text-[250%] font-normal 2xl:font-bold leading-tight 
                  text-left 2xl:text-7xl lg:text-left 3xs:mt-10 sm:hidden ml-4"
@@ -117,8 +111,7 @@ export default function InvestmentHorizons() {
                   European Real Asset
                 </h3>
                 <p className="text-iotc-text text-lg 2xl:text-4xl 3xs:text-justify leading-relaxed md:max-w-xs 2xl:max-w-lg">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium voluptatum deleniti atque corrupti quos dolores.
+                  Shaping distinguished properties across Europe with timeless design, refined craftsmanship, and enduring investment value.
                 </p>
               </div>
             </FadeOnScroll>
