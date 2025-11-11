@@ -12,6 +12,8 @@ export default function AnimatedSections() {
   const [progress, setProgress] = useState(0);
   const [isLocked, setIsLocked] = useState(false);
   const [lastAnimationDone, setLastAnimationDone] = useState(false);
+  const [secondAnimationDone, setSecondAnimationDone] = useState(false);
+  const [lockType, setLockType] = useState(null); // 'second' | 'third' | null
 
   const sections = [
     { title: "Bridging Purpose." },
@@ -70,8 +72,13 @@ export default function AnimatedSections() {
 
     setProgress(p);
 
-    // Lock scroll when entering the final section
+    // Lock scroll when entering the second or final (third) section
+    if (currentSection === 1 && !isLocked && !secondAnimationDone) {
+      setLockType('second');
+      setIsLocked(true);
+    }
     if (currentSection === 2 && !isLocked && !lastAnimationDone) {
+      setLockType('third');
       setIsLocked(true);
     }
 
@@ -82,22 +89,28 @@ export default function AnimatedSections() {
 
   // Apply/remove scroll lock when isLocked changes
   useEffect(() => {
-    if (isLocked && !lastAnimationDone) {
-      // Set a timer to unlock based on animation duration
-      const animationDuration = isMobile ? 2000 : 3000; // matches SVG path animation
+    if (isLocked && lockType) {
+      // Determine animation duration based on lockType and device
+      let animationDuration = isMobile ? 1500 : 2000; // default for 'second'
+      if (lockType === 'third') animationDuration = isMobile ? 2000 : 3000;
+
       const unlockTimer = setTimeout(() => {
-        setLastAnimationDone(true);
+        if (lockType === 'third') {
+          setLastAnimationDone(true);
+        } else if (lockType === 'second') {
+          setSecondAnimationDone(true);
+        }
         setIsLocked(false);
 
-        // Also dispatch the completion event for InvestmentHorizons
+        // Dispatch completion event with section info
         document.dispatchEvent(new CustomEvent('animationComplete', {
-          detail: { isAnimationComplete: true, progress }
+          detail: { isAnimationComplete: true, section: lockType, progress }
         }));
-      }, animationDuration + 200); // Add 200ms buffer
+        setLockType(null);
+      }, animationDuration + 200);
 
       // Store current scroll position and lock scroll
       const scrollY = window.scrollY;
-
       const preventScroll = (e) => {
         e.preventDefault();
         window.scrollTo(0, scrollY);
@@ -118,7 +131,7 @@ export default function AnimatedSections() {
     }
 
     return () => { };
-  }, [isLocked, lastAnimationDone, isMobile, progress]);
+  }, [isLocked, lockType, isMobile, progress]);
 
   useEffect(() => {
     handleScroll();
@@ -253,6 +266,15 @@ export default function AnimatedSections() {
                   initial={{ pathLength: 0 }}
                   animate={pathControls}
                   transition={{ duration: isMobile ? 2 : 3, ease: "easeInOut" }}
+                  onAnimationComplete={() => {
+                    // mark last animation done and release scroll lock
+                    setLastAnimationDone(true);
+                    if (isLocked) setIsLocked(false);
+                    // notify other components (e.g., InvestmentHorizons) that animation is complete
+                    document.dispatchEvent(new CustomEvent('animationComplete', {
+                      detail: { isAnimationComplete: true, progress }
+                    }));
+                  }}
                 />
               )}
 
