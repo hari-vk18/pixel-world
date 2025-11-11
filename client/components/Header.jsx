@@ -39,7 +39,7 @@ export default function Header() {
 
   return (
     <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
-      <nav className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] py-8 pr-8">
+      <nav className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] py-8 lg:pr-16 md:pr-8">
 
         {/* Logo */}
         <FadeOnScroll direction="down" duration={1000}>

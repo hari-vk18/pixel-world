@@ -9,7 +9,7 @@ const ESG = () => (
       <div className="lg:ml-[3%] 3xs:ml-[4%] mt-4 mr-[2%]">
         <div className="flex lg:flex-row justify-between 3xs:flex-col">
           <p className="2xl:text-[500%] lg:text-[400%] 3xs:text-[200%] font-normal font-sf-pro lg:mt-3">ESG</p>
-          <div className="mb-8 lg:w-[70%] 3xs:w-[100%] lg:ml-[16%] lg:mt-0 3xs:mt-3">
+          <div className="mb-8 lg:w-[75%] 3xs:w-[100%] lg:ml-[16%] lg:mt-0 3xs:mt-3">
             <h2 className="2xl:text-3xl lg:text-xl 3xs:text-1xl text-[#6C6C6C] font-normal lg:text-left 3xs:text-justify mb-4"
               style={{
                 cursor: "default",
@@ -29,11 +29,11 @@ const ESG = () => (
             height: "50%",
           }} />
         <div
-          className="absolute inset-0 z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom opacity-100 pointer-events-none"
+          className="absolute inset-0 z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom -bottom-2 opacity-100 pointer-events-none"
           style={{ backgroundImage: 'url("/pixel-world/Vector 3306.svg")' }}
         ></div>
         <div
-          className="absolute inset-0 ml-[4.7%] z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[8.7%] opacity-100 pointer-events-none"
+          className="absolute inset-0 ml-[4.7%] z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[7.9%] opacity-100 pointer-events-none"
           style={{ backgroundImage: 'url("/pixel-world/Vector 3304.svg")' }}
         ></div>
         <div
@@ -65,7 +65,7 @@ const ESG = () => (
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-12"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-10"
             style={{
               cursor: "default",
             }}>
@@ -85,7 +85,7 @@ const ESG = () => (
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-12"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-10"
             style={{
               cursor: "default",
             }}>
@@ -127,7 +127,7 @@ const ESG = () => (
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-12"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-10"
             style={{
               cursor: "default",
             }}>
@@ -167,7 +167,7 @@ const ESG = () => (
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-4"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-7"
             style={{
               cursor: "default",
             }}>
@@ -278,7 +278,7 @@ const ESG = () => (
             cursor: "default",
             lineHeight: "1.2",
           }}>
-          Strong Governance Framework
+          Governance Framework
         </h1>
         <p className="2xl:text-4xl lg:text-2xl 3xs:text-xl font-normal lg:mt-6 3xs:mt-3"
           style={{
