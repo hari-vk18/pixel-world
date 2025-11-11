@@ -76,7 +76,7 @@ export default function InvestmentHorizons() {
             <FadeOnScroll direction="right" duration={1000} delay={300} distance={50}>
               <div className="flex flex-col justify-right items-start">
                 <h2
-                  className="text-iotc-blue-bg font-sf-pro 3xs:text-[250%] font-normal 2xl:font-bold leading-tight 
+                  className="text-iotc-blue-bg font-sf-pro 3xs:text-[250%] lg:text-[300%] font-normal 2xl:font-bold leading-tight 
                  text-left 2xl:text-7xl lg:text-left 3xs:mt-10 sm:hidden ml-4"
                 >
                   Investment Horizons
@@ -186,29 +186,29 @@ export default function InvestmentHorizons() {
         }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
-        className={`relative z-40 bg-white transition-all 3xs:hidden md:block duration-700 ${isFullScreen ? 'fixed top-0 left-0 w-full overflow-y-auto' : 'py-8 md:py-32'
+        className={`relative z-40 px-12 bg-white transition-all 3xs:hidden md:block duration-700 ${isFullScreen ? 'fixed top-0 left-0 w-full overflow-y-auto' : 'py-8 md:py-32'
           }`}
         style={{
           backgroundColor: 'white'
         }}
       >
         <h2
-          className="text-iotc-text font-sf-pro 3xs:text-2xl lg:text-4xl md:text-5xl 
-                font-normal 2xl:font-bold leading-tight mb-6 text-center 2xl:text-7xl lg:text-left 3xs:mt-10 md:mt-0 3xs:hidden sm:block ml-8"
+          className="text-iotc-text font-sf-pro 3xs:text-2xl lg:text-5xl md:text-5xl 
+                font-normal 2xl:font-bold leading-tight mb-6 text-center 2xl:text-7xl lg:text-right 3xs:mt-10 md:mt-0 3xs:hidden sm:block ml-8"
         >
           Investment Horizons
         </h2>
-        <div className="max-w-8xl mx-auto sm:px-6 lg:px-8 xl:pr-8 xl:pl-8">
+        <div className="max-w-8xl">
           {/* Top Row */}
           <div className="grid grid-cols-1 lg:grid-cols-2 items-start md:mt-10 md:mb-10 relative gap-2">
             {/* Left Image */}
-            <dir className="flex flex-row justify-around items-center px-4 lg:items-start">
+            <dir className="flex flex-row justify-around items-center p-0 lg:items-start">
               <FadeOnScroll className="3xs:hidden lg:block" direction="left" duration={1000} delay={100} distance={40}>
 
                 <img
                   src="/pixel-world/image (1).png"
                   alt="Investment property"
-                  className="w-72 sm:w-56 md:w-56 lg:w-48 xl:w-64 2xl:w-[34rem] h-auto object-cover"
+                  className="w-72 sm:w-56 md:w-56 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover"
                 />
               </FadeOnScroll>
 
@@ -228,8 +228,14 @@ export default function InvestmentHorizons() {
 
             {/* Right Title + Image */}
             <FadeOnScroll direction="right" duration={1000} delay={300} distance={50}>
-              <div className="flex lg:flex-row justify-between items-center px-4 lg:items-start mt-4">
-                <div className="flex flex-col lg:text-right w-[60%]">
+              <div className="flex lg:flex-row justify-between items-center px-0 lg:items-start mt-24">
+
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/c875ffef857fbc15d6df44d4cc6547916746ac90"
+                  alt="Investment opportunity"
+                  className="w-72 sm:w-56 md:w-64 lg:w-48 xl:w-64 2xl:w-[34rem] h-auto object-cover 3xs:hidden sm:block"
+                />
+                <div className="flex flex-col lg:text-left w-[60%] ml-4">
                   <div className="text-lg 2xl:text-4xl text-gray-700 mb-2 text mr-4">02</div>
                   <h3 className="text-iotc-text text-left text-2xl md:text-2xl 2xl:text-5xl font-normal 2xl:font-bold mb-4 md:w-[40%] lg:w-full">
                     Real Asset Opportunities in Emerging Countries
@@ -239,11 +245,6 @@ export default function InvestmentHorizons() {
                   </p>
                 </div>
 
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/c875ffef857fbc15d6df44d4cc6547916746ac90"
-                  alt="Investment opportunity"
-                  className="w-72 sm:w-56 md:w-64 lg:w-48 xl:w-64 2xl:w-[34rem] h-auto object-cover 3xs:hidden sm:block"
-                />
               </div>
             </FadeOnScroll>
           </div>

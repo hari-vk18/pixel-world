@@ -436,7 +436,7 @@ export default function ContactUs() {
                 </p>
               </div>
               <div className="flex flex-col 2xl:w-[20%] lg:ml-0">
-                <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-medium lg:mt-2 lg:mb-2">
+                <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-medium lg:mb-2">
                   Phone
                 </p>
                 <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-normal lg:mt-4 lg:mb-2">
