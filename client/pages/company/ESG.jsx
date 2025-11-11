@@ -65,7 +65,7 @@ const ESG = () => (
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-10"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-8"
             style={{
               cursor: "default",
             }}>
@@ -85,7 +85,7 @@ const ESG = () => (
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-10"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-[12.5%]"
             style={{
               cursor: "default",
             }}>
