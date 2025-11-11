@@ -61,11 +61,11 @@ const ESG = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
         <img src="/pixel-world/Group lang.png" alt="" className="absolute right-0 top-0 3xs:h-[650px]" />
         <div className="bg-white p-2 rounded-lg">
-          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Green Certified.png" alt=""
+          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Green Certificate.png" alt=""
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-8"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-4"
             style={{
               cursor: "default",
             }}>
@@ -81,11 +81,11 @@ const ESG = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Integrated Waste Treatment.png" alt=""
+          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Integrated waste Management.png" alt=""
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-[12.5%]"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-4"
             style={{
               cursor: "default",
             }}>
@@ -101,7 +101,7 @@ const ESG = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Smart Energy Systems.png" alt=""
+          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Smart Energy System.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -123,11 +123,11 @@ const ESG = () => (
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%]">
         <div className="bg-white p-2 rounded-lg">
-          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Green Energy powered.png" alt=""
+          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Green Energy.png" alt=""
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-10"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-4"
             style={{
               cursor: "default",
             }}>
@@ -143,7 +143,7 @@ const ESG = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Rooftop Solar.png" alt=""
+          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Roof top solar.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -163,11 +163,11 @@ const ESG = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/EV Enabled.png" alt=""
+          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/EV Enabled (1).png" alt=""
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-7"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-4"
             style={{
               cursor: "default",
             }}>
@@ -210,11 +210,11 @@ const ESG = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
         <div className="bg-white p-2 rounded-lg">
-          <img className="3xs:w-[20%] 3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Talent Centric Workplace.png" alt=""
+          <img className="3xs:w-[20%] 3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Talent Workspace.png" alt=""
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-6"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-4"
             style={{
               cursor: "default",
             }}>
@@ -230,11 +230,11 @@ const ESG = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Health and Safety.png" alt=""
+          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Health and Safety (1).png" alt=""
             style={{
               cursor: "default",
             }} />
-          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-6"
+          <p className="text-xl 2xl:text-4xl font-sf-pro font-normal mt-4"
             style={{
               cursor: "default",
             }}>
@@ -250,7 +250,7 @@ const ESG = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Ethical vendor Engagement.png" alt=""
+          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Ethical Mangement.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -291,7 +291,7 @@ const ESG = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-3 glg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
         <div className="bg-white p-2 rounded-lg">
-          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Strong Governance FRamework.png" alt=""
+          <img className="3xs:w-[20%] xl:w-[20%]" src="/pixel-world/Strong Governance.png" alt=""
             style={{
               cursor: "default",
             }} />
