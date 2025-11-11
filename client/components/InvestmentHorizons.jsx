@@ -5,19 +5,7 @@ import { useEffect, useState } from "react";
 export default function InvestmentHorizons() {
   const [isFullScreen, setIsFullScreen] = useState(false);
 
-  useEffect(() => {
-    const handleAnimationComplete = (event) => {
-      if (event.detail.progress >= 0.55) {
-        // Add a small delay to ensure the third animation is fully complete
-        setTimeout(() => {
-          setIsFullScreen(true);
-        }, 300);
-      }
-    };
 
-    document.addEventListener('animationComplete', handleAnimationComplete);
-    return () => document.removeEventListener('animationComplete', handleAnimationComplete);
-  }, []);
 
   return (
     <motion.section
@@ -34,7 +22,7 @@ export default function InvestmentHorizons() {
         backgroundColor: 'white'
       }}
     >
-      <div className="max-w-8xl mx-auto sm:px-6 lg:px-8 xl:pr-8 xl:pl-16 3xs:pl-8">
+      <div className="max-w-8xl mx-auto sm:px-6 lg:px-8 xl:pr-8 xl:pl-16">
         {/* Top Row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 items-start md:mt-10 md:mb-10 relative">
           {/* Left Image */}

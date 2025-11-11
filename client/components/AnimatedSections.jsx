@@ -10,6 +10,8 @@ export default function AnimatedSections() {
   const [isMobile, setIsMobile] = useState(false);
   const [isActive, setIsActive] = useState(false); // when container is in viewport
   const [progress, setProgress] = useState(0);
+  const [isLocked, setIsLocked] = useState(false);
+  const [lastAnimationDone, setLastAnimationDone] = useState(false);
 
   const sections = [
     { title: "Bridging Purpose." },
@@ -52,23 +54,71 @@ export default function AnimatedSections() {
 
     const scrollable = Math.max(containerHeight - viewportHeight, 1);
     const scrolledInto = Math.min(Math.max(-rect.top, 0), scrollable);
-    const multiplier = isMobile ? 0.6 : 1; // smaller = slower progress
-    const p = Math.min(Math.max((scrolledInto / scrollable) * multiplier, 0), 1);
-
-    // Only trigger transition after third animation is complete
-    if (p >= 0.55 && currentSection === 2) {
-      const pathAnimationComplete = document.querySelector('path[stroke="#B89B7A"]')?.getAttribute('style')?.includes('pathLength: 1');
-      if (pathAnimationComplete) {
-        document.dispatchEvent(new CustomEvent('animationComplete', { detail: { progress: p } }));
-      }
+    // multiplier < 1 should slow progress but must still allow p to reach 1.
+    // Choose multipliers dynamically so mobile devices still can reach the end.
+    let multiplier;
+    if (isMobile) {
+      // on small/short devices we want less slowdown so users can reach the end
+      multiplier = window.innerHeight && window.innerHeight < 720 ? 0.9 : 0.8;
+    } else {
+      // desktop can be a bit slower
+      multiplier = window.innerHeight && window.innerHeight >= 1040 ? 0.75 : 0.7;
     }
 
+    const adjustedScrollable = Math.max(1, scrollable / multiplier); // larger => slower progress
+    const p = Math.min(Math.max(scrolledInto / adjustedScrollable, 0), 1);
+
     setProgress(p);
+
+    // Lock scroll when entering the final section
+    if (currentSection === 2 && !isLocked && !lastAnimationDone) {
+      setIsLocked(true);
+    }
 
     if (p < 0.33) setCurrentSection(0);
     else if (p < 0.66) setCurrentSection(1);
     else setCurrentSection(2);
-  }, []);
+  }, [isMobile, currentSection, isLocked, lastAnimationDone]);
+
+  // Apply/remove scroll lock when isLocked changes
+  useEffect(() => {
+    if (isLocked && !lastAnimationDone) {
+      // Set a timer to unlock based on animation duration
+      const animationDuration = isMobile ? 2000 : 3000; // matches SVG path animation
+      const unlockTimer = setTimeout(() => {
+        setLastAnimationDone(true);
+        setIsLocked(false);
+
+        // Also dispatch the completion event for InvestmentHorizons
+        document.dispatchEvent(new CustomEvent('animationComplete', {
+          detail: { isAnimationComplete: true, progress }
+        }));
+      }, animationDuration + 200); // Add 200ms buffer
+
+      // Store current scroll position and lock scroll
+      const scrollY = window.scrollY;
+
+      const preventScroll = (e) => {
+        e.preventDefault();
+        window.scrollTo(0, scrollY);
+      };
+
+      window.addEventListener('wheel', preventScroll, { passive: false });
+      window.addEventListener('touchmove', preventScroll, { passive: false });
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+
+      return () => {
+        clearTimeout(unlockTimer);
+        window.removeEventListener('wheel', preventScroll);
+        window.removeEventListener('touchmove', preventScroll);
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+      };
+    }
+
+    return () => { };
+  }, [isLocked, lastAnimationDone, isMobile, progress]);
 
   useEffect(() => {
     handleScroll();
@@ -224,6 +274,15 @@ export default function AnimatedSections() {
                     initial={{ pathLength: 0 }}
                     animate={{ pathLength: 1 }}
                     transition={{ duration: isMobile ? 2 : 3, ease: "easeInOut" }}
+                    onAnimationComplete={() => {
+                      // mark last animation done and release scroll lock
+                      setLastAnimationDone(true);
+                      if (isLocked) setIsLocked(false);
+                      // notify other components (e.g., InvestmentHorizons) that animation is complete
+                      document.dispatchEvent(new CustomEvent('animationComplete', {
+                        detail: { isAnimationComplete: true, progress }
+                      }));
+                    }}
                   />
                   <motion.circle
                     cx="762.5"
@@ -269,9 +328,9 @@ export default function AnimatedSections() {
                 fontFamily: "Inter, Arial, sans-serif",
                 fontWeight: 200,
                 right: isMobile ? "2%" : "4%",
-                top: currentSection === 1 ? "auto" : "50%",
-                bottom: currentSection === 1 ? (isMobile ? "8%" : "10%") : "auto",
-                transform: currentSection === 1 ? "none" : "translateY(-50%)",
+                top: "50%",
+                bottom: "auto",
+                transform: "translateY(-50%)",
                 backgroundImage:
                   "linear-gradient(90deg, #B89B7A 0%, #B89B7A 45%, #e8dbc8 75%)",
                 WebkitBackgroundClip: "text",
