@@ -19,8 +19,7 @@ export default function ContactUs() {
       // address split into lines for explicit <br/> rendering
       address: [
         "Lage Ham 182,",
-        "5102 AE Dongen,",
-        "The Netherlands",
+        "5102 AE Dongen, The Netherlands"
       ],
       number: "+311 6224 2792",
     },
@@ -119,7 +118,7 @@ export default function ContactUs() {
                   letterSpacing: "-0.035em",
                 }}
               >
-                We're Operating across Europe and South Asia Including The
+                We're Operating across Europe, UAE and South Asia Including The
                 Netherlands, Luxembourg, Belgium, France, UK, India, and Sri
                 Lanka
               </h2>
@@ -415,14 +414,11 @@ export default function ContactUs() {
             <img src="/pixel-world/IOTC Real Asset logo blue 1 (1).png" alt="" />
           </div>
           <div>
-            <p className="pb-8 2xl:text-[350%] lg:text-[250%] 3xs:text-[200%] font-normal">
-              {countryData[selectedCountry].tagline}
-            </p>
-            <div className="flex justify-between lg:flex-row 3xs:flex-col gap-6">
-              <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-[300] font-sf-pro">
+            <div className="flex justify-around  lg:flex-row 3xs:flex-col gap-2 3xs:pl-4 md:pl-0">
+              <p className="2xl:text-[280%] lg:text-[250%] 3xs:text-[130%] font-[600] font-sf-pro">
                 {countryData[selectedCountry].title}
               </p>
-              <div className="flex flex-col lg:w-[40%] lg:ml-4">
+              <div className="flex flex-col lg:w-[33%] lg:ml-4">
                 <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-medium lg:mb-2">
                   Email Address
                 </p>

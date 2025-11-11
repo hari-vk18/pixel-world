@@ -22,7 +22,7 @@ export default function ContactForm() {
 
   return (
     <div className=" flex items-center justify-center py-8 3xs:px-8">
-      <div className="w-full max-w-6xl">
+      <div className="w-full w-[95%]">
         {/* Top Row - Three Input Fields */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Name Field */}
@@ -89,17 +89,17 @@ export default function ContactForm() {
           className="bg-slate-800 text-white lg:px-12 3xs:px-4 lg:py-4 3xs:py-2 rounded-full lg:text-2xl font-normal hover:bg-slate-700 transition-colors flex items-center gap-2"
         >
           Leave us a Message
-          <svg 
-            className="lg:w-5 lg:h-5 3xs:w-4 3xs:h-4" 
-            fill="none" 
-            stroke="currentColor" 
+          <svg
+            className="lg:w-5 lg:h-5 3xs:w-4 3xs:h-4"
+            fill="none"
+            stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M14 5l7 7m0 0l-7 7m7-7H3" 
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
             />
           </svg>
         </button>
