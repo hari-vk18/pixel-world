@@ -41,16 +41,16 @@ const Overview = () => (
       <FadeOnScroll direction="up" distance={20} duration={1000}>
         <div className="lg:mt-20 relative">
           <img
-            src="/pixel-world/image (14).png"
+            src="/pixel-world/Investment Management.png"
             alt="ESG building"
             className="w-full object-cover"
           />
           <div
-            className="absolute inset-0 z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom opacity-100 pointer-events-none"
+            className="absolute inset-0 z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom -bottom-2 opacity-100 pointer-events-none"
             style={{ backgroundImage: 'url("/pixel-world/Vector 3306.svg")' }}
           ></div>
           <div
-            className="absolute inset-0 ml-[4.7%] z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[8.7%] opacity-100 pointer-events-none"
+            className="absolute inset-0 ml-[4.7%] z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[7.9%] opacity-100 pointer-events-none"
             style={{ backgroundImage: 'url("/pixel-world/Vector 3304.svg")' }}
           ></div>
           <div

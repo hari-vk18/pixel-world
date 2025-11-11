@@ -409,9 +409,9 @@ export default function ContactUs() {
         {/* 📍 Dynamic Country Info Section */}
         <section
           ref={addressRef} // ✅ reference target
-          className="w-full p-[5%] pb-[2%] bg-[#707A87]/5 relative 2xl:mt-[5%] lg:mt-[5%]"
+          className="w-full p-[2%] pb-[2%] bg-[#707A87]/5 relative 2xl:mt-[5%] lg:mt-[5%]"
         >
-          <div className="absolute w-[20%] bottom-0 left-[25%] opacity-5">
+          <div className="absolute w-[20%] bottom-0 left-[4%] opacity-5">
             <img src="/pixel-world/IOTC Real Asset logo blue 1 (1).png" alt="" />
           </div>
           <div>
@@ -422,7 +422,7 @@ export default function ContactUs() {
               <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-[300] font-sf-pro">
                 {countryData[selectedCountry].title}
               </p>
-              <div className="flex flex-col lg:w-[45%] lg:ml-4">
+              <div className="flex flex-col lg:w-[40%] lg:ml-4">
                 <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-medium lg:mb-2">
                   Email Address
                 </p>
