@@ -415,7 +415,7 @@ export default function ContactUs() {
           </div>
           <div>
             <div className="flex justify-around  lg:flex-row 3xs:flex-col gap-2 3xs:pl-4 md:pl-0">
-              <p className="2xl:text-[280%] lg:text-[250%] 3xs:text-[130%] font-[600] font-sf-pro">
+              <p className="text-iotc-blue-bg 2xl:text-[280%] lg:text-[250%] 3xs:text-[130%] font-[400] font-sf-pro">
                 {countryData[selectedCountry].title}
               </p>
               <div className="flex flex-col lg:w-[33%] lg:ml-4">

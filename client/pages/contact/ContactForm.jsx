@@ -22,7 +22,7 @@ export default function ContactForm() {
 
   return (
     <div className=" flex items-center justify-center py-8 3xs:px-8">
-      <div className="w-full w-[95%]">
+      <div className="w-full xl:w-[95%] lg:w-[93%]">
         {/* Top Row - Three Input Fields */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Name Field */}

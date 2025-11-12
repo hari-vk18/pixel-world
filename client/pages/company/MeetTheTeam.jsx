@@ -4,9 +4,9 @@ import Footer from "../../components/Footer";
 const MeetTheTeam = () => (
   <div className="company-meet-team-page">
 
-    <section className="lg:pt-[1%] lg:pb-[6%] 3xs:py-[6%] lg:px-[4%] 3xs:px-6">
+    <section className="lg:pt-[0%] lg:pb-[6%] 3xs:py-[6%] lg:px-[4%] 3xs:px-6">
       <div className="lg:mx-auto">
-        <h1 className="2xl:text-[500%] lg:text-[380%] 3xs:text-[200%] font-normal lg:mb-8"
+        <h1 className="2xl:text-[500%] lg:text-[300%] 3xs:text-[200%] font-normal lg:mb-8"
           style={{ cursor: "default" }}>Meet the Team</h1>
         <p className="2xl:text-[250%] lg:text-[120%] 3xs:text-[110%] text-gray-600 3xs:mt-3 lg:text-left 3xs:text-justify lg:mb-10"
           style={{
@@ -15,7 +15,7 @@ const MeetTheTeam = () => (
           We understand that property investment can be challenging, and investors face roadblocks at different stages of the journey. We have a dedicated team of professionals who are committed to supporting investors on their investment journey.
         </p>
         <div className="mb-8 mt-[6%] 2xl:mt-[4%]">
-          <p className="2xl:text-[500%] lg:text-[380%] 3xs:text-[200%] font-[400]"
+          <p className="2xl:text-[500%] lg:text-[300%] 3xs:text-[200%] font-[400]"
             style={{
               cursor: "default",
               lineHeight: "32px"
