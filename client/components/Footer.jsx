@@ -1,9 +1,12 @@
+
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   const footerLinks = [
-    { label: 'About Us', href: '#' },
-    { label: 'ESG', href: '#' },
-    { label: 'Portfolio', href: '#' },
-    { label: 'News letter', href: '#' },
+    { label: 'About Us', path: '/company/about-us' },
+    { label: 'ESG', path: '/company/esg' },
+    { label: 'Portfolio', path: '#' },
+    { label: 'News letter', path: '#' },
   ];
 
   return (
@@ -43,16 +46,29 @@ export default function Footer() {
           <div className="mt-40 mb-10 3xs:mb-8 3xs:mt-10 relative">
             <nav className="flex flex-wrap lg:flex-row 3xs:flex-col gap-2 sm:gap-4 md:gap-10 justify-center">
               {footerLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="text-white font-sf-pro-text text-sm sm:text-base 2xl:text-xl hover:text-iotc-gold transition-colors duration-200 tracking-tight"
-                  style={{
-                    letterSpacing: '-0.02em',
-                  }}
-                >
-                  {link.label}
-                </a>
+                link.path === '#' ? (
+                  <a
+                    key={index}
+                    href={link.path}
+                    className="text-white font-sf-pro-text text-sm sm:text-base 2xl:text-xl hover:text-iotc-gold transition-colors duration-200 tracking-tight"
+                    style={{
+                      letterSpacing: '-0.02em',
+                    }}
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={index}
+                    to={link.path}
+                    className="text-white font-sf-pro-text text-sm sm:text-base 2xl:text-xl hover:text-iotc-gold transition-colors duration-200 tracking-tight"
+                    style={{
+                      letterSpacing: '-0.02em',
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                )
               ))}
             </nav>
 

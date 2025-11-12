@@ -23,8 +23,8 @@ const MeetTheTeam = () => (
           <div className="grid 3xs:grid-row-1 md:grid-cols-2 gap-x-8 2xl:gap-y-16 gap-y-10 pt-[7%]">
             {/* Map team members here */}
             <div className="flex lg:flex-row ">
-              <div className="bg-[#B89B7A] rounded-xl lg:pl-4 pt-5 overflow-hidden">
-                <img src="/pixel-world/image 1125.png" alt="" className="object-cover w-full h-full rounded-lg" />
+              <div className="bg-[#B89B7A] rounded-xl  overflow-hidden">
+                <img src="/pixel-world/Contact.png" alt="" className="object-cover w-full h-full rounded-lg" />
               </div>
               <div className=" pl-8 font-sf-pro w-[64%]">
                 <p className="2xl:text-[300%] lg:text-[150%] xl:text-[170%] 3xs:text-[120%] font-normal"
@@ -75,8 +75,8 @@ const MeetTheTeam = () => (
             </div>
 
             <div className="flex lg:flex-row ">
-              <div className="bg-[#B89B7A] rounded-xl lg:pl-4 pt-5 overflow-hidden">
-                <img src="/pixel-world/image 1125.png" alt="" className="object-cover w-full h-full rounded-lg" />
+              <div className="bg-[#B89B7A] rounded-xl  overflow-hidden">
+                <img src="/pixel-world/Contact.png" alt="" className="object-cover w-full h-full rounded-lg" />
               </div>
               <div className=" pl-8 font-sf-pro w-[64%]">
                 <p className="2xl:text-[300%] lg:text-[150%] xl:text-[170%] 3xs:text-[120%] font-normal"
@@ -127,8 +127,8 @@ const MeetTheTeam = () => (
             </div>
 
             <div className="flex lg:flex-row ">
-              <div className="bg-[#B89B7A] rounded-xl lg:pl-4 pt-5 overflow-hidden">
-                <img src="/pixel-world/image 1125.png" alt="" className="object-cover w-full h-full rounded-lg" />
+              <div className="bg-[#B89B7A] rounded-xl  overflow-hidden">
+                <img src="/pixel-world/Contact.png" alt="" className="object-cover w-full h-full rounded-lg" />
               </div>
               <div className=" pl-8 font-sf-pro w-[64%]">
                 <p className="2xl:text-[300%] lg:text-[150%] xl:text-[170%] 3xs:text-[120%] font-normal"
@@ -179,8 +179,8 @@ const MeetTheTeam = () => (
             </div>
 
             <div className="flex lg:flex-row ">
-              <div className="bg-[#B89B7A] rounded-xl lg:pl-4 pt-5 overflow-hidden">
-                <img src="/pixel-world/image 1125.png" alt="" className="object-cover w-full h-full rounded-lg" />
+              <div className="bg-[#B89B7A] rounded-xl  overflow-hidden">
+                <img src="/pixel-world/Contact.png" alt="" className="object-cover w-full h-full rounded-lg" />
               </div>
               <div className=" pl-8 font-sf-pro w-[64%]">
                 <p className="2xl:text-[300%] lg:text-[150%] xl:text-[170%] 3xs:text-[120%] font-normal"
@@ -241,8 +241,8 @@ const MeetTheTeam = () => (
             }}>Advisory Committee</h2>
           <div className="grid 3xs:grid-row-1 md:grid-cols-2 pt-[5%] gap-x-8 gap-y-10 2xl:gap-y-16">
             <div className="flex lg:flex-row ">
-              <div className="bg-[#B89B7A] rounded-xl lg:pl-4 pt-5 overflow-hidden">
-                <img src="/pixel-world/image 1125.png" alt="" className="object-cover w-full h-full rounded-lg" />
+              <div className="bg-[#B89B7A] rounded-xl  overflow-hidden">
+                <img src="/pixel-world/Contact.png" alt="" className="object-cover w-full h-full rounded-lg" />
               </div>
               <div className=" pl-8 font-sf-pro w-[64%]">
                 <p className="2xl:text-[300%] lg:text-[150%] xl:text-[170%] 3xs:text-[120%] font-normal"
@@ -293,8 +293,8 @@ const MeetTheTeam = () => (
             </div>
 
             <div className="flex lg:flex-row ">
-              <div className="bg-[#B89B7A] rounded-xl lg:pl-4 pt-5 overflow-hidden">
-                <img src="/pixel-world/image 1125.png" alt="" className="object-cover w-full h-full rounded-lg" />
+              <div className="bg-[#B89B7A] rounded-xl  overflow-hidden">
+                <img src="/pixel-world/Contact.png" alt="" className="object-cover w-full h-full rounded-lg" />
               </div>
               <div className=" pl-8 font-sf-pro w-[64%]">
                 <p className="2xl:text-[300%] lg:text-[150%] xl:text-[170%] 3xs:text-[120%] font-normal"
@@ -345,8 +345,8 @@ const MeetTheTeam = () => (
             </div>
 
             <div className="flex lg:flex-row ">
-              <div className="bg-[#B89B7A] rounded-xl lg:pl-4 pt-5 overflow-hidden">
-                <img src="/pixel-world/image 1125.png" alt="" className="object-cover w-full h-full rounded-lg" />
+              <div className="bg-[#B89B7A] rounded-xl  overflow-hidden">
+                <img src="/pixel-world/Contact.png" alt="" className="object-cover w-full h-full rounded-lg" />
               </div>
               <div className=" pl-8 font-sf-pro w-[64%]">
                 <p className="2xl:text-[300%] lg:text-[150%] xl:text-[170%] 3xs:text-[120%] font-normal"
@@ -397,8 +397,8 @@ const MeetTheTeam = () => (
             </div>
 
             <div className="flex lg:flex-row ">
-              <div className="bg-[#B89B7A] rounded-xl lg:pl-4 pt-5 overflow-hidden">
-                <img src="/pixel-world/image 1125.png" alt="" className="object-cover w-full h-full rounded-lg" />
+              <div className="bg-[#B89B7A] rounded-xl  overflow-hidden">
+                <img src="/pixel-world/Contact.png" alt="" className="object-cover w-full h-full rounded-lg" />
               </div>
               <div className=" pl-8 font-sf-pro w-[64%]">
                 <p className="2xl:text-[300%] lg:text-[150%] xl:text-[170%] 3xs:text-[120%] font-normal"

@@ -12,7 +12,7 @@ import FadeOnScroll from "../components/FadeOnScroll";
 export default function Company() {
   const companyLinks = [
     { title: "About the firm", path: "about-us" },
-    { title: "Meet the team", path: "#" },
+    { title: "Meet the team", path: "meet-the-team" },
     { title: "ESG Environment, Sustainability & Social", path: "esg" },
     { title: "Insights", path: "#" },
     { title: "Careers", path: "#" },

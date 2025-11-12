@@ -5,7 +5,7 @@ export default function DesigningToday() {
     <section className="relative flex w-full overflow-hidden pb-32 md:pb-48">
       {/* Background Image */}
       <img
-        src="/pixel-world/real asset. 6 (1).png"
+        src="/pixel-world/Green building.jpg"
         alt="Modern real estate development"
         className="absolute inset-0 w-full h-full object-cover"
       />

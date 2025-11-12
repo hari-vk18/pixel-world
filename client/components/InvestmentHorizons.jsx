@@ -34,7 +34,7 @@ export default function InvestmentHorizons() {
           backgroundColor: 'white'
         }}
       >
-        <div className="max-w-8xl mx-auto sm:px-6 lg:px-8 xl:pr-8 xl:pl-16">
+        <div className="max-w-8xl mx-auto py-6">
           {/* Top Row */}
           <div className="grid grid-cols-1 lg:grid-cols-3 items-start md:mt-10 md:mb-10 relative">
             {/* Left Image */}
@@ -192,12 +192,30 @@ export default function InvestmentHorizons() {
           backgroundColor: 'white'
         }}
       >
-        <h2
-          className="text-iotc-text font-sf-pro 3xs:text-2xl lg:text-5xl md:text-5xl 
-                font-normal 2xl:font-bold leading-tight mb-6 text-center 2xl:text-7xl lg:text-right 3xs:mt-10 md:mt-0 3xs:hidden sm:block ml-8"
-        >
-          Investment Horizons
-        </h2>
+        <div className="relative flex justify-center lg:mt-5">
+          <motion.div
+            className="h-[3px] bg-gray-400 origin-left mt-6"
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{
+              delay: 0.5,
+              duration: 1.2,
+              ease: "easeInOut",
+            }}
+            style={{
+              width: "90%",
+              maxWidth: "800px",
+            }}
+          />
+          <h2
+            className="text-iotc-text font-sf-pro 3xs:text-2xl lg:text-5xl md:text-5xl 
+                font-normal 2xl:font-bold leading-tight mb-6 text-center 2xl:text-7xl lg:text-right 3xs:mt-10 md:mt-0 ml-8"
+          >
+            Investment Horizons
+          </h2>
+        </div>
+
         <div className="max-w-8xl">
           {/* Top Row */}
           <div className="grid grid-cols-1 lg:grid-cols-2 items-start md:mt-10 md:mb-10 relative gap-2">
@@ -255,7 +273,16 @@ export default function InvestmentHorizons() {
               <img
                 src="/pixel-world/Vector 3313.svg"
                 alt="Vector 3313"
-                className="absolute xl:left-[56.2%] xl:top-[-0.8rem] lg:left-[62.3%] lg:top-[-0.8rem] 2xl:top-[-0.8rem] 2xl:left-[40.3rem]"
+                className="absolute xl:left-[40.2%] xl:top-[-8rem] lg:left-[62.3%] lg:top-[-0.8rem] 2xl:top-[-0.8rem] 2xl:left-[40.3rem]"
+              />
+            </div>
+          </FadeOnScroll>
+          <FadeOnScroll direction="fade" duration={1000} delay={500}>
+            <div className="relative mt-0 hidden lg:block">
+              <img
+                src="/pixel-world/Vector 3312.svg"
+                alt="Vector 3312"
+                className="absolute xl:left-[5%] xl:top-[-4rem] lg:left-[15%] lg:top-[-9.4rem] 2xl:left-[12%]"
               />
             </div>
           </FadeOnScroll>
