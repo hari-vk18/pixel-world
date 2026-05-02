@@ -21,7 +21,7 @@ export default function Company() {
   return (
     <div className="min-h-screen bg-white relative">
       <Header />
-      <main className="lg:pt-40 2xl:pt-60 3xs:pt-20 overflow-hidden">
+      <main className="lg:pt-40 2xl:pt-60 3xs:pt-32 overflow-hidden">
         <Routes>
           <Route
             index

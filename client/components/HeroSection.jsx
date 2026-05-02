@@ -31,7 +31,7 @@ export default function HeroSection() {
       💡
       {/* Background Images */}
       <img
-        src="/pixel-world/modern-multistory-residential-building-with-balconies-greenery.png"
+        src="/modern-multistory-residential-building-with-balconies-greenery.webp"
         alt="Modern residential building"
         className="absolute inset-0 w-full h-full object-cover"
       />

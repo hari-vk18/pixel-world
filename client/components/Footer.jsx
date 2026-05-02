@@ -14,7 +14,7 @@ export default function Footer() {
       {/* Background Logo/Graphic */}
       <div className="absolute right-7 top-24 bottom-0 w-full max-w-2xl h-full opacity-80">
         <img
-          src="/pixel-world/IOTC Real Asset logo blue 1 (1).png"
+          src="/IOTC Real Asset logo blue 1 (1).png"
           alt="IOTC Logo Background"
           width={642}
           height={779}
@@ -108,7 +108,7 @@ export default function Footer() {
           <div className="border-t border-gray-600 pt-6 sm:pt-10 ">
             <div className="flex lg:flex-col md:flex-row 3xs:flex-row justify-between items-center space-y-6 md:space-y-0 mb-2">
               <img
-                src="/pixel-world/IOTC Real Asset logo white 2.svg"
+                src="/IOTC Real Asset logo white 2.svg"
                 alt="IOTC Real Asset"
                 className="w-8 h-10 sm:w-10 sm:h-[69px] 2xl:w-12 2xl:h-[83px] md:hidden relative right-0 mt-12"
               />
@@ -116,7 +116,7 @@ export default function Footer() {
                 {/* Logo */}
                 <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
                   <img
-                    src="/pixel-world/IOTC Real Asset logo white 2.svg"
+                    src="/IOTC Real Asset Logo_White.png"
                     alt="IOTC Real Asset"
                     className="w-8 h-10 sm:w-10 sm:h-[69px] 2xl:w-12 2xl:h-[83px] 3xs:hidden md:block"
                   />
@@ -148,7 +148,7 @@ export default function Footer() {
 
                 <div className="flex flex-col sm:flex-row items-right space-y-2 sm:space-y-0 sm:space-x-6">
                   <img
-                    src="/pixel-world/IOTC Real Asset logo white 2.svg"
+                    src="/IOTC Real Asset Logo_White.png"
                     alt="IOTC Real Asset"
                     className="w-8 h-10 sm:w-10 sm:h-[69px] 2xl:w-12 2xl:h-[83px] 3xs:hidden md:block"
                   />

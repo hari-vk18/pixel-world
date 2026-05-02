@@ -7,7 +7,7 @@ import FadeOnScroll from "../components/FadeOnScroll"; // ✅ Import your animat
 
 export default function ProjectsInvestment() {
   const projectLinks = [
-    { title: "Europe", path: "#" },
+    { title: "Europe", path: "europe" },
     { title: "Asia Pacific", path: "#" },
   ];
 

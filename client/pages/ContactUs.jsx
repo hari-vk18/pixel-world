@@ -98,10 +98,10 @@ export default function ContactUs() {
       <Header />
 
       <main className="lg:pt-32 3xs:pt-24 pb-16 relative">
-        <div className="lg:px-12 3xs:px-5 lg:pb-14">
+        <div className="lg:px-12 3xs:px-5 lg:pb-12">
           <div className="flex lg:flex-row 3xs:flex-col justify-between">
             <p
-              className="2xl:text-[500%] lg:text-[350%] 3xs:text-[200%] font-[300] font-sf-pro lg:mb-8 3xs:mb-4 mt-[3%] xl:mt-[1%]"
+              className="2xl:text-[500%] lg:text-[250%] 3xs:text-[200%] font-[300] font-sf-pro lg:mb-4 xl:mt-8 3xs:mb-4 mt-[3%] xl:mt-[1%]"
               style={{
                 cursor: "default",
                 lineHeight: "1.2",
@@ -111,7 +111,7 @@ export default function ContactUs() {
             </p>
             <div className="mb-8 lg:w-[60%] lg:text-left 3xs:text-justify">
               <h2
-                className="2xl:text-[250%] lg:text-[150%] 3xs:text-[100%] text-[#6C6C6C] font-normal lg:mt-8 mb-4"
+                className="2xl:text-[250%] lg:text-[120%] 3xs:text-[100%] text-[#6C6C6C] font-normal lg:mt-8 mb-4"
                 style={{
                   cursor: "default",
                   lineHeight: "1.5",
@@ -128,7 +128,7 @@ export default function ContactUs() {
 
         {/* 🌍 World Map Section */}
         <div className=" w-full max-w-[2500px] mx-auto mb-16 aspect-[3/1.4] relative">
-          <img className="absolute top-0 left-0 w-full h-full object-contain" src="/pixel-world/world.svg" alt=""
+          <img className="absolute top-0 left-0 w-full h-full object-contain" src="/world.svg" alt=""
           />
 
           {/* Netherlands */}
@@ -411,22 +411,22 @@ export default function ContactUs() {
           className="w-full p-[2%] pb-[2%] bg-[#707A87]/5 relative 2xl:mt-[5%] lg:mt-[5%]"
         >
           <div className="absolute w-[20%] bottom-0 left-[4%] opacity-5">
-            <img src="/pixel-world/IOTC Real Asset logo blue 1 (1).png" alt="" />
+            <img src="/IOTC Real Asset logo blue 1 (1).png" alt="" />
           </div>
           <div>
             <div className="flex justify-around  lg:flex-row 3xs:flex-col gap-2 3xs:pl-4 md:pl-0">
               <p className="text-iotc-blue-bg 2xl:text-[280%] lg:text-[250%] 3xs:text-[130%] font-[400] font-sf-pro">
                 {countryData[selectedCountry].title}
               </p>
-              <div className="flex flex-col lg:w-[33%] lg:ml-4">
+              <div className="flex flex-col lg:w-[35%] lg:ml-4">
                 <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-medium lg:mb-2">
                   Email Address
                 </p>
-                <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-normal lg:mt-4 lg:mb-2">
+                <p className="2xl:text-[250%] lg:text-[150%] 3xs:text-[130%] font-normal lg:mb-2">
                   {countryData[selectedCountry].email}
                 </p>
                 <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-medium mt-4 lg:mb-2">Address</p>
-                <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-normal lg:mt-4 lg:mb-2">
+                <p className="2xl:text-[250%] lg:text-[150%] 3xs:text-[130%] font-normal lg:mb-2">
                   {countryData[selectedCountry].address.map((line, idx) => (
                     <span key={idx}>
                       {line}
@@ -439,7 +439,7 @@ export default function ContactUs() {
                 <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-medium lg:mb-2">
                   Phone
                 </p>
-                <p className="2xl:text-[250%] lg:text-[180%] 3xs:text-[130%] font-normal lg:mt-4 lg:mb-2">
+                <p className="2xl:text-[250%] lg:text-[150%] 3xs:text-[130%] font-normal lg:mb-2">
                   {countryData[selectedCountry].number}
                 </p>
               </div>

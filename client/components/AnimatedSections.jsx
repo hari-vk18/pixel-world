@@ -14,6 +14,7 @@ export default function AnimatedSections() {
   const [lastAnimationDone, setLastAnimationDone] = useState(false);
   const [secondAnimationDone, setSecondAnimationDone] = useState(false);
   const [lockType, setLockType] = useState(null); // 'second' | 'third' | null
+  const lockedRef = useRef(false); // Use ref to avoid stale closures
 
   const sections = [
     { title: "Bridging Purpose." },
@@ -61,7 +62,7 @@ export default function AnimatedSections() {
     let multiplier;
     if (isMobile) {
       // on small/short devices we want less slowdown so users can reach the end
-      multiplier = window.innerHeight && window.innerHeight < 720 ? 0.9 : 0.8;
+      multiplier = window.innerHeight && window.innerHeight < 720 ? 0.7 : 0.8;
     } else {
       // desktop can be a bit slower
       multiplier = window.innerHeight && window.innerHeight >= 1040 ? 0.75 : 0.7;
@@ -72,65 +73,111 @@ export default function AnimatedSections() {
 
     setProgress(p);
 
-    // Lock scroll when entering the second or final (third) section
-    if (currentSection === 1 && !isLocked && !secondAnimationDone) {
+    // Determine next section
+    let nextSection = 0;
+    if (p < 0.33) nextSection = 0;
+    else if (p < 0.66) nextSection = 1;
+    else nextSection = 2;
+
+    // Lock scroll when entering the second section
+    if (nextSection === 1 && currentSection !== 1 && !lockedRef.current && !secondAnimationDone) {
+      lockedRef.current = true;
       setLockType('second');
       setIsLocked(true);
-    }
-    if (currentSection === 2 && !isLocked && !lastAnimationDone) {
-      setLockType('third');
-      setIsLocked(true);
+      console.log('🔒 Locking 2nd section');
     }
 
-    if (p < 0.33) setCurrentSection(0);
-    else if (p < 0.66) setCurrentSection(1);
-    else setCurrentSection(2);
-  }, [isMobile, currentSection, isLocked, lastAnimationDone]);
+    // Lock scroll when entering the third section (more aggressive trigger)
+    if (nextSection === 2 && currentSection !== 2 && !lockedRef.current && !lastAnimationDone) {
+      lockedRef.current = true;
+      setLockType('third');
+      setIsLocked(true);
+      console.log('🔒 Locking 3rd section');
+    }
+
+    setCurrentSection(nextSection);
+  }, [isMobile, currentSection, lastAnimationDone, secondAnimationDone]);
 
   // Apply/remove scroll lock when isLocked changes
   useEffect(() => {
-    if (isLocked && lockType) {
-      // Determine animation duration based on lockType and device
-      let animationDuration = isMobile ? 1500 : 2000; // default for 'second'
-      if (lockType === 'third') animationDuration = isMobile ? 2000 : 3000;
+    if (!isLocked || !lockType) {
+      // Clean up when unlocked
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      return;
+    }
 
-      const unlockTimer = setTimeout(() => {
+    // Determine animation duration based on lockType and device
+    let animationDuration = isMobile ? 1500 : 2000; // default for 'second'
+    if (lockType === 'third') animationDuration = isMobile ? 2000 : 3000;
+
+    // Store current scroll position
+    const scrollY = window.scrollY;
+
+    // Strong scroll prevention with multiple layers
+    const preventScroll = (e) => {
+      if (lockedRef.current) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    };
+
+    // Lock scroll by setting position fixed and preventing events
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = '100%';
+
+    window.addEventListener('wheel', preventScroll, { passive: false, capture: true });
+    window.addEventListener('touchmove', preventScroll, { passive: false, capture: true });
+    window.addEventListener('keydown', (e) => {
+      if (['ArrowUp', 'ArrowDown', 'Space', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.key)) {
+        if (lockedRef.current) e.preventDefault();
+      }
+    }, { capture: true });
+
+    let unlockTimer;
+
+    // For 'second' section, use a timer. For 'third', also use a timer as fallback
+    if (lockType === 'second' || lockType === 'third') {
+      unlockTimer = setTimeout(() => {
+        lockedRef.current = false;
+
         if (lockType === 'third') {
+          console.log('🔓 Unlocking 3rd section (timer)');
           setLastAnimationDone(true);
         } else if (lockType === 'second') {
+          console.log('🔓 Unlocking 2nd section (timer)');
           setSecondAnimationDone(true);
         }
+
         setIsLocked(false);
+        setLockType(null);
 
         // Dispatch completion event with section info
         document.dispatchEvent(new CustomEvent('animationComplete', {
           detail: { isAnimationComplete: true, section: lockType, progress }
         }));
-        setLockType(null);
       }, animationDuration + 200);
-
-      // Store current scroll position and lock scroll
-      const scrollY = window.scrollY;
-      const preventScroll = (e) => {
-        e.preventDefault();
-        window.scrollTo(0, scrollY);
-      };
-
-      window.addEventListener('wheel', preventScroll, { passive: false });
-      window.addEventListener('touchmove', preventScroll, { passive: false });
-      document.documentElement.style.overflow = 'hidden';
-      document.body.style.overflow = 'hidden';
-
-      return () => {
-        clearTimeout(unlockTimer);
-        window.removeEventListener('wheel', preventScroll);
-        window.removeEventListener('touchmove', preventScroll);
-        document.documentElement.style.overflow = '';
-        document.body.style.overflow = '';
-      };
     }
 
-    return () => { };
+    return () => {
+      clearTimeout(unlockTimer);
+      window.removeEventListener('wheel', preventScroll, { capture: true });
+      window.removeEventListener('touchmove', preventScroll, { capture: true });
+
+      // Restore scroll position
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      window.scrollTo(0, scrollY);
+    };
   }, [isLocked, lockType, isMobile, progress]);
 
   useEffect(() => {
@@ -297,13 +344,17 @@ export default function AnimatedSections() {
                     animate={{ pathLength: 1 }}
                     transition={{ duration: isMobile ? 2 : 3, ease: "easeInOut" }}
                     onAnimationComplete={() => {
-                      // mark last animation done and release scroll lock
-                      setLastAnimationDone(true);
-                      if (isLocked) setIsLocked(false);
-                      // notify other components (e.g., InvestmentHorizons) that animation is complete
-                      document.dispatchEvent(new CustomEvent('animationComplete', {
-                        detail: { isAnimationComplete: true, progress }
-                      }));
+                      // Only unlock if this is the 3rd section animation completing
+                      if (lockType === 'third') {
+                        lockedRef.current = false;
+                        setLastAnimationDone(true);
+                        setIsLocked(false);
+                        setLockType(null);
+                        // notify other components (e.g., InvestmentHorizons) that animation is complete
+                        document.dispatchEvent(new CustomEvent('animationComplete', {
+                          detail: { isAnimationComplete: true, section: 'third', progress }
+                        }));
+                      }
                     }}
                   />
                   <motion.circle

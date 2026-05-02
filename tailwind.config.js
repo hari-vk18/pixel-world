@@ -119,16 +119,15 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       screens: {
-        '3xs': '320px',  // very small phones (iPhone SE, older Androids)
-        '2xs': '375px',  // small phones (iPhone 12 mini, Pixel 4a)
-        'xs': '475px',  // slightly larger phones before sm (640px)
-        // existing defaults continue...
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
-        '3xl': '2000px',
+        '3xs': '20rem',       // 320px
+        '2xs': '23.4375rem',  // 375px
+        'xs': '29.6875rem',   // 475px
+        'sm': '40rem',        // 640px
+        'md': '48rem',        // 768px
+        'lg': '64rem',        // 1024px
+        'xl': '80rem',        // 1280px
+        '2xl': '96rem',       // 1536px
+        '3xl': '125rem',
       }
     },
   },

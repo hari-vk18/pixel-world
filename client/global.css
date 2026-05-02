@@ -18,6 +18,30 @@
   display: inline-block;
 }
 
+.popup-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(15, 43, 38, 0.35) transparent;
+}
+
+.popup-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.popup-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.popup-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(15, 43, 38, 0.25);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.popup-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 43, 38, 0.45);
+}
+
 /* SF Pro Display self-hosted font faces */
 @font-face {
   font-family: 'SF Pro Display';
@@ -40,6 +64,31 @@
   src: url('/fonts/SFPRODISPLAYLIGHTITALIC.OTF') format('opentype');
   font-weight: 300;
   font-style: italic;
+  font-display: swap;
+}
+
+/* Use WOFF format for normal 100-300 weights */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display-Light.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/SF-Pro-Display-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
   font-display: swap;
 }
 

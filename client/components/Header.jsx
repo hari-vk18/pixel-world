@@ -31,21 +31,21 @@ export default function Header() {
   const navItems = [
     { label: 'Investment Management', href: '/investment-management' },
     { label: 'Real Estate Service', href: '/real-estate-service' },
-    { label: 'Projects and Investment', href: '/projects-investment' },
+    { label: 'Portfolio', href: '/portfolio' },
     { label: 'Company', href: '/company' },
-    { label: 'Investor Login', href: '/investor-portal' },
+    // { label: 'Investor Login', href: '/investor-portal' },
     { label: 'Contact Us', href: '/contact-us' },
   ];
 
   return (
     <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
-      <nav className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] py-8 lg:pr-16 md:pr-8">
+      <nav className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] 3xs:pr-[25px] py-8 lg:pr-16 md:pr-8 md:pl-16">
 
         {/* Logo */}
         <FadeOnScroll direction="down" duration={1000}>
-          <a href="/pixel-world/" className="inline-block">
+          <a href="/" className="inline-block">
             <img
-              src={isHomePage ? "/pixel-world/IOTC Real Asset Logo_White.png" : "/pixel-world/IOTC Real Asset Logo_Blue.png"}
+              src={isHomePage ? "/IOTC Real Asset Logo_White.png" : "/IOTC Real Asset Logo_Blue.png"}
               alt="IOTC Real Asset"
               className="w-8 sm:w-8 md:w-4 lg:w-10 xl:w-12 2xl-w-16 h-auto"
             />
@@ -86,7 +86,7 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="lg:hidden">
+        <div className="lg:hidden mb-6">
           <FadeOnScroll direction="left" duration={1000}>
             <button
               className={`lg:hidden p-2 ${isHomePage ? 'text-white' : 'text-iotc-text'}`}
@@ -118,11 +118,11 @@ export default function Header() {
           }`}
       >
         <div className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] py-8 pr-8">
-          <a href="/pixel-world/">
+          <a href="/">
             <img
-              src="/pixel-world/IOTC Real Asset logo white 2.svg"
+              src="/IOTC Real Asset Logo_White.png"
               alt="IOTC Real Asset"
-              className="xl:w-[100%] xl:h-[150%] lg:w-[96%] lg:h-[100%] 3xs:w-[50%] 3xs:h-[50%] flex-shrink-0"
+              className="w-8 sm:w-8 md:w-4 lg:w-10 xl:w-12 2xl-w-16 h-auto flex-shrink-0"
             />
           </a>
           <button

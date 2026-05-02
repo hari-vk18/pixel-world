@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/pixel-world/',
+  base: '/',
   server: {
     port: 5173
   },

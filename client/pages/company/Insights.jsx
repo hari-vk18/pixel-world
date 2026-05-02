@@ -1,10 +1,6 @@
 import React from "react";
 import BgPattern1 from "../../../public/Vector 3306.png";
 import BgPattern2 from "../../../public/Vector 3304.png";
-import aboutBuilding from "../../../public/real asset 7.png"; // Replace with your actual image path
-import esgBuilding from "../../../public/image (2).png"; // Corrected path
-import Building from "../../../public/real asset. 6 (1).png"; // Corrected path
-import back from "../../../public/image (5).png"; // Corrected path
 import Footer from "@/components/Footer";
 
 const Insights = () => (
@@ -38,10 +34,13 @@ const Insights = () => (
           className="absolute inset-0 ml-[14%] bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[4%] opacity-100 pointer-events-none"
           style={{ backgroundImage: `url(${BgPattern2})` }}
         ></div>
-        <img src={back} alt="About building" className="w-full 2xl:h-[816px] lg:h-[416px] 3xs:h-[200px]"
+        <img
+          src="/image (5).png"
+          alt="About building"
+          className="w-full 2xl:h-[816px] lg:h-[416px] 3xs:h-[200px]"
           style={{
           }} />
-        <img src={aboutBuilding} alt="About building" className="absolute w-[60%] 3xs:h-[120%] lg:h-[132%] 3xs:w-[50%] object-cover inset-0 lg:left-[40%] 3xs:left-[40%] lg:top-[-32%] 3xs:top-[-20%]"
+        <img src="/real asset 7.webp" alt="About building" className="absolute w-[60%] 3xs:h-[120%] lg:h-[132%] 3xs:w-[50%] object-cover inset-0 lg:left-[40%] 3xs:left-[40%] lg:top-[-32%] 3xs:top-[-20%]"
           style={{
             width: "60%",
           }} />

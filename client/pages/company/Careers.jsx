@@ -28,22 +28,22 @@ const Careers = () => (
         </div>
       </div>
       <div className="mt-12 relative">
-        <img src="/pixel-world/image (8).png" alt="ESG building" className="w-full object-cover"
+        <img src="/image (8).png" alt="ESG building" className="w-full object-cover"
           style={{
             width: "100%",
             height: "auto",
           }} />
         <div
           className="absolute inset-0 z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom opacity-100 pointer-events-none"
-          style={{ backgroundImage: 'url("/pixel-world/Vector 3306.svg")' }}
+          style={{ backgroundImage: 'url("/Vector 3306.svg")' }}
         ></div>
         <div
           className="absolute inset-0 ml-[4.7%] z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[8.7%] opacity-100 pointer-events-none"
-          style={{ backgroundImage: 'url("/pixel-world/Vector 3304.svg")' }}
+          style={{ backgroundImage: 'url("/Vector 3304.svg")' }}
         ></div>
         <div
           className="absolute inset-0 ml-[14%] z-10 bg-no-repeat bg-[length:4.8%] bg-left-bottom mb-[4%] opacity-100 pointer-events-none"
-          style={{ backgroundImage: 'url("/pixel-world/Vector 3304.svg")' }}
+          style={{ backgroundImage: 'url("/Vector 3304.svg")' }}
         ></div>
       </div>
       <div className="ml-[4%]">
@@ -62,7 +62,7 @@ const Careers = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 pt-[4%] lg:mt-12 px-[4%] relative">
         <div className="bg-white p-2 rounded-lg">
-          <img src="/pixel-world/f1.svg.png" alt=""
+          <img src="/f1.svg.png" alt=""
             style={{
               cursor: "default",
             }} />
@@ -82,7 +82,7 @@ const Careers = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img src="/pixel-world/f2.svg fill.svg" alt=""
+          <img src="/f2.svg fill.svg" alt=""
             style={{
               cursor: "default",
             }} />
@@ -102,7 +102,7 @@ const Careers = () => (
           </p>
         </div>
         <div className="bg-white p-2 rounded-lg">
-          <img src="/pixel-world/f4.svg.svg" alt=""
+          <img src="/f4.svg.svg" alt=""
             style={{
               cursor: "default",
             }} />
@@ -144,7 +144,7 @@ const Careers = () => (
           <FadeOnScroll className="3xs:hidden lg:block" direction="left" duration={1000} delay={100} distance={40}>
             <div className="flex justify-center lg:justify-start">
               <img
-                src="/pixel-world/image (1).png"
+                src="/image (1).png"
                 alt="Investment property"
                 className="w-72 sm:w-56 md:w-56 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover"
               />
@@ -223,7 +223,7 @@ const Careers = () => (
           <FadeOnScroll direction="up" duration={1000} delay={200}>
             <div className="flex md:justify-center lg:justify-start lg:mt-32 3xs:mt-10 3xs:justify-center">
               <img
-                src="/pixel-world/image.png"
+                src="/image.png"
                 alt="Real estate development"
                 className="w-72 sm:w-56 md:w-56 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover lg:ml-4"
               />
@@ -254,12 +254,12 @@ const Careers = () => (
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:my-11 3xs:mb-16 3xs:mt-8">
         <div className="grid grid-row-1 sm:grid-row-2 lg:gap-14 3xs:gap-8">
-          <img src="/pixel-world/image (10).png" alt="Team member 1" className="w-full h-auto object-cover" />
-          <img src="/pixel-world/image (11).png" alt="Team member 1" className="w-full h-auto object-cover" />
+          <img src="/image (10).webp" alt="Team member 1" className="w-full h-auto object-cover" />
+          <img src="/image (11).webp" alt="Team member 1" className="w-full h-auto object-cover" />
         </div>
         <div className="grid grid-row-1 sm:grid-row-2 gap-[5%]">
-          <img src="/pixel-world/image (12).png" alt="Team member 1" className="w-full h-auto object-cover" />
-          <img src="/pixel-world/image (13).png" alt="Team member 1" className="w-full h-auto object-cover" />
+          <img src="/image (12).webp" alt="Team member 1" className="w-full h-auto object-cover" />
+          <img src="/image (13).png" alt="Team member 1" className="w-full h-auto object-cover" />
         </div>
       </div>
     </section>
