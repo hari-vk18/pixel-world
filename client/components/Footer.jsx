@@ -1,7 +1,15 @@
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Footer() {
+  const location = useLocation();
+
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    window.location.href = '/contact-us';
+  };
+
   const footerLinks = [
     { label: 'About Us', path: '/company/about-us' },
     { label: 'ESG', path: '/company/esg' },
@@ -36,9 +44,9 @@ export default function Footer() {
                 Ready to invest in something real ?<br />
                 Get in touch with us.
               </h2>
-              <button className="inline-flex items-center justify-center px-8 sm:px-14 py-3 sm:py-4 bg-iotc-gold hover:bg-iotc-gold/90 rounded-[29px] text-white font-sf-pro text-base 2xl:text-xl font-medium transition-colors duration-300 mt-2">
+              <a href="/contact-us" onClick={handleContactClick} className="inline-flex items-center justify-center px-8 sm:px-14 py-3 sm:py-4 bg-iotc-gold hover:bg-iotc-gold/90 rounded-[29px] text-white font-sf-pro text-base 2xl:text-xl font-medium transition-colors duration-300 mt-2">
                 Contact Us
-              </button>
+              </a>
             </div>
           </div>
 

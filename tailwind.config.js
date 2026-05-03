@@ -72,7 +72,7 @@ export default {
         'iotc-gray': '#555',
         'iotc-light-gray': '#777',
         'iotc-card-bg': '#F6F8FB',
-        'iotc-blue-bg': '#052a82ff',
+        'iotc-blue-bg': '#122f52',
       },
       fontFamily: {
         'sf-pro': ['SF Pro Display', '-apple-system', 'Roboto', 'Helvetica', 'sans-serif'],

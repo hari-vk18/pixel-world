@@ -7,7 +7,7 @@ export default function InvestorSpotlight() {
   const blogPosts = [
     {
       id: 1,
-      image: "./image (3).png",
+      image: "./image (3).webp",
       title: "IOTC Breaks Ground on €120M Net-Zero Residential Project",
       date: "02 december 2022",
       readTime: "3 min. to read",
@@ -16,7 +16,7 @@ export default function InvestorSpotlight() {
     },
     {
       id: 2,
-      image: "./image (4).png",
+      image: "./image (4).webp",
       title: "New Industrial Park Launches in Luxembourg",
       date: "02 december 2022",
       readTime: "3 min. to read",
@@ -25,7 +25,7 @@ export default function InvestorSpotlight() {
     },
     {
       id: 3,
-      image: "./image (3).png",
+      image: "./image (3).webp",
       title: "India Expansion Secures €40M in Capital",
       date: "02 december 2022",
       readTime: "3 min. to read",
@@ -34,7 +34,7 @@ export default function InvestorSpotlight() {
     },
     {
       id: 4,
-      image: "./image (3).png",
+      image: "./image (3).webp",
       title: "IOTC Breaks Ground on €120M Net-Zero Residential Project",
       date: "02 december 2022",
       readTime: "3 min. to read",
@@ -43,7 +43,7 @@ export default function InvestorSpotlight() {
     },
     {
       id: 5,
-      image: "./image (3).png",
+      image: "./image (3).webp",
       title: "India Expansion Secures €40M in Capital",
       date: "02 december 2022",
       readTime: "3 min. to read",
@@ -52,7 +52,7 @@ export default function InvestorSpotlight() {
     },
     {
       id: 6,
-      image: "./image (4).png",
+      image: "./image (4).webp",
       title: "New Industrial Park Launches in Luxembourg",
       date: "02 december 2022",
       readTime: "3 min. to read",

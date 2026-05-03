@@ -41,7 +41,7 @@ export default function InvestmentHorizons() {
             <FadeOnScroll className="3xs:hidden lg:block" direction="left" duration={1000} delay={100} distance={40}>
               <div className="flex justify-center lg:justify-start">
                 <img
-                  src="/image (1).png"
+                  src="/image (1).webp"
                   alt="Investment property"
                   className="w-80 sm:w-56 md:w-56 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover"
                 />
@@ -82,7 +82,7 @@ export default function InvestmentHorizons() {
                   Investment Horizons
                 </h2>
                 <img
-                  src="image 21.png"
+                  src="image 21.webp"
                   alt="Investment opportunity"
                   className="w-80 sm:w-56 md:w-64 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover lg:mt-10 3xs:hidden sm:block"
                 />
@@ -120,7 +120,7 @@ export default function InvestmentHorizons() {
             <FadeOnScroll direction="up" duration={1000} delay={200}>
               <div className="flex md:justify-center lg:justify-start lg:mt-32 3xs:mt-10 3xs:justify-center">
                 <img
-                  src="/image.png"
+                  src="/image.webp"
                   alt="Real estate development"
                   className="w-80 sm:w-56 md:w-56 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover lg:ml-4"
                 />
@@ -142,7 +142,7 @@ export default function InvestmentHorizons() {
             <FadeOnScroll className="sm:hidden" direction="up" duration={1000} delay={200}>
               <div className="flex md:justify-center lg:justify-start lg:mt-32 3xs:mt-10 3xs:justify-center">
                 <img
-                  src="/image (1).png"
+                  src="/image (1).webp"
                   alt="Investment property"
                   className="w-80 sm:w-56 md:w-56 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover"
                 />
@@ -223,7 +223,7 @@ export default function InvestmentHorizons() {
               <FadeOnScroll className="3xs:hidden lg:block" direction="left" duration={1000} delay={100} distance={40}>
 
                 <img
-                  src="/image (1).png"
+                  src="/image (1).webp"
                   alt="Investment property"
                   className="w-80 sm:w-56 md:w-56 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover"
                 />
@@ -248,7 +248,7 @@ export default function InvestmentHorizons() {
               <div className="flex lg:flex-row justify-between items-center px-0 lg:items-start mt-48">
 
                 <img
-                  src="image 21.png"
+                  src="image 21.webp"
                   alt="Investment opportunity"
                   className="w-80 sm:w-56 md:w-64 lg:w-48 xl:w-64 2xl:w-[34rem] h-auto object-cover 3xs:hidden sm:block"
                 />

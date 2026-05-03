@@ -6,6 +6,8 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const isProjectDetailPage = location.pathname.startsWith('/project/');
+  const useWhiteHeader = isHomePage || isProjectDetailPage;
 
   // Effect to handle body scroll lock
   useEffect(() => {
@@ -45,7 +47,7 @@ export default function Header() {
         <FadeOnScroll direction="down" duration={1000}>
           <a href="/" className="inline-block">
             <img
-              src={isHomePage ? "/IOTC Real Asset Logo_White.png" : "/IOTC Real Asset Logo_Blue.png"}
+              src={useWhiteHeader ? "/IOTC Real Asset logo white 2 (1).svg" : "/IOTC Real Asset Logo_Blue.png"}
               alt="IOTC Real Asset"
               className="w-8 sm:w-8 md:w-4 lg:w-10 xl:w-12 2xl-w-16 h-auto"
             />
@@ -59,7 +61,7 @@ export default function Header() {
               font-sf-pro 3xl:text-4xl leading-[150%] 
               hover:text-iotc-gold transition-colors duration-200
               ${index === 0 ? 'font-normal' : 'font-normal'}
-              ${isHomePage ? 'text-white' : 'text-iotc-text'}
+              ${useWhiteHeader ? 'text-white' : 'text-iotc-text'}
             `;
             const showSeparator = item.label === 'Company';
 
@@ -73,7 +75,7 @@ export default function Header() {
                 <div className="flex items-center gap-4">
                   {showSeparator && (
                     <div
-                      className={`${isHomePage ? 'bg-white/50' : 'bg-gray-300'} w-px 2xl:w-[5px] h-5 2xl:h-8`}
+                      className={`${useWhiteHeader ? 'bg-white/50' : 'bg-gray-300'} w-px 2xl:w-[5px] h-5 2xl:h-8`}
                     />
                   )}
                   <Link to={item.href} className={base}>
@@ -89,7 +91,7 @@ export default function Header() {
         <div className="lg:hidden mb-6">
           <FadeOnScroll direction="left" duration={1000}>
             <button
-              className={`lg:hidden p-2 ${isHomePage ? 'text-white' : 'text-iotc-text'}`}
+              className={`lg:hidden p-2 ${useWhiteHeader ? 'text-white' : 'text-iotc-text'}`}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle mobile menu"
             >

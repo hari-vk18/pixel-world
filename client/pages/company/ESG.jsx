@@ -68,9 +68,9 @@ const ESG = () => (
 
       <FadeOnScroll direction="up" distance={40} delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
-          <img src="/Group lang.png" alt="" className="absolute right-0 top-0 3xs:h-[650px]" />
+          <img src="/Group lang.webp" alt="" className="absolute right-0 top-0 3xs:h-[650px]" />
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Green Certificate.png" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Green Certificate.webp" alt=""
               style={{
                 cursor: "default",
               }} />
@@ -90,7 +90,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Integrated waste Management.png" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Integrated waste Management.webp" alt=""
               style={{
                 cursor: "default",
               }} />
@@ -110,7 +110,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Smart Energy System.png" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Smart Energy System.webp" alt=""
               style={{
                 cursor: "default",
               }} />
@@ -134,7 +134,7 @@ const ESG = () => (
       <FadeOnScroll direction="up" distance={40} delay={150}>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%]">
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Green Energy.png" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Green Energy.webp" alt=""
               style={{
                 cursor: "default",
               }} />
@@ -154,7 +154,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Roof top solar.png" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Roof top solar.webp" alt=""
               style={{
                 cursor: "default",
               }} />
@@ -174,7 +174,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/EV Enabled (1).png" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/EV Enabled (1).webp" alt=""
               style={{
                 cursor: "default",
               }} />
@@ -199,7 +199,7 @@ const ESG = () => (
     <FadeOnScroll direction="up" distance={60}>
       <section>
         <div>
-          <img src="/Social Cover.png" alt="ESG building" className="w-full object-cover"
+          <img src="/Social Cover.webp" alt="ESG building" className="w-full object-cover"
             style={{
               width: "100%",
               height: "50%",
@@ -227,7 +227,7 @@ const ESG = () => (
       <FadeOnScroll direction="up" distance={40} delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] 3xs:w-[20%] xl:w-[20%]" src="/Talent Workspace.png" alt=""
+            <img className="3xs:w-[20%] 3xs:w-[20%] xl:w-[20%]" src="/Talent Workspace.webp" alt=""
               style={{
                 cursor: "default",
               }} />
@@ -247,7 +247,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Health and Safety (1).png" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Health and Safety (1).webp" alt=""
               style={{
                 cursor: "default",
               }} />
@@ -267,7 +267,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Ethical Mangement.png" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Ethical Mangement.webp" alt=""
               style={{
                 cursor: "default",
               }} />
@@ -312,7 +312,7 @@ const ESG = () => (
       <FadeOnScroll direction="up" distance={40} delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-3 glg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Strong Governance.png" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Strong Governance.webp" alt=""
               style={{
                 cursor: "default",
               }} />

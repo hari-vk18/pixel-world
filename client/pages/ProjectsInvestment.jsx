@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import BgPattern from "../../public/Group 1000001906.png";
+import BgPattern from "../../public/Group 1000001906.webp";
 import Projects from "./project/Projects";
 import { Link, Routes, Route } from "react-router-dom";
 import FadeOnScroll from "../components/FadeOnScroll"; // ✅ Import your animation wrapper

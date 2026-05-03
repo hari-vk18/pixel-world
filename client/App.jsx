@@ -7,6 +7,7 @@ import { TooltipProvider } from "./components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Chatbot from "./components/Chatbot";
+import CookieConsent from "./components/CookieConsent";
 import Index from "./pages/Index";
 import Company from "./pages/Company";
 import InvestmentManagement from "./pages/InvestmentManagement";
@@ -19,6 +20,7 @@ import NotFound from "./pages/NotFound";
 import Overview from "./pages/investment/Overview";
 import RealEstate from "./pages/realEstate/RealEstate";
 import Portfolio from "./pages/Portfolio";
+import ProjectDetail from "./pages/project/ProjectDetail";
 
 const queryClient = new QueryClient();
 
@@ -37,12 +39,14 @@ const App = () => (
           <Route path="/real-estate-services/real-estate" element={<RealEstate />} />
           <Route path="/projects-investment/*" element={<ProjectsInvestment />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
           <Route path="/news" element={<News />} />
           {/* <Route path="/investor-portal/*" element={<InvestorPortal />} /> */}
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Chatbot />
+        <CookieConsent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

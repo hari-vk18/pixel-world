@@ -1,30 +1,36 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FadeOnScroll from "../components/FadeOnScroll";
 // Removed ResponsiveImage; using direct webp image sources
 
 export default function Portfolio() {
-    const [activeTab, setActiveTab] = useState("completed");
+    const [activeTab, setActiveTab] = useState("ongoing");
+    const [selectedCountry, setSelectedCountry] = useState("all");
     const [showCountryPopup, setShowCountryPopup] = useState(false);
     const [activeRegion, setActiveRegion] = useState(null);
 
+    const countryFlags = {
+        all: { flag: "/world.svg", name: "All Countries" },
+        india: { flag: "/in.svg", name: "India" },
+        srilanka: { flag: "/Sri_Lanka.svg", name: "Sri Lanka" },
+        luxembourg: { flag: "/lu.svg", name: "Luxembourg" }
+    };
+
     const regions = [
         {
-            name: 'Americas',
-            countries: ['Argentina', 'Brazil', 'Canada', 'Chile', 'Colombia', 'Mexico', 'United States', 'Uruguay'],
-        },
-        {
-            name: 'Asia Pacific',
-            countries: ['Australia', 'Chinese Mainland', 'Hong Kong SAR', 'India', 'Indonesia', 'Japan', 'Korea', 'Malaysia', 'New Zealand', 'Pakistan', 'Philippines', 'Singapore', 'Taiwan', 'Thailand', 'Vietnam'],
+            name: 'Asia',
+            countries: [
+                { name: 'India', code: 'india' },
+                { name: 'Sri Lanka', code: 'srilanka' }
+            ],
         },
         {
             name: 'Europe',
-            countries: ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Czech Republic', 'Denmark', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Luxembourg', 'Netherlands', 'Norway', 'Poland', 'Portugal', 'Romania', 'Serbia', 'Slovakia', 'Spain', 'Sweden', 'Switzerland', 'United Kingdom'],
-        },
-        {
-            name: 'Middle East and Africa',
-            countries: ['Bahrain', 'Botswana', 'Cameroon', 'Ivory Coast', 'Egypt', 'Ghana', 'Israel', 'Jordan', 'Kenya', 'Kuwait', 'Mali', 'Morocco', 'Namibia', 'Nigeria', 'Oman', 'Qatar', 'Rwanda', 'Saudi Arabia', 'Senegal', 'South Africa', 'Tanzania', 'Turkey', 'Uganda', 'United Arab Emirates', 'Zambia', 'Zimbabwe'],
+            countries: [
+                { name: 'Luxembourg', code: 'luxembourg' }
+            ],
         },
     ];
 
@@ -41,7 +47,6 @@ export default function Portfolio() {
     }, [showCountryPopup]);
 
     const tabs = [
-        { id: "completed", label: "Completed" },
         { id: "ongoing", label: "Ongoing" },
         { id: "upcoming", label: "Upcoming" }
     ];
@@ -99,7 +104,7 @@ export default function Portfolio() {
                             ))}
                         </div>
 
-                        {/* India Flag */}
+                        {/* Country Flag */}
                         <div className="ml-auto">
                             <button
                                 type="button"
@@ -108,8 +113,8 @@ export default function Portfolio() {
                                 aria-expanded={showCountryPopup}
                             >
                                 <img
-                                    src="/in.svg"
-                                    alt="India"
+                                    src={countryFlags[selectedCountry].flag}
+                                    alt={countryFlags[selectedCountry].name}
                                     className="w-12 h-8 object-cover"
                                 />
                             </button>
@@ -141,6 +146,18 @@ export default function Portfolio() {
                                 </button>
                             </div>
                             <div className="flex-1 min-h-0 overflow-y-auto p-6 sm:p-8 space-y-4 popup-scrollbar">
+                                {/* All Countries Option */}
+                                <button
+                                    type="button"
+                                    className="w-full text-left rounded-2xl px-5 py-4 bg-gray-50 border border-gray-200 hover:bg-iotc-gold/10 transition-colors duration-200"
+                                    onClick={() => {
+                                        setSelectedCountry('all');
+                                        setShowCountryPopup(false);
+                                    }}
+                                >
+                                    <span className="text-lg font-medium text-[#0F2B26]">All Countries</span>
+                                </button>
+
                                 {regions.map((region) => (
                                     <div key={region.name} className="rounded-3xl border border-gray-200 overflow-hidden">
                                         <button
@@ -155,15 +172,16 @@ export default function Portfolio() {
                                             <div className="px-5 pb-5 pt-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                                                 {region.countries.map((country) => (
                                                     <button
-                                                        key={country}
+                                                        key={country.code}
                                                         type="button"
                                                         className="text-left rounded-2xl px-4 py-3 bg-white border border-gray-200 hover:bg-iotc-gold/10 transition-colors duration-200 text-sm text-[#0F2B26]"
                                                         onClick={() => {
+                                                            setSelectedCountry(country.code);
                                                             setShowCountryPopup(false);
-                                                            setActiveRegion(region.name);
+                                                            setActiveRegion(null);
                                                         }}
                                                     >
-                                                        {country}
+                                                        {country.name}
                                                     </button>
                                                 ))}
                                             </div>
@@ -178,247 +196,94 @@ export default function Portfolio() {
                 {/* Content Area */}
                 <FadeOnScroll direction="up" distance={40} delay={100}>
                     <div className="mb-20">
-                        {activeTab === "completed" && (
+                        {activeTab === "ongoing" && (
                             <div>
                                 {/* Project Grid */}
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                                    {/* Left Column */}
-                                    <div className="flex flex-col gap-6">
-                                        {/* Main Project Card */}
-                                        <div className="relative h-[717px] overflow-hidden group">
-                                            <img
-                                                src="/porfolio_image_6.webp"
-                                                alt="Mozhi Project"
-                                                className="w-full h-full object-cover"
-                                            />
+                                    {(selectedCountry === "all" || selectedCountry === "india") && (
+                                        <Link to="/project/agaram" className="relative h-[500px] overflow-hidden group">
+                                            <img src="/Agaram.webp" alt="Agaram Project" className="w-full h-full object-cover" />
                                             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-300"></div>
                                             <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                                                 <div>
-                                                    <h2 className="text-4xl font-sf-pro font-[300] mb-4">Mozhi</h2>
-                                                    <p className="text-lg mb-2">Koyembedu, Chennai</p>
-                                                    <p className="text-base opacity-90 max-w-md">
-                                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-                                                    </p>
+                                                    <h2 className="text-4xl font-sf-pro font-[300] mb-4">Agaram</h2>
+                                                    <p className="text-lg mb-2">Koyambedu, Chennai, India</p>
+                                                    <p className="text-base opacity-90 max-w-md">Signature 2BHK apartments with solar panels and smart systems near Koyambedu Metro.</p>
                                                 </div>
                                                 <div className="space-y-3">
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 1</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 2</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 3</span>
-                                                    </div>
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">6 Units</span></div>
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">Solar Panels</span></div>
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">Under Construction</span></div>
                                                 </div>
-                                                <div className="flex justify-end">
-                                                    <a href="#" className="text-white hover:text-iotc-gold transition-colors duration-300">
-                                                        View Project
-                                                    </a>
-                                                </div>
+                                                <div className="flex justify-end"><span className="text-white hover:text-iotc-gold transition-colors duration-300">View Project</span></div>
                                             </div>
-                                        </div>
-
-                                        {/* Bottom Left Image */}
-                                        <div className="relative h-[663px] overflow-hidden group">
-                                            <img
-                                                src="/portfolio_image.webp"
-                                                alt="Project"
-                                                className="w-full h-full object-cover"
-                                            />
+                                        </Link>
+                                    )}
+                                    {(selectedCountry === "all" || selectedCountry === "srilanka") && (
+                                        <Link to="/project/aureum" className="relative h-[500px] overflow-hidden group">
+                                            <img src="/Aureum.webp" alt="Aureum Project" className="w-full h-full object-cover" />
                                             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-300"></div>
                                             <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                                                 <div>
-                                                    <h2 className="text-4xl font-sf-pro font-[300] mb-4">Mozhi</h2>
-                                                    <p className="text-lg mb-2">Koyembedu, Chennai</p>
-                                                    <p className="text-base opacity-90 max-w-md">
-                                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-                                                    </p>
+                                                    <h2 className="text-4xl font-sf-pro font-[300] mb-4">Aureum</h2>
+                                                    <p className="text-lg mb-2">Colombo, Sri Lanka</p>
+                                                    <p className="text-base opacity-90 max-w-md">Eco-luxury hospitality destination with 57 guest rooms, watersports, and wellness facilities.</p>
                                                 </div>
                                                 <div className="space-y-3">
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 1</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 2</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 3</span>
-                                                    </div>
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">57 Rooms</span></div>
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">7 Acres</span></div>
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">Under Renovation</span></div>
                                                 </div>
-                                                <div className="flex justify-end">
-                                                    <a href="#" className="text-white hover:text-iotc-gold transition-colors duration-300">
-                                                        View Project
-                                                    </a>
-                                                </div>
+                                                <div className="flex justify-end"><span className="text-white hover:text-iotc-gold transition-colors duration-300">View Project</span></div>
                                             </div>
-                                        </div>
-                                        <div className="relative h-[447px] overflow-hidden group">
-                                            <img
-                                                src="/portfolio_image_2.webp"
-                                                alt="Project 2"
-                                                className="w-full h-full object-cover"
-                                            />
-                                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-300"></div>
-                                            <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                                                <div>
-                                                    <h2 className="text-4xl font-sf-pro font-[300] mb-4">Mozhi</h2>
-                                                    <p className="text-lg mb-2">Koyembedu, Chennai</p>
-                                                    <p className="text-base opacity-90 max-w-md">
-                                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-                                                    </p>
-                                                </div>
-                                                <div className="space-y-3">
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 1</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 2</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 3</span>
-                                                    </div>
-                                                </div>
-                                                <div className="flex justify-end">
-                                                    <a href="#" className="text-white hover:text-iotc-gold transition-colors duration-300">
-                                                        View Project
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Right Column - Three Images */}
-                                    <div className="flex flex-col gap-6">
-                                        <div className="relative h-[447px] overflow-hidden group">
-                                            <img
-                                                src="/portfolio_image_3.webp"
-                                                alt="Project 3"
-                                                className="w-full h-full object-cover"
-                                            />
-                                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-300"></div>
-                                            <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                                                <div>
-                                                    <h2 className="text-4xl font-sf-pro font-[300] mb-4">Mozhi</h2>
-                                                    <p className="text-lg mb-2">Koyembedu, Chennai</p>
-                                                    <p className="text-base opacity-90 max-w-md">
-                                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-                                                    </p>
-                                                </div>
-                                                <div className="space-y-3">
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 1</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 2</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 3</span>
-                                                    </div>
-                                                </div>
-                                                <div className="flex justify-end">
-                                                    <a href="#" className="text-white hover:text-iotc-gold transition-colors duration-300">
-                                                        View Project
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="relative h-[663px] overflow-hidden group">
-                                            <img
-                                                src="/portfolio_image_4.webp"
-                                                alt="Project 4"
-                                                className="w-full h-full object-cover"
-                                            />
-                                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-300"></div>
-                                            <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                                                <div>
-                                                    <h2 className="text-4xl font-sf-pro font-[300] mb-4">Mozhi</h2>
-                                                    <p className="text-lg mb-2">Koyembedu, Chennai</p>
-                                                    <p className="text-base opacity-90 max-w-md">
-                                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-                                                    </p>
-                                                </div>
-                                                <div className="space-y-3">
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 1</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 2</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 3</span>
-                                                    </div>
-                                                </div>
-                                                <div className="flex justify-end">
-                                                    <a href="#" className="text-white hover:text-iotc-gold transition-colors duration-300">
-                                                        View Project
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="relative h-[717px] overflow-hidden group">
-                                            <img
-                                                src="/portfolio_image_5.webp"
-                                                alt="Project 5"
-                                                className="w-full h-full object-cover"
-                                            />
-                                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-300"></div>
-                                            <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                                                <div>
-                                                    <h2 className="text-4xl font-sf-pro font-[300] mb-4">Mozhi</h2>
-                                                    <p className="text-lg mb-2">Koyembedu, Chennai</p>
-                                                    <p className="text-base opacity-90 max-w-md">
-                                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-                                                    </p>
-                                                </div>
-                                                <div className="space-y-3">
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 1</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 2</span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-8 h-8 rounded-full bg-gray-400"></div>
-                                                        <span className="text-base">Spec 3</span>
-                                                    </div>
-                                                </div>
-                                                <div className="flex justify-end">
-                                                    <a href="#" className="text-white hover:text-iotc-gold transition-colors duration-300">
-                                                        View Project
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        </Link>
+                                    )}
                                 </div>
                             </div>
                         )}
-                        {activeTab === "ongoing" && (
-                            <div className="text-center py-20">
-                                <p className="text-2xl text-gray-400">Ongoing projects will be displayed here</p>
-                            </div>
-                        )}
                         {activeTab === "upcoming" && (
-                            <div className="text-center py-20">
-                                <p className="text-2xl text-gray-400">Upcoming projects will be displayed here</p>
+                            <div>
+                                {/* Project Grid */}
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                    {(selectedCountry === "all" || selectedCountry === "srilanka") && (
+                                        <Link to="/project/aethrina" className="relative h-[500px] overflow-hidden group">
+                                            <img src="/Aethrina.webp" alt="Aethrina Project" className="w-full h-full object-cover" />
+                                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-300"></div>
+                                            <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                                <div>
+                                                    <h2 className="text-4xl font-sf-pro font-[300] mb-4">Aethrina</h2>
+                                                    <p className="text-lg mb-2">Thalawathugoda, Sri Lanka</p>
+                                                    <p className="text-base opacity-90 max-w-md">Mixed-use development with 40 residential units and commercial space across 10 floors.</p>
+                                                </div>
+                                                <div className="space-y-3">
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">40 Units</span></div>
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">10 Floors</span></div>
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">Pre-launch</span></div>
+                                                </div>
+                                                <div className="flex justify-end"><span className="text-white hover:text-iotc-gold transition-colors duration-300">View Project</span></div>
+                                            </div>
+                                        </Link>
+                                    )}
+                                    {(selectedCountry === "all" || selectedCountry === "luxembourg") && (
+                                        <Link to="/project/mamer" className="relative h-[500px] overflow-hidden group">
+                                            <img src="/portfolio_image_4.webp" alt="Mamer Project" className="w-full h-full object-cover" />
+                                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-300"></div>
+                                            <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                                <div>
+                                                    <h2 className="text-4xl font-sf-pro font-[300] mb-4">Mamer</h2>
+                                                    <p className="text-lg mb-2">Luxembourg</p>
+                                                    <p className="text-base opacity-90 max-w-md">Premium development in Luxembourg with high-quality construction and modern amenities.</p>
+                                                </div>
+                                                <div className="space-y-3">
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">Premium Quality</span></div>
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">Modern Design</span></div>
+                                                    <div className="flex items-center gap-3"><div className="w-8 h-8 rounded-full bg-gray-400"></div><span className="text-base">Planning Phase</span></div>
+                                                </div>
+                                                <div className="flex justify-end"><span className="text-white hover:text-iotc-gold transition-colors duration-300">View Project</span></div>
+                                            </div>
+                                        </Link>
+                                    )}
+                                </div>
                             </div>
                         )}
                     </div>

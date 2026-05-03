@@ -44,7 +44,7 @@ export default function DesigningToday() {
           >
             <div className="relative w-full overflow-visible">
               <img
-                src="/image (2).png"
+                src="/image (2).webp"
                 alt="Modern building design"
                 className="object-cover h-auto ml-0 md:ml-2 lg:ml-5 
                 w-[90vw] md:w-[80vw] xl:w-[96vw] 2xl:w-[105vw]"

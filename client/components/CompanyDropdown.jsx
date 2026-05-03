@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import BgPattern from "../../public/Group 1000001906.png";
+import BgPattern from "../../public/Group 1000001906.webp";
 
 export default function CompanyDropdown({ isOpen, onClose }) {
   const companyLinks = [

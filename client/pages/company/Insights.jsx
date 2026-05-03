@@ -35,7 +35,7 @@ const Insights = () => (
           style={{ backgroundImage: `url(${BgPattern2})` }}
         ></div>
         <img
-          src="/image (5).png"
+          src="/image (5).webp"
           alt="About building"
           className="w-full 2xl:h-[816px] lg:h-[416px] 3xs:h-[200px]"
           style={{

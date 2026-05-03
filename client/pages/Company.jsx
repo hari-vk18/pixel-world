@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import BgPattern from "../../public/Group 1000001906.png";
+import BgPattern from "../../public/Group 1000001906.webp";
 import { Link, Routes, Route } from "react-router-dom";
 import AboutUs from "./company/AboutUs";
 import MeetTheTeam from "./company/MeetTheTeam";

@@ -5,10 +5,10 @@ import Footer from "../../components/Footer";
 import FadeOnScroll from "../../components/FadeOnScroll";
 import BgPattern1 from "../../../public/Vector 3306.png";
 import BgPattern2 from "../../../public/Vector 3304.png";
-import aboutBuilding from "../../../public/real asset 7.png"; // Replace with your actual image path
-import esgBuilding from "../../../public/image (2).png"; // Corrected path
-import Building from "../../../public/real asset. 6 (1).png"; // Corrected path
-import back from "../../../public/image (5).png"; // Corrected path
+import aboutBuilding from "../../../public/real asset 7.webp"; // Replace with your actual image path
+import esgBuilding from "../../../public/image (2).webp"; // Corrected path
+import Building from "../../../public/real asset. 6 (1).webp"; // Corrected path
+import back from "../../../public/image (5).webp"; // Corrected path
 
 export default function AboutUs() {
   return (

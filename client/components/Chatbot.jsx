@@ -1,7 +1,30 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Chatbot() {
+    const [shouldLoad, setShouldLoad] = useState(false);
+
     useEffect(() => {
+        const consent = localStorage.getItem("locationConsent");
+
+        if (consent) {
+            setShouldLoad(true);
+        } else {
+            const handleConsentEvent = () => {
+                setTimeout(() => {
+                    setShouldLoad(true);
+                }, 500);
+            };
+
+            window.addEventListener("consentResponded", handleConsentEvent);
+
+            return () => {
+                window.removeEventListener("consentResponded", handleConsentEvent);
+            };
+        }
+    }, []);
+
+    useEffect(() => {
+        if (!shouldLoad) return;
         const injectStylesDeep = (messenger) => {
             const root = messenger.shadowRoot;
             if (!root) return false;
@@ -167,9 +190,9 @@ export default function Chatbot() {
 
         /* Open state button color */
         div.df-messenger-wrapper.expanded button#widgetIcon {
-          background-color: #052a82 !important;
-          background: #052a82 !important;
-          border-color: #052a82 !important;
+          background-color: #122f52 !important;
+          background: #122f52 !important;
+          border-color: #122f52 !important;
         }
 
         /* Rounded launcher wrapper */
@@ -217,9 +240,9 @@ export default function Chatbot() {
         style.textContent = `
       df-messenger {
         --df-messenger-bot-message: #E8E8E8;
-        --df-messenger-button-titlebar-color: #052a82;
+        --df-messenger-button-titlebar-color: #122f52;
         --df-messenger-button-background: #FFFFFF;
-        --df-messenger-send-icon: #052a82;
+        --df-messenger-send-icon: #122f52;
         --df-messenger-user-message: #E8E8E8;
 
         --df-messenger-chat-width: 320px;
@@ -241,7 +264,9 @@ export default function Chatbot() {
                 document.head.removeChild(style);
             }
         };
-    }, []);
+    }, [shouldLoad]);
+
+    if (!shouldLoad) return null;
 
     return (
         <df-messenger

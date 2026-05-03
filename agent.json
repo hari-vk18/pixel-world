@@ -1,0 +1,582 @@
+{
+  "chatbot_qa": [
+    {
+      "intent": "hero_tagline",
+      "questions": [
+        "What is your tagline?",
+        "What is your mission statement?",
+        "What do you stand for?",
+        "Your main message",
+        "Company slogan"
+      ],
+      "answer": "Transforming Real Assets into Sustainable Value. We bridge purpose, build communities, and sustain the future through sustainable, smart investments."
+    },
+    {
+      "intent": "designing_philosophy",
+      "questions": [
+        "What is your design philosophy?",
+        "How do you approach development?",
+        "Your development approach",
+        "Design principles",
+        "Building philosophy"
+      ],
+      "answer": "Designing for Today, Building for Tomorrow. We discover what we do, why it matters, and how we're creating value through sustainable, smart investments. Our approach integrates timeless design, refined craftsmanship, and enduring investment value."
+    },
+    {
+      "intent": "leadership_team",
+      "questions": [
+        "Who are your leaders?",
+        "Tell me about your leadership",
+        "Who runs the company?",
+        "Management team",
+        "Company executives",
+        "Leadership structure"
+      ],
+      "answer": "Our leadership team includes: Diego Fernández de Córdoba (Chairman, Senior Legal & Tax Expert with 30+ years experience), Thinesh Ganeshakumaran (Co-Founder of FT Capital, Group CEO with 15+ years in real economy investments), Filippo De Toma (Co-Founder of FT Capital, Managing Partner with 10+ years in private equity), Rob Willems (Director Netherlands, former advisor to Dutch Finance Minister), and Murugaraj Balakrishnan (Head of APAC & Middle East with 15+ years in global real estate)."
+    },
+    {
+      "intent": "advisory_committee",
+      "questions": [
+        "Who are your advisors?",
+        "Advisory board",
+        "Tell me about advisory committee",
+        "Who advises the company?",
+        "Advisory team"
+      ],
+      "answer": "Our Advisory Committee includes: Prof. Ashu Marasinghe (Director of IOTC Ventures, Former Sri Lanka Presidential Advisor, PhD economist and policymaker, Former MP, Chairman of State Engineering Corporation) and H.E. Omar Abdul Razzak (Director of IOTC Ventures, Former State Minister & Ambassador to the European Union with extensive diplomatic and economic expertise)."
+    },
+    {
+      "intent": "investment_horizons",
+      "questions": [
+        "What are your investment horizons?",
+        "Investment focus areas",
+        "Where do you invest?",
+        "Investment regions",
+        "Geographic focus"
+      ],
+      "answer": "We have two main investment horizons: 1) European Real Asset - Shaping distinguished properties across Europe with timeless design, refined craftsmanship, and enduring investment value. 2) Real Asset Opportunities in Emerging Countries - Offering strong growth potential through rapid urbanization, infrastructure expansion, and rising property demand in APAC and Middle East markets."
+    },
+    {
+      "intent": "vision_mission",
+      "questions": [
+        "What is your vision and mission?",
+        "Company vision",
+        "Mission statement",
+        "Core values",
+        "What drives your company?"
+      ],
+      "answer": "Vision: We create sustainable solutions for CREATING A BETTER WORLD that connect to development, investments, property management, and technology to design, deliver and operate sustainable projects. Value: Our values are the essence of our company's identity. They represent how we act, speak and behave together, and how we engage with our clients and stakeholders."
+    },
+    {
+      "intent": "development_asset_management",
+      "questions": [
+        "What is development and asset management?",
+        "Tell me about asset management",
+        "Development services",
+        "How do you manage assets?",
+        "Asset management approach"
+      ],
+      "answer": "IOTC Real Asset is a professionally managed Development and Asset Management firm that creates an entire spectrum of investment products in real estate. We focus on Residential, Commercial, Industrial and Warehouse across Europe, APAC (Sri Lanka and India) and Middle East (UAE and Saudi Arabia) to deliver the best performance to our investors. We specialize in building and managing high-performing real estate portfolios."
+    },
+    {
+      "intent": "strategic_differentiation",
+      "questions": [
+        "What makes you different?",
+        "Your competitive advantage",
+        "Why choose you?",
+        "Strategic advantages",
+        "What sets you apart?"
+      ],
+      "answer": "IOTC Real Asset delivers a distinct advantage through: 1) Advanced trend analysis across macroeconomic, sectoral, and jurisdictional layers, 2) Local market intelligence backed by our on-ground team enabling informed decisions, 3) Deep operational expertise enabling swift execution and value optimization. We integrate holistic asset management with jurisdictional advantages and regulatory efficiencies."
+    },
+    {
+      "intent": "integrated_investment_structure",
+      "questions": [
+        "What is your investment structure?",
+        "How do you structure investments?",
+        "Investment framework",
+        "Investment model",
+        "How do investments work?"
+      ],
+      "answer": "Our Integrated Investment Structure includes: Direct holdings of high-performing investment properties, Co-investment by IOTC Real Asset ensuring the project remains developer driven, Developers' interests in the projects, and Full alignment with investors ensuring transparency and trust throughout the investment lifecycle."
+    },
+    {
+      "intent": "residential_development",
+      "questions": [
+        "Tell me about residential projects",
+        "Residential development",
+        "Housing projects",
+        "Apartment developments",
+        "Residential real estate"
+      ],
+      "answer": "Residential real estate is one of our most resilient and scalable asset classes. Fuelled by demographic growth, urbanization, and shifting lifestyle needs, housing demand consistently outpaces supply in major urban centers. We offer build-to-sell, build-to-rent, and co-living formats with strong potential for capital appreciation, stable yields, and portfolio diversification. Our residential projects feature smart home technology, solar panels, and sustainable design."
+    },
+    {
+      "intent": "commercial_office_parks",
+      "questions": [
+        "Commercial projects",
+        "Office developments",
+        "Commercial real estate",
+        "Office parks",
+        "Business spaces"
+      ],
+      "answer": "IOTC Real Asset designs future-ready workspaces that foster community, catalyse cross-sector collaboration, and anchor growth industries from trade to Information and Communications Technology (ICT) in vibrant, amenity-rich environments. Our commercial developments are designed with modern amenities and sustainable features."
+    },
+    {
+      "intent": "industrial_warehousing",
+      "questions": [
+        "Industrial projects",
+        "Warehouse development",
+        "Logistics facilities",
+        "Industrial real estate",
+        "Warehousing solutions"
+      ],
+      "answer": "Industrial & Warehousing forms one of the three foundational pillars of institutional portfolios driven by macro resilience, operational scalability, and regulatory clarity. We develop green energy-powered warehouses with rooftop solar PV systems and modern logistics infrastructure."
+    },
+    {
+      "intent": "better_world_vision",
+      "questions": [
+        "Creating a better world",
+        "How do you create better world?",
+        "Social impact",
+        "Community development",
+        "Better world initiative"
+      ],
+      "answer": "IOTC Real Asset embarked on a journey with the vision of CREATING A BETTER WORLD - delivering superior, yet affordable, living for residents and designing sustainable industrial parks globally to build a NET ZERO integrated smart city living. We are redefining the future of cities and setting the benchmark for transformative development through local insight, global expertise, and a steadfast commitment to sustainable value creation."
+    },
+    {
+      "intent": "net_zero_smart_city",
+      "questions": [
+        "What is NET ZERO?",
+        "Smart city development",
+        "Integrated smart city",
+        "Net zero projects",
+        "Smart living cities"
+      ],
+      "answer": "We are building NET ZERO integrated smart city living - comprehensive urban developments that combine residential, commercial, and industrial spaces with advanced sustainability features including solar energy, smart energy systems, EV charging infrastructure, integrated waste management, and green building certifications to achieve net-zero carbon emissions."
+    },
+    {
+      "intent": "company_overview",
+      "questions": [
+        "What is IOTC Real Asset?",
+        "Tell me about your company",
+        "Who are you?",
+        "What does IOTC Real Asset do?",
+        "Give me company information"
+      ],
+      "answer": "IOTC Real Asset is a subsidiary of IOTC Investments Luxembourg, committed to delivering superior performance across Residential, Commercial, and Logistics (Warehouse) asset classes. We deliver risk-mitigated investments, bridging buyers and sellers while ensuring strong returns. We operate across Europe, UAE, and South Asia including The Netherlands, Luxembourg, Belgium, France, UK, India, and Sri Lanka."
+    },
+    {
+      "intent": "assets_under_management",
+      "questions": [
+        "How much assets do you manage?",
+        "What is your AUM?",
+        "Assets under management",
+        "How big is your portfolio?",
+        "What's your total asset value?"
+      ],
+      "answer": "We have €0.99 Billion in consolidated Assets Under Management across the IOTC Group, with €295.62 Million directly managed by IOTC Investment Luxembourg. Our strategic allocation enables us to capitalize on jurisdictional advantages, regulatory efficiencies, and market-specific growth dynamics."
+    },
+    {
+      "intent": "investment_strategies",
+      "questions": [
+        "What are your investment strategies?",
+        "How do you invest?",
+        "What investment approach do you use?",
+        "Tell me about your investment management",
+        "What strategies do you follow?"
+      ],
+      "answer": "We strategically manage investments across Core, Core Plus, Value-Add, and Opportunistic strategies, ensuring a balanced portfolio that aligns with both long-term stability and high-growth potential. We shape a diverse portfolio of sustainable real estate investments across Europe, APAC, and the Middle East, guided by integrity, innovation, and responsibility."
+    },
+    {
+      "intent": "project_agaram",
+      "questions": [
+        "Tell me about Agaram project",
+        "What is Agaram?",
+        "Agaram details",
+        "Projects in Chennai",
+        "Projects in India",
+        "Koyambedu project"
+      ],
+      "answer": "Agaram is a signature residential project in Koyambedu, Chennai, India. It features 6 premium 2BHK apartments across 3 floors with a total built-up area of 7,500 sq.ft on 2,800 sq.ft of land. The project is currently under construction with the third-floor roof slab completed. Key features include: proximity to Koyambedu Metro Station (just 300m away), integrated solar panels, smart home technology, CMDA approval, and convenient access to CMBT Bus Stand and VR Mall."
+    },
+    {
+      "intent": "project_aureum",
+      "questions": [
+        "Tell me about Aureum project",
+        "What is Aureum?",
+        "Aureum details",
+        "Hospitality projects",
+        "Projects in Colombo",
+        "Sri Lanka projects"
+      ],
+      "answer": "Aureum is an eco-luxury hospitality destination located at Bopitiya Junction, Colombo, Sri Lanka. Spread across 7 acres with 100,000 sq.ft built-up area, it features 57 guest rooms currently under renovation. The property offers waterfront experiences with sea view rooms and water front chalets accessible via Hamilton Canal, comprehensive watersports facilities, wellness center with spa, gym and Ayurvedic treatments, spacious banquet hall for events, solar panels for energy efficiency, and is SLTDA approved."
+    },
+    {
+      "intent": "project_aethrina",
+      "questions": [
+        "Tell me about Aethrina project",
+        "What is Aethrina?",
+        "Aethrina details",
+        "Mixed-use projects",
+        "Thalawathugoda project",
+        "Pre-launch projects"
+      ],
+      "answer": "Aethrina is a mixed-use development in Thalawathugoda, Sri Lanka, currently in pre-launch phase. The project features 40 spacious 3-bedroom residential units across 10 floors with commercial space. Built on 12,000 sq.ft of land with 68,571 sq.ft built-up area, it's strategically located near Hemas Hospital (0.20 km), iGate College, and Maharagama Railway Station. The project is fully approved and ready for development with excellent connectivity to healthcare, education, and transportation hubs."
+    },
+    {
+      "intent": "project_mamer",
+      "questions": [
+        "Tell me about Mamer project",
+        "What is Mamer?",
+        "Luxembourg projects",
+        "Projects in Europe",
+        "Upcoming projects in Luxembourg"
+      ],
+      "answer": "Mamer is a premium development project in Luxembourg currently in the planning phase. This project represents our expansion into the European market with high-quality construction standards, modern amenities, sustainable design approach, and strategic location in the heart of Luxembourg. Detailed specifications will be announced soon."
+    },
+    {
+      "intent": "ongoing_projects",
+      "questions": [
+        "What are your ongoing projects?",
+        "Current projects",
+        "Projects under construction",
+        "Active developments",
+        "What projects are you working on now?"
+      ],
+      "answer": "We currently have two ongoing projects: 1) Agaram in Koyambedu, Chennai, India - 6 signature 2BHK apartments with solar panels and smart systems, currently under construction. 2) Aureum in Colombo, Sri Lanka - An eco-luxury hospitality destination with 57 guest rooms across 7 acres, currently under renovation."
+    },
+    {
+      "intent": "upcoming_projects",
+      "questions": [
+        "What are your upcoming projects?",
+        "Future projects",
+        "Pre-launch projects",
+        "What's coming next?",
+        "New developments"
+      ],
+      "answer": "We have two exciting upcoming projects: 1) Aethrina in Thalawathugoda, Sri Lanka - A mixed-use development with 40 residential units and commercial space across 10 floors, currently in pre-launch phase. 2) Mamer in Luxembourg - A premium development in the planning phase with details to be announced soon."
+    },
+    {
+      "intent": "esg_commitment",
+      "questions": [
+        "What is your ESG policy?",
+        "Tell me about sustainability",
+        "Environmental initiatives",
+        "ESG commitment",
+        "How do you handle sustainability?",
+        "Green building practices"
+      ],
+      "answer": "At IOTC Real Asset, ESG is embedded into the DNA of every development. Our commitment includes: Green-certified development adhering to recognized sustainability standards, integrated waste treatment with composting and waste diversion, demand response technology with smart energy systems, green energy-powered warehouses, rooftop solar PV systems, and EV charging infrastructure. Our ESG focus ensures every project drives value for investors, society, and the environment."
+    },
+    {
+      "intent": "social_responsibility",
+      "questions": [
+        "What are your social initiatives?",
+        "Social responsibility",
+        "Employee welfare",
+        "Community impact",
+        "Social commitment"
+      ],
+      "answer": "Our social commitment includes: Talent-centric workplace designed to attract, retain, and nurture top-tier professionals, robust health & safety standards with site-level safety protocols and wellness initiatives, and ethical vendor engagement with contracts awarded to vendors compliant with labor laws and fair employment practices."
+    },
+    {
+      "intent": "governance",
+      "questions": [
+        "What is your governance framework?",
+        "Corporate governance",
+        "Business ethics",
+        "Compliance standards",
+        "How do you ensure transparency?"
+      ],
+      "answer": "We maintain a strong governance framework with transparent decision-making, compliance oversight, and ethical business conduct across all our operations and jurisdictions."
+    },
+    {
+      "intent": "real_estate_services",
+      "questions": [
+        "What real estate services do you offer?",
+        "Real estate services",
+        "What services do you provide?",
+        "Property services",
+        "Development services"
+      ],
+      "answer": "IOTC Real Asset transforms real estate into cross-border opportunities where investment meets infrastructure, and strategy meets scale. We offer comprehensive services from residential communities to integrated smart living cities, covering product types including residential, commercial, and logistics (warehouse) developments."
+    },
+    {
+      "intent": "locations",
+      "questions": [
+        "Where are you located?",
+        "Office locations",
+        "Where do you operate?",
+        "Global presence",
+        "Which countries do you work in?"
+      ],
+      "answer": "We operate across Europe, UAE, and South Asia with offices in: Netherlands (Lage Ham 182, 5102 AE Dongen), Luxembourg (Rue Schiller 9, L-2519), India (Chennai - No.4/22,23, Anugraha Apts, Gill Nagar, Choolaimedu, Chennai – 600094), and Sri Lanka (No.28, Battaramulla Road, Kotte). We also have presence in Belgium, France, and UK."
+    },
+    {
+      "intent": "contact_netherlands",
+      "questions": [
+        "How to contact Netherlands office?",
+        "Netherlands contact",
+        "Contact details for Netherlands",
+        "Netherlands office address",
+        "Call Netherlands office"
+      ],
+      "answer": "IOTC Real Asset B.V. Netherlands office: Address: Lage Ham 182, 5102 AE Dongen, The Netherlands. Email: nl@iotc-group.com. Phone: +311 6224 2792."
+    },
+    {
+      "intent": "contact_india",
+      "questions": [
+        "How to contact India office?",
+        "India contact",
+        "Contact details for India",
+        "India office address",
+        "Call India office",
+        "Chennai office contact"
+      ],
+      "answer": "IOTC Real Asset India Private Limited: Address: No.4/22,23, Anugraha Apts, Ground floor, Sakthi Nagar 5th street, Gill Nagar, Choolaimedu, Chennai – 600094, India. Email: ind@iotc-group.com. Phone: +91 88075 16650."
+    },
+    {
+      "intent": "contact_srilanka",
+      "questions": [
+        "How to contact Sri Lanka office?",
+        "Sri Lanka contact",
+        "Contact details for Sri Lanka",
+        "Sri Lanka office address",
+        "Call Sri Lanka office"
+      ],
+      "answer": "IOTC Real Asset Private Limited Sri Lanka: Address: No.28, Battaramulla Road, Kotte, Sri Lanka. Email: lk@iotc-group.com. Phone: +94 77 1234567."
+    },
+    {
+      "intent": "contact_luxembourg",
+      "questions": [
+        "How to contact Luxembourg office?",
+        "Luxembourg contact",
+        "Contact details for Luxembourg",
+        "Luxembourg office address",
+        "Call Luxembourg office"
+      ],
+      "answer": "IOTC Real Asset Luxembourg: Address: Rue Schiller 9, L-2519, Luxembourg, Grand-Duché de Luxembourg. Email: lu@iotc-ra.com. Phone: +352 2767 6012."
+    },
+    {
+      "intent": "investment_opportunities",
+      "questions": [
+        "How can I invest?",
+        "Investment opportunities",
+        "Can I invest with you?",
+        "How to become an investor?",
+        "Investment process"
+      ],
+      "answer": "We offer diverse investment opportunities across Core, Core Plus, Value-Add, and Opportunistic strategies in residential, commercial, and logistics asset classes. For investment inquiries, please contact us through our website or reach out to your nearest office. Our team will guide you through the investment process and available opportunities."
+    },
+    {
+      "intent": "asset_types",
+      "questions": [
+        "What types of assets do you develop?",
+        "Asset classes",
+        "Property types",
+        "What do you build?",
+        "Development types"
+      ],
+      "answer": "We develop three main asset classes: 1) Residential - Premium apartments and housing communities, 2) Commercial - Office spaces and mixed-use developments, 3) Logistics - Warehouses and distribution centers. All our developments incorporate sustainable design and smart technology."
+    },
+    {
+      "intent": "smart_features",
+      "questions": [
+        "What smart features do you offer?",
+        "Smart home technology",
+        "Technology in buildings",
+        "Smart systems",
+        "Building automation"
+      ],
+      "answer": "Our developments incorporate advanced smart home technology including smart energy systems with demand response technology, rooftop solar PV systems for clean energy generation, EV charging infrastructure, integrated waste management systems, and building automation for optimal energy efficiency and resident convenience."
+    },
+    {
+      "intent": "sustainability_features",
+      "questions": [
+        "What sustainability features do you include?",
+        "Green features",
+        "Eco-friendly aspects",
+        "Environmental features",
+        "Sustainable building features"
+      ],
+      "answer": "Our sustainability features include: Green-certified development standards, solar panels for renewable energy, integrated waste treatment and composting, demand response technology for energy optimization, green energy-powered facilities, EV charging stations, and adherence to recognized environmental standards across design and construction."
+    },
+    {
+      "intent": "project_status",
+      "questions": [
+        "What is the status of your projects?",
+        "Project progress",
+        "Construction status",
+        "Project timeline",
+        "When will projects complete?"
+      ],
+      "answer": "Our project statuses vary: Agaram (Chennai) - Under construction with third-floor roof slab completed, Aureum (Colombo) - Under renovation, Aethrina (Thalawathugoda) - Pre-launch phase, fully approved, Mamer (Luxembourg) - Planning phase. For specific timeline details, please contact our respective regional offices."
+    },
+    {
+      "intent": "approvals_certifications",
+      "questions": [
+        "What approvals do you have?",
+        "Certifications",
+        "Legal approvals",
+        "Regulatory compliance",
+        "Are projects approved?"
+      ],
+      "answer": "All our projects have necessary regulatory approvals: Agaram is CMDA (Chennai Metropolitan Development Authority) approved, Aureum is SLTDA (Sri Lanka Tourism Development Authority) approved, Aethrina is fully approved and ready for development. We maintain strict compliance with local regulations and international standards across all jurisdictions."
+    },
+    {
+      "intent": "career_opportunities",
+      "questions": [
+        "Are you hiring?",
+        "Career opportunities",
+        "Jobs available",
+        "How to join your team?",
+        "Work with you"
+      ],
+      "answer": "We maintain a talent-centric workplace designed to attract, retain, and nurture top-tier professionals. For current career opportunities, please visit our careers page or contact our HR department through the contact form on our website."
+    },
+    {
+      "intent": "company_vision",
+      "questions": [
+        "What is your vision?",
+        "Company mission",
+        "What drives you?",
+        "Your goals",
+        "Company purpose"
+      ],
+      "answer": "Our vision is to create lasting value for investors and communities alike through sustainable real estate investments. We are guided by integrity, innovation, and responsibility, bridging purpose with building communities and sustaining the future. We aim to transform real estate into cross-border opportunities where investment meets infrastructure, and strategy meets scale."
+    },
+    {
+      "intent": "amenities_general",
+      "questions": [
+        "What amenities do you provide?",
+        "Building amenities",
+        "Facilities available",
+        "What features are included?",
+        "Common facilities"
+      ],
+      "answer": "Our amenities vary by project but commonly include: Solar panels and renewable energy systems, Smart home technology and building automation, EV charging stations, Waste management systems, Green spaces and sustainable landscaping, Modern security systems, and Premium finishes. Specific amenities depend on the project type and location."
+    },
+    {
+      "intent": "metro_connectivity",
+      "questions": [
+        "Do you have metro connectivity?",
+        "Public transport access",
+        "Metro station nearby",
+        "Transportation facilities",
+        "How is the connectivity?"
+      ],
+      "answer": "Yes, we prioritize excellent connectivity. For example, our Agaram project in Chennai is just 300m from Koyambedu Metro Station. Aethrina in Sri Lanka is strategically located near Maharagama Railway Station. We ensure all our developments have excellent access to public transportation, healthcare, education, and commercial hubs."
+    },
+    {
+      "intent": "pricing_information",
+      "questions": [
+        "What are the prices?",
+        "How much does it cost?",
+        "Pricing details",
+        "Unit prices",
+        "Cost of apartments"
+      ],
+      "answer": "Pricing varies by project, location, unit size, and specifications. For detailed pricing information and current offers, please contact our sales team at the respective regional office or submit an inquiry through our website. Our team will provide you with comprehensive pricing details and payment plans."
+    },
+    {
+      "intent": "booking_process",
+      "questions": [
+        "How to book a unit?",
+        "Booking process",
+        "How to reserve?",
+        "Purchase process",
+        "How to buy?"
+      ],
+      "answer": "To book a unit, please follow these steps: 1) Contact our sales team through our website or regional office, 2) Schedule a site visit or virtual tour, 3) Review project details and pricing, 4) Submit required documentation, 5) Complete booking formalities with our team. Our representatives will guide you through the entire process."
+    },
+    {
+      "intent": "site_visit",
+      "questions": [
+        "Can I visit the site?",
+        "Site visit",
+        "Property viewing",
+        "Can I see the project?",
+        "Schedule a visit"
+      ],
+      "answer": "Yes, we welcome site visits! You can schedule a visit by contacting our regional offices or submitting a request through our website. Our team will arrange a convenient time for you to visit the project site and provide a detailed walkthrough of the development."
+    },
+    {
+      "intent": "payment_plans",
+      "questions": [
+        "What payment plans do you offer?",
+        "Payment options",
+        "Installment plans",
+        "Financing options",
+        "Payment schedule"
+      ],
+      "answer": "We offer flexible payment plans tailored to different project phases and customer needs. For specific payment plan details, construction-linked payment schedules, and financing options, please contact our sales team at the respective regional office. They will provide you with comprehensive payment plan options."
+    },
+    {
+      "intent": "roi_returns",
+      "questions": [
+        "What returns can I expect?",
+        "ROI information",
+        "Investment returns",
+        "Rental yields",
+        "Appreciation potential"
+      ],
+      "answer": "We deliver risk-mitigated investments with strong returns. Returns vary based on asset class, location, and investment strategy (Core, Core Plus, Value-Add, or Opportunistic). Our strategic allocation across multiple jurisdictions helps maximize value. For specific ROI projections and investment analysis, please contact our investment management team."
+    },
+    {
+      "intent": "legal_documentation",
+      "questions": [
+        "What documents are required?",
+        "Legal paperwork",
+        "Documentation needed",
+        "Required documents",
+        "Legal process"
+      ],
+      "answer": "Required documentation varies by jurisdiction and project. Generally, you'll need: Identity proof, Address proof, PAN/Tax identification, Financial documents, and Investment declaration forms. Our legal team will provide a complete checklist and guide you through the documentation process for your specific investment."
+    },
+    {
+      "intent": "property_management",
+      "questions": [
+        "Do you offer property management?",
+        "Maintenance services",
+        "Property management services",
+        "After-sales service",
+        "Building management"
+      ],
+      "answer": "Yes, we provide comprehensive real estate investment and asset management services. This includes property management, maintenance coordination, tenant management for commercial properties, and ongoing support. Our integrated investment structure ensures professional management throughout the asset lifecycle."
+    },
+    {
+      "intent": "resale_assistance",
+      "questions": [
+        "Can you help with resale?",
+        "Resale support",
+        "Selling my property",
+        "Exit options",
+        "Property resale"
+      ],
+      "answer": "Yes, we bridge buyers and sellers in the real estate market. Our team can assist with resale opportunities, market valuation, and connecting with potential buyers. Contact our asset management team for resale assistance and market insights."
+    },
+    {
+      "intent": "nri_investment",
+      "questions": [
+        "Can NRIs invest?",
+        "NRI investment",
+        "Foreign investment",
+        "International investors",
+        "Overseas investment"
+      ],
+      "answer": "Yes, we welcome international and NRI investors. We operate across multiple jurisdictions including Europe, UAE, and South Asia, facilitating cross-border real estate investments. Our team can guide you through the specific regulations, documentation, and processes for international investments. Please contact our investment management team for detailed information."
+    },
+    {
+      "intent": "project_updates",
+      "questions": [
+        "How do I get project updates?",
+        "Construction progress updates",
+        "Project news",
+        "Stay informed",
+        "Progress reports"
+      ],
+      "answer": "You can stay updated on project progress through: Regular email updates to registered investors, Our website's project pages, Direct communication from our project management team, Site visit arrangements, and Quarterly progress reports. Register your interest through our website or contact our customer service team to receive regular updates."
+    }
+  ]
+}

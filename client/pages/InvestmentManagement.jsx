@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import BgPattern from "../../public/Group 1000001906.png";
+import BgPattern from "../../public/Group 1000001906.webp";
 import FadeOnScroll from "@/components/FadeOnScroll";
 
 export default function InvestmentManagement() {

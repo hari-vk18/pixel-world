@@ -28,7 +28,7 @@ const Careers = () => (
         </div>
       </div>
       <div className="mt-12 relative">
-        <img src="/image (8).png" alt="ESG building" className="w-full object-cover"
+        <img src="/image (8).webp" alt="ESG building" className="w-full object-cover"
           style={{
             width: "100%",
             height: "auto",
@@ -62,7 +62,7 @@ const Careers = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 pt-[4%] lg:mt-12 px-[4%] relative">
         <div className="bg-white p-2 rounded-lg">
-          <img src="/f1.svg.png" alt=""
+          <img src="/f1.svg.webp" alt=""
             style={{
               cursor: "default",
             }} />
@@ -144,7 +144,7 @@ const Careers = () => (
           <FadeOnScroll className="3xs:hidden lg:block" direction="left" duration={1000} delay={100} distance={40}>
             <div className="flex justify-center lg:justify-start">
               <img
-                src="/image (1).png"
+                src="/image (1).webp"
                 alt="Investment property"
                 className="w-72 sm:w-56 md:w-56 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover"
               />
@@ -223,7 +223,7 @@ const Careers = () => (
           <FadeOnScroll direction="up" duration={1000} delay={200}>
             <div className="flex md:justify-center lg:justify-start lg:mt-32 3xs:mt-10 3xs:justify-center">
               <img
-                src="/image.png"
+                src="/image.webp"
                 alt="Real estate development"
                 className="w-72 sm:w-56 md:w-56 lg:w-56 xl:w-64 2xl:w-[34rem] h-auto object-cover lg:ml-4"
               />

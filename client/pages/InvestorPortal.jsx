@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-import BgPattern from "../../public/Group 1000001906.png";
+import BgPattern from "../../public/Group 1000001906.webp";
 import Header from "../components/Header";
 import Login from "./investor/Login";
 import { Link, Routes, Route } from "react-router-dom";
