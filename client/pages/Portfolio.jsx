@@ -207,7 +207,7 @@ export default function Portfolio() {
                                             <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                                                 <div>
                                                     <h2 className="text-4xl font-sf-pro font-[300] mb-4">Agaram</h2>
-                                                    <p className="text-lg mb-2">Koyambedu, Chennai, India</p>
+                                                    <p className="text-lg mb-2">Koyambedu - Chennai, India</p>
                                                     <p className="text-base opacity-90 max-w-md">Signature 2BHK apartments with solar panels and smart systems near Koyambedu Metro.</p>
                                                 </div>
                                                 <div className="space-y-3">
@@ -226,7 +226,7 @@ export default function Portfolio() {
                                             <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                                                 <div>
                                                     <h2 className="text-4xl font-sf-pro font-[300] mb-4">Aureum</h2>
-                                                    <p className="text-lg mb-2">Colombo, Sri Lanka</p>
+                                                    <p className="text-lg mb-2">Colombo - Sri Lanka</p>
                                                     <p className="text-base opacity-90 max-w-md">Eco-luxury hospitality destination with 57 guest rooms, watersports, and wellness facilities.</p>
                                                 </div>
                                                 <div className="space-y-3">
@@ -252,7 +252,7 @@ export default function Portfolio() {
                                             <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                                                 <div>
                                                     <h2 className="text-4xl font-sf-pro font-[300] mb-4">Aethrina</h2>
-                                                    <p className="text-lg mb-2">Thalawathugoda, Sri Lanka</p>
+                                                    <p className="text-lg mb-2">Thalawathugoda - Sri Lanka</p>
                                                     <p className="text-base opacity-90 max-w-md">Mixed-use development with 40 residential units and commercial space across 10 floors.</p>
                                                 </div>
                                                 <div className="space-y-3">

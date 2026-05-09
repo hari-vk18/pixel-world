@@ -62,7 +62,6 @@ export default function Overview() {
                   style={{
                     cursor: "default",
                     lineHeight: "1.5",
-                    letterSpacing: "-0.03em",
                   }}
                 >
                   IOTC Real Asset a professionally managed Development and Asset Management firm aims to create an entire spectrum of investment products in real estate, we are launching first investment product focused in Residential, Commercial, Industrial and Warehouse across Europe, APAC (Sri Lanka and India) and Middle East (UAE and Saudi Arabia) to deliver the best performance to our investors.
@@ -102,7 +101,9 @@ export default function Overview() {
               <p className="2xl:text-[500%] lg:text-[300%] 3xs:text-[180%] font-sf-pro font-normal text-[#B89B7A] mt-4">
                 Vision
               </p>
-              <p className="2xl:text-[180%] lg:text-[110%] 3xs:text-[100%] font-sf-pro font-normal lg:text-left 3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]">
+              <p className="2xl:text-[180%] lg:text-[110%] 3xs:text-[100%] font-sf-pro font-normal lg:text-left 
+              3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]"
+                style={{ letterSpacing: "0.03em" }}>
                 We create sustainable solutions for CREATING A BETTER WORLD that connect
                 to development, investments, property management, technology to design,
                 deliver and operate the sustainable projects.
@@ -117,7 +118,9 @@ export default function Overview() {
               <p className="2xl:text-[500%] lg:text-[300%] 3xs:text-[180%] font-sf-pro font-normal text-[#B89B7A] lg:mt-4">
                 Value
               </p>
-              <p className="2xl:text-[180%] lg:text-[110%] 3xs:text-[100%] font-sf-pro font-normal lg:text-left 3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]">
+              <p className="2xl:text-[180%] lg:text-[110%] 3xs:text-[100%] font-sf-pro font-normal 
+              lg:text-left 3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]"
+                style={{ letterSpacing: "0.03em" }}>
                 Our values are the essence of our company’s identity. They represent how
                 we act, speak and behave together, and how we engage with our clients and
                 stakeholders.
@@ -137,7 +140,9 @@ export default function Overview() {
           </p>
         </FadeOnScroll>
         <FadeOnScroll direction="up" delay={150} distance={30} duration={800}>
-          <p className="ml-[4%] mr-[4%] mt-[2%] 2xl:text-[300%] lg:text-[110%] 3xs:text-[100%] text-[#6C6C6C] lg:text-left 3xs:text-justify font-light font-sf-pro">
+          <p className="ml-[4%] mr-[4%] mt-[2%] 2xl:text-[300%] lg:text-[110%] 3xs:text-[100%] 
+          text-[#6C6C6C] lg:text-left 3xs:text-justify font-light font-sf-pro"
+            style={{ letterSpacing: "0.03em" }}>
             IOTC Real Asset delivers a distinct advantage to investors through a holistic asset management approach that integrates.
           </p>
         </FadeOnScroll>
@@ -166,7 +171,8 @@ export default function Overview() {
               </p>
             </FadeOnScroll>
             <FadeOnScroll direction="up" delay={200}>
-              <p className="mb-[4%] lg:font-sf-pro 3xs:font-normal 2xl:text-[250%] lg:text-[120%] 3xs:text-[100%]">
+              <p className="mb-[4%] lg:font-sf-pro 3xs:font-light 2xl:text-[250%] lg:text-[120%] 
+              3xs:text-[100%]">
                 across macroeconomic, sectoral, and jurisdictional layers.
               </p>
             </FadeOnScroll>
@@ -177,7 +183,7 @@ export default function Overview() {
               </p>
             </FadeOnScroll>
             <FadeOnScroll direction="up" delay={400}>
-              <p className="mb-[4%] lg:font-sf-pro 3xs:font-normal 2xl:text-[250%] lg:text-[120%] 3xs:text-[100%]">
+              <p className="mb-[4%] lg:font-sf-pro 3xs:font-light 2xl:text-[250%] lg:text-[120%] 3xs:text-[100%]">
                 backed by our on‑ground team, enables us to make informed decisions
               </p>
             </FadeOnScroll>
@@ -188,7 +194,7 @@ export default function Overview() {
               </p>
             </FadeOnScroll>
             <FadeOnScroll direction="up" delay={600}>
-              <p className="mb-[5%] lg:font-sf-pro 3xs:font-normal 2xl:text-[250%] lg:text-[120%] 3xs:text-[100%]">
+              <p className="mb-[5%] lg:font-sf-pro 3xs:font-light 2xl:text-[250%] lg:text-[120%] 3xs:text-[100%]">
                 expertise enabling swift execution and value optimization
               </p>
             </FadeOnScroll>

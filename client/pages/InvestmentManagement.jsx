@@ -15,8 +15,6 @@ export default function InvestmentManagement() {
     { title: "Overview", section: "overview" },
     { title: "Strategic Differentiation", section: "differentiation" },
     { title: "Integrated Investment Structure", section: "integrated" },
-    { title: "Revenue Model & Growth Engine", section: "revenue" },
-    { title: "Real Estate Investment and Asset Management", section: "realestate" },
   ];
 
   return (

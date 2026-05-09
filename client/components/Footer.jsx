@@ -47,8 +47,69 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation Links */}
-          <div className=" flex flex-wrap lg:flex-row justify-between mt-40 mb-10 3xs:mb-8 3xs:mt-10 relative">
+          {/* Navigation Links - Mobile Layout (nav + icons together) */}
+          <div className="flex flex-col lg:hidden gap-6 mt-40 mb-10 3xs:mb-8 3xs:mt-10">
+            <a href="/contact-us" onClick={handleContactClick} className="inline-flex items-center justify-center px-6 sm:px-10 py-2 sm:py-3 bg-iotc-gold hover:bg-iotc-gold/90 rounded-[29px] text-white font-sf-pro text-sm sm:text-base font-medium transition-colors duration-300 w-fit">
+              Contact Us
+            </a>
+            <div className="flex flex-row items-center justify-between gap-4 sm:gap-6">
+              <nav className="flex flex-wrap gap-2 sm:gap-4">
+                {footerLinks.map((link, index) => (
+                  link.path === '#' ? (
+                    <a
+                      key={index}
+                      href={link.path}
+                      className="text-white font-sf-pro-text text-sm sm:text-base hover:text-iotc-gold transition-colors duration-200 tracking-tight"
+                      style={{
+                        letterSpacing: '-0.02em',
+                      }}
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      key={index}
+                      to={link.path}
+                      className="text-white font-sf-pro-text text-sm sm:text-base hover:text-iotc-gold transition-colors duration-200 tracking-tight"
+                      style={{
+                        letterSpacing: '-0.02em',
+                      }}
+                    >
+                      {link.label}
+                    </Link>
+                  )
+                ))}
+              </nav>
+
+              {/* Social Media Icons - Mobile */}
+              <div className="flex flex-row items-center space-x-4 sm:space-x-2">
+                {/* X/Twitter */}
+                <a href="https://www.facebook.com/share/14YjmMCKfAq/" className="text-white hover:text-iotc-gold transition-colors duration-200">
+                  <svg fill="#ffffff" height="18px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-337 273 123.5 256" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3 c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z"></path> </g></svg>
+                </a>
+
+                {/* LinkedIn */}
+                <a href="https://www.linkedin.com/company/iotc-realasset-nl/" className="text-white hover:text-iotc-gold inline-flex items-center justify-center rounded-sm transition-colors duration-300">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 34 34" fill="none">
+                    <rect width="34" height="34" rx="2" />
+                    <path d="M10.1 14.3h3v9.4h-3v-9.4zm1.5-4.2c1 0 1.7.7 1.7 1.6 0 .9-.7 1.6-1.7 1.6h-.1c-1 0-1.7-.7-1.7-1.6 0-.9.7-1.6 1.7-1.6zm4.2 4.2h2.9v1.3h.1c.4-.7 1.3-1.5 2.7-1.5 2.1 0 3.7 1.4 3.7 4.3v5.3h-3v-4.7c0-1.1-.4-1.8-1.3-1.8-.7 0-1.1.5-1.3 1-.1.2-.1.5-.1.8v4.7h-3v-9.4z" fill="currentColor" />
+                  </svg>
+                </a>
+
+                {/* Instagram */}
+                <a href="https://www.instagram.com/iotc_ra_india?igsh=MTEya25iczUydmFjZw==" className="text-white hover:text-iotc-gold inline-flex items-center justify-center rounded-lg transition-colors duration-300">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Navigation Links - Desktop Layout */}
+          <div className="hidden lg:flex flex-wrap lg:flex-row justify-between mt-40 mb-10 3xs:mb-8 3xs:mt-10 relative">
             <a href="/contact-us" onClick={handleContactClick} className="inline-flex items-center justify-center px-8 sm:px-14 py-3 sm:py-4 bg-iotc-gold hover:bg-iotc-gold/90 rounded-[29px] text-white font-sf-pro text-base 2xl:text-xl font-medium transition-colors duration-300 mt-2">
               Contact Us
             </a>
@@ -80,7 +141,7 @@ export default function Footer() {
               ))}
             </nav>
 
-            {/* Social Media Icons */}
+            {/* Social Media Icons - Desktop */}
             <div className="flex lg:flex-row 3xs:flex-row items-center space-x-4 sm:space-x-1 top-5 bottom-10 right-[-2rem] 3xs:right-[2rem] 3xs:top-24 md:top-4">
               {/* X/Twitter */}
               <a href="https://www.facebook.com/share/14YjmMCKfAq/" className="text-white hover:text-iotc-gold transition-colors duration-200 3xs:ml-4">
@@ -108,7 +169,7 @@ export default function Footer() {
 
 
           {/* Footer Bottom */}
-          <div className="border-t border-gray-600 pt-6 sm:pt-10 ">
+          <div className="border-t border-gray-600 md:py-4 sm:py-10 ">
             <div className="flex lg:flex-col md:flex-row 3xs:flex-row justify-between items-center space-y-6 md:space-y-0 mb-2">
               <img
                 src="/IOTC Real Asset logo white 2.svg"
@@ -123,13 +184,14 @@ export default function Footer() {
                     alt="IOTC Real Asset"
                     className="w-8 h-10 sm:w-10 sm:h-[69px] 2xl:w-12 2xl:h-[83px] 3xs:hidden md:block"
                   />
-                  <div className="text-white font-inter text-xs sm:text-base 2xl:text-lg font-normal leading-[22px] sm:leading-[26px] text-center sm:text-left">
+                  <div className="flex items-end h-full text-white font-inter text-xs sm:text-base 2xl:text-lg 
+                  font-normal leading-[22px] sm:leading-[26px] text-center sm:text-left">
                     © Copyright 2025, All Rights Reserved
                   </div>
                 </div>
 
                 {/* Social Media & Legal Links */}
-                <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-8">
+                <div className="flex flex-col sm:flex-row items-end space-y-2 sm:space-y-0 sm:space-x-8">
                   {/* Legal Links */}
                   <div className="text-white font-inter text-xs sm:text-sm 2xl:text-lg font-normal leading-[22px] sm:leading-[26px] text-center sm:text-right">
                     Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;Terms & Conditions

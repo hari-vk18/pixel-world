@@ -59,7 +59,6 @@ const ESG = () => (
           <p className="2xl:text-3xl lg:text-2xl 3xs:text-1xl font-normal text-[#6C6C6C] mt-3"
             style={{
               cursor: "default",
-              letterSpacing: "-0.03em",
             }}>
             Our commitment to sustainability goes beyond compliance it's built into every aspect of our development.
           </p>
@@ -214,10 +213,9 @@ const ESG = () => (
             style={{ cursor: "default" }}>
             Social
           </h1>
-          <p className="2xl:text-4xl lg:text-2xl 3xs:text-lg font-normal lg:mt-6 3xs:mt-3"
+          <p className="2xl:text-4xl lg:text-2xl 3xs:text-lg font-normal text-[#6C6C6C] lg:mt-6 3xs:mt-3"
             style={{
               cursor: "default",
-              letterSpacing: "-0.03em",
             }}>
             Our commitment to sustainability goes beyond compliance it's built into every aspect of our development.
           </p>
@@ -299,10 +297,9 @@ const ESG = () => (
             }}>
             Governance Framework
           </h1>
-          <p className="2xl:text-4xl lg:text-2xl 3xs:text-xl font-normal lg:mt-6 3xs:mt-3"
+          <p className="2xl:text-4xl lg:text-2xl 3xs:text-xl font-normal text-[#6C6C6C] lg:mt-6 3xs:mt-3"
             style={{
               cursor: "default",
-              letterSpacing: "-0.03em",
             }}>
             Transparent decision-making, compliance oversight, and ethical business conduct.
           </p>

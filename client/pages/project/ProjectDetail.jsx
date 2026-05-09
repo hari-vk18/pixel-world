@@ -133,40 +133,40 @@ export default function ProjectDetail() {
     },
     mamer: {
       name: "Mamer",
-      location: "Luxembourg",
+      location: "Luxembourg, Europe",
       city: "Luxembourg",
-      tagline: "Premium development in Luxembourg",
+      tagline: "To be Distributed",
       heroImage: "/portfolio_image_4.webp",
-      assetType: "To be announced",
-      status: "Planning phase",
-      landArea: "TBA",
-      builtUpArea: "TBA",
-      units: "TBA",
-      floors: "TBA",
+      assetType: "Residential",
+      status: "To be distributed",
+      landArea: "10 kms to Marnier Train Station (on foot)",
+      builtUpArea: "4800 sq.ft",
+      units: "48",
+      floors: "1-3 Bedrooms",
       features: [
         {
-          title: "Coming Soon",
-          description: "Project details will be announced soon."
+          title: "Location Highlights",
+          description: "10 kms to Marnier Train Station (on foot), Lyc-ce Manier, 4800 sq.ft built-up area"
         },
         {
-          title: "Strategic Location",
-          description: "Located in the heart of Luxembourg."
+          title: "Unit Configuration",
+          description: "48 units with 1-3 bedroom options designed for modern living."
         },
         {
-          title: "Premium Development",
-          description: "High-quality construction and design standards."
+          title: "Accessibility",
+          description: "Strategic location providing excellent access to major transit hubs and amenities."
         },
         {
-          title: "Modern Amenities",
-          description: "State-of-the-art facilities and services."
+          title: "Urban Development",
+          description: "Part of a growing residential community in Luxembourg."
         },
         {
-          title: "Sustainable Design",
-          description: "Environmentally conscious development approach."
+          title: "Real Estate Investment",
+          description: "European market opportunity in a stable and prosperous location."
         },
         {
-          title: "Investment Opportunity",
-          description: "Prime real estate investment in European market."
+          title: "Distribution Timeline",
+          description: "Units to be distributed as per project development schedule."
         }
       ]
     }

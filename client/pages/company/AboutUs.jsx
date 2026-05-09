@@ -22,7 +22,7 @@ export default function AboutUs() {
               style={{ cursor: "default" }}>Who are we</p>
           </FadeOnScroll>
           <FadeOnScroll direction="up" delay={150} distance={30} duration={800}>
-            <p className="2xl:text-[250%] lg:text-[110%] 3xs:text-[100%] text-gray-600 lg:text-left 3xs:text-justify lg:leading-16 lg:max-w-3xl 2xl:max-w-7xl tracking-tight"
+            <p className="2xl:text-[250%] lg:text-[110%] 3xs:text-[100%] text-gray-600 lg:text-left 3xs:text-justify lg:leading-16 lg:max-w-3xl 2xl:max-w-7xl"
               style={{ cursor: "default" }}>
               IOTC Real Asset, a subsidiary of IOTC Investments Luxembourg, is committed to delivering superior performance across
               Residential, Commercial, and Logistics (Warehouse) asset classes.
