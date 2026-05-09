@@ -49,7 +49,8 @@ export default function HeroSection() {
               }`}
             style={{ transitionDuration: inView ? "2000ms" : undefined, animationDuration: inView ? "2000ms" : undefined }}
           >
-            Transforming Real Assets into Sustainable Value.
+            Transforming Real Assets into
+            <br />Sustainable Value.
           </h1>
         </div>
       </div>

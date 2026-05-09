@@ -227,7 +227,7 @@ const ESG = () => (
       <FadeOnScroll direction="up" distance={40} delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] 3xs:w-[20%] xl:w-[20%]" src="/Talent Workspace.webp" alt=""
+            <img className="3xs:w-[20%] 3xs:w-[20%] xl:w-[20%]" src="/Talent Workspace.png" alt=""
               style={{
                 cursor: "default",
               }} />

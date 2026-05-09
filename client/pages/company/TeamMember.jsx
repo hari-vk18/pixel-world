@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function TeamMember({ img, name, title, bio }) {
+export default function TeamMember({ img, name, title, bio, link }) {
     return (
         <div className="flex lg:flex-row items-start gap-4 h-full">
 
@@ -8,8 +8,8 @@ export default function TeamMember({ img, name, title, bio }) {
             <div
                 className="
           bg-[#B89B7A] rounded-xl overflow-hidden border-2 border-iotc-gold
-          w-[120px] h-[120px]
-          lg:w-[150px] lg:h-[150px]
+          w-[120px] h-[180px]
+          lg:w-[150px] lg:h-[190px]
           2xl:w-[200px] 2xl:h-[200px]
           flex-shrink-0
         "
@@ -35,9 +35,9 @@ export default function TeamMember({ img, name, title, bio }) {
                     {bio}
                 </p>
 
-                <div className="flex items-center mt-4">
+                <div className="flex items-center mt-4" href={link}>
                     <a
-                        href="#"
+                        href={link}
                         className="
               text-white bg-[#696969] inline-flex items-center justify-center 
               rounded-[10%] transition-colors duration-300
@@ -53,14 +53,14 @@ export default function TeamMember({ img, name, title, bio }) {
 
                     </a>
 
-                    <p
+                    <a
                         className="
               2xl:text-[250%] xl:text-[100%] lg:text-[80%] 3xs:text-[60%]
               ml-4 font-semibold text-gray-600 tracking-widest cursor-pointer
-            "
+            " href={link}
                     >
                         READ PROFILE
-                    </p>
+                    </a>
                 </div>
             </div>
         </div>

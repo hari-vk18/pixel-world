@@ -55,8 +55,8 @@ export default function Portfolio() {
         <div className="min-h-screen bg-white">
             <Header />
 
-            <main className="lg:pt-40 2xl:pt-60 3xs:pt-28 px-[4%]">
-                <div className="flex lg:flex-row 3xs:flex-col gap-8 lg:gap-4 mb-16">
+            <main className="lg:pt-36 2xl:pt-60 3xs:pt-28 px-[4%]">
+                <div className="flex lg:flex-row 3xs:flex-col gap-8 lg:gap-4 lg:mb-10 sm:md-8">
                     {/* Left - Title */}
                     <div className="lg:w-[35%] 3xs:w-full">
                         <FadeOnScroll direction="left" distance={40} duration={800}>
@@ -67,7 +67,7 @@ export default function Portfolio() {
                     </div>
 
                     {/* Right - Description */}
-                    <div className="lg:w-[65%] 3xs:w-full pl-12 pt-1">
+                    <div className="lg:w-[65%] 3xs:w-full md:pl-12 pt-1">
                         <FadeOnScroll direction="up" delay={150} distance={30} duration={800}>
                             <p className="2xl:text-[200%] lg:text-[120%] 3xs:text-[110%] text-[#6C6C6C] font-[400] lg:text-left 3xs:text-justify" style={{ letterSpacing: '-0.04em', lineHeight: '1.4' }}>
                                 From concept to completion, our projects showcase our dedication to delivering real, lasting value. Browse through our portfolio to see the developments that define our expertise and vision.
@@ -221,7 +221,7 @@ export default function Portfolio() {
                                     )}
                                     {(selectedCountry === "all" || selectedCountry === "srilanka") && (
                                         <Link to="/project/aureum" className="relative h-[500px] overflow-hidden group">
-                                            <img src="/Aureum.webp" alt="Aureum Project" className="w-full h-full object-cover" />
+                                            <img src="/Elevation.webp" alt="Aureum Project" className="w-full h-full object-cover" />
                                             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-300"></div>
                                             <div className="absolute inset-0 p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                                                 <div>

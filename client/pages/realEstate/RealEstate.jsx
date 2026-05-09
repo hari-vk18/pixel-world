@@ -64,7 +64,7 @@ export default function RealEstate() {
                 </div>
 
                 <FadeOnScroll direction="up" distance={60}>
-                    <div className="lg:mt-10 relative">
+                    <div className="lg:mt-8 relative">
                         <img
                             src="/Real Estte Services.webp"
                             alt="ESG building"
@@ -92,7 +92,7 @@ export default function RealEstate() {
             {/* ================================================================= */}
             {/* SECTION 2 — PRODUCT TYPE */}
             {/* ================================================================= */}
-            <section ref={productRef} className="bg-white py-[1%] 3xs:pr-[5%]">
+            <section ref={productRef} className="bg-white py-[1%] 3xs:pr-[0%]">
                 <FadeOnScroll direction="up" distance={40}>
                     <section className="bg-white py-[1%] 3xs:pr-[5%]">
                         <p className="ml-[4%] 2xl:text-[500%] lg:text-[250%] 3xs:text-[200%] font-light font-sf-pro">
@@ -120,9 +120,9 @@ export default function RealEstate() {
                 <FadeOnScroll direction="up" distance={40}>
                     <section className="lg:px-[1%] 3xs:px-[5%] lg:pb-0 3xs:pb-[5%]">
                         <div className="my-10 xl:my-12 grid grid-cols-1 md:grid-cols-2 gap-1">
-                            <div className="flex bg-white justify-center 3xs:mb-8 md:mb-0">
+                            <div className="flex bg-white justify-start 3xs:mb-8 md:mb-0 lg:pl-8 2xl:pl-16">
                                 <img
-                                    className="2xl:w-[70%] lg:w-[70%]"
+                                    className="2xl:w-[90%] lg:w-[90%] sm:w-[85%]"
                                     src="/image (20).jpg"
                                     alt=""
                                 />
@@ -143,7 +143,7 @@ export default function RealEstate() {
                                 <p className="2xl:text-[250%] lg:text-[150%] 3xs:text-[150%] font-normal my-[1%] font-sf-pro text-[#B89B7A]" style={{ cursor: "default", lineHeight: "1.5", letterSpacing: "-0.03em", }} >
                                     Industrial & Warehousing
                                 </p>
-                                <p className="mb-[5%] font-sf-pro lg:text-left 3xs:text-justify 2xl:text-[200%] lg:text-[100%] 3xs:text-[100%] text-[#6C6C6C]" style={{ cursor: "default", lineHeight: "1.5", }} >
+                                <p className="lg:mb-[5%] font-sf-pro lg:text-left 3xs:text-justify 2xl:text-[200%] lg:text-[100%] 3xs:text-[100%] text-[#6C6C6C]" style={{ cursor: "default", lineHeight: "1.5", }} >
                                     Forms one of the three foundational pillars of institutional portfolios driven by macro resilience, operational scalability, and regulatory clarity
                                 </p>
                             </div>

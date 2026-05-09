@@ -415,7 +415,7 @@ export default function AnimatedSections() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <span className="text-xl leading-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-[60px] block">
+              <span className="text-xl leading-tight sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl block">
                 {sections[currentSection].title}
               </span>
             </motion.h2>

@@ -11,17 +11,16 @@ import FadeOnScroll from "../components/FadeOnScroll";
 
 export default function Company() {
   const companyLinks = [
-    { title: "About the firm", path: "about-us" },
+    { title: "Who are we", path: "about-us" },
     { title: "Meet the team", path: "meet-the-team" },
     { title: "ESG Environment, Sustainability & Social", path: "esg" },
-    { title: "Insights", path: "#" },
-    { title: "Careers", path: "#" },
+    { title: "Careers", path: "careers" },
   ];
 
   return (
     <div className="min-h-screen bg-white relative">
       <Header />
-      <main className="lg:pt-40 2xl:pt-60 3xs:pt-32 overflow-hidden">
+      <main className="lg:pt-32 2xl:pt-40 3xs:pt-28 overflow-hidden">
         <Routes>
           <Route
             index
@@ -42,7 +41,7 @@ export default function Company() {
                     <div>
                       <FadeOnScroll direction="top" distance={30} duration={800}>
                         <h1 className="text-iotc-text font-sf-pro lg:text-[300%] 3xs:text-[200%] 2xl:text-[450%] font-normal lg:mb-8 2xl:mb-16 3xs:mb-4">
-                          Company
+                          About Us
                         </h1>
                       </FadeOnScroll>
                       <FadeOnScroll direction="up" delay={150} distance={30} duration={900}>
@@ -95,7 +94,6 @@ export default function Company() {
           < Route path="about-us" element={< AboutUs />} />
           < Route path="meet-the-team" element={< MeetTheTeam />} />
           < Route path="esg" element={< ESG />} />
-          < Route path="insights" element={< Insights />} />
           < Route path="careers" element={< Careers />} />
         </Routes >
       </main >

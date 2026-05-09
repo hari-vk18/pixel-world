@@ -28,7 +28,7 @@ export default function DesigningToday() {
             <h2
               className="text-white font-sf-pro text-4xl md:text-5xl 2xl:text-8xl 
               2xl:mt-[40%] lg:mt-[30%] 2xs:mt-[20%] xl:text-[350%] font-normal 
-              leading-tight md:leading-[93px] tracking-[-1.2px]"
+              leading-tight md:leading-[83px] 2xl:leading-[123px] md:tracking-[-1.2px] "
             >
               Designing for Today, Building for Tomorrow
             </h2>
@@ -59,12 +59,12 @@ export default function DesigningToday() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
           viewport={{ once: true }}
-          className="relative flex flex-col md:flex-row md:justify-center 
+          className="relative flex flex-col md:flex-col md:justify-start 
           2xl:justify-start w-full mt-[15%] lg:mt-[8%] 2xl:mb-16 lg:mb-8"
         >
           <p
             className="text-white font-sf-pro text-xl md:text-2xl 2xl:text-5xl 
-            font-normal italic leading-9 tracking-[-0.5px] md:w-[80%] 3x2l:w-[100%]"
+            font-normal italic leading-9 lg:w-[100%] md:w-[80%] 3x2l:w-[100%]"
           >
             Discover what we do, why it matters, and how we're creating value through
             sustainable, smart investments.
@@ -74,7 +74,7 @@ export default function DesigningToday() {
             whileHover={{ x: 10, color: "#C5A96D" }}
             transition={{ duration: 0.3 }}
             className="group flex items-center space-x-3 text-white font-sf-pro 
-            text-xl md:text-2xl 2xl:text-4xl font-light mt-10 md:mt-0"
+            text-xl md:text-2xl 2xl:text-5xl font-light py-6 w-[12%] lg:w-[12%] md:w-[30%] 3xs:w-[40%]"
           >
             <span>Know more</span>
             <svg

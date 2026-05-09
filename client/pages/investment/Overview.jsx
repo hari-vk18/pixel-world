@@ -50,8 +50,8 @@ export default function Overview() {
         <div className="ml-[4%] lg:mt-4 mr-[4%] 3xs:mt-32">
           <div className="flex lg:flex-row 3xs:flex-col">
             <FadeOnScroll className="flex align-center" direction="left" distance={40} duration={800}>
-              <p className="lg:text-[300%] 3xs:text-[180%] 2xl:text-[500%] font-[400] lg:mb-4 leading-[130%]">
-                DEVELOPMENT / ASSET MANAGEMENT
+              <p className="lg:text-[200%] 3xs:text-[180%] 2xl:text-[450%] font-[400] lg:mb-4 leading-[130%]">
+                Development / Asset Management
               </p>
             </FadeOnScroll>
 
@@ -74,7 +74,7 @@ export default function Overview() {
 
         {/* Background image fade */}
         <FadeOnScroll direction="up" distance={20} duration={1000}>
-          <div className="lg:mt-20 relative">
+          <div className="lg:mt-8 relative">
             <img
               src="/Investment Management.webp"
               alt="ESG building"
@@ -102,7 +102,7 @@ export default function Overview() {
               <p className="2xl:text-[500%] lg:text-[300%] 3xs:text-[180%] font-sf-pro font-normal text-[#B89B7A] mt-4">
                 Vision
               </p>
-              <p className="2xl:text-[180%] lg:text-[120%] 3xs:text-[100%] font-sf-pro font-normal lg:text-left 3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]">
+              <p className="2xl:text-[180%] lg:text-[110%] 3xs:text-[100%] font-sf-pro font-normal lg:text-left 3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]">
                 We create sustainable solutions for CREATING A BETTER WORLD that connect
                 to development, investments, property management, technology to design,
                 deliver and operate the sustainable projects.
@@ -117,7 +117,7 @@ export default function Overview() {
               <p className="2xl:text-[500%] lg:text-[300%] 3xs:text-[180%] font-sf-pro font-normal text-[#B89B7A] lg:mt-4">
                 Value
               </p>
-              <p className="2xl:text-[180%] lg:text-[120%] 3xs:text-[100%] font-sf-pro font-normal lg:text-left 3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]">
+              <p className="2xl:text-[180%] lg:text-[110%] 3xs:text-[100%] font-sf-pro font-normal lg:text-left 3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]">
                 Our values are the essence of our company’s identity. They represent how
                 we act, speak and behave together, and how we engage with our clients and
                 stakeholders.
@@ -200,7 +200,7 @@ export default function Overview() {
       {/* ============================= */}
       {/* SECTION 4: Integrated Investment Structure */}
       {/* ============================= */}
-      <section ref={integratedRef} className="px-[4%] lg:pb-24">
+      <section ref={integratedRef} className="px-[4%] lg:pb-16 sm:pb-12 3xs:pb-4">
         <FadeOnScroll direction="up" distance={30} duration={900}>
           <p className="2xl:text-[510%] lg:text-[200%] 3xs:text-[160%] font-[300] font-sf-pro">
             Integrated Investment Structure

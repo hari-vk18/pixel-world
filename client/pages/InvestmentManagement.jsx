@@ -40,13 +40,13 @@ export default function InvestmentManagement() {
             <div>
               <FadeOnScroll direction="top" distance={30} duration={800}>
                 <h1 className="text-iotc-text font-sf-pro 
-                  2xl:text-[450%] lg:text-[300%] 3xs:text-[200%] font-normal">
+                  2xl:text-[350%] lg:text-[250%] 3xs:text-[200%] font-normal">
                   Investment Management
                 </h1>
               </FadeOnScroll>
 
               <FadeOnScroll direction="up" delay={150} distance={30} duration={900}>
-                <p className="text-iotc-gray font-sf-pro text-lg 2xl:text-[220%] leading-relaxed">
+                <p className="text-iotc-gray font-sf-pro text-md 2xl:text-[220%] leading-relaxed">
                   IOTC Real Asset is shaping a diverse portfolio of sustainable real estate
                   investments across Europe, APAC, and the Middle East. Guided by integrity,
                   innovation, and responsibility, we aim to create lasting value for investors

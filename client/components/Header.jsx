@@ -34,14 +34,14 @@ export default function Header() {
     { label: 'Investment Management', href: '/investment-management' },
     { label: 'Real Estate Service', href: '/real-estate-service' },
     { label: 'Portfolio', href: '/portfolio' },
-    { label: 'Company', href: '/company' },
+    { label: 'About Us', href: '/company' },
     // { label: 'Investor Login', href: '/investor-portal' },
     { label: 'Contact Us', href: '/contact-us' },
   ];
 
   return (
     <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
-      <nav className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] 3xs:pr-[25px] py-8 lg:pr-16 md:pr-8 md:pl-16">
+      <nav className="flex items-center justify-between xl:pl-16 3xs:pl-[25px] 3xs:pr-[25px] py-8 lg:pr-16 md:pr-8 md:pl-16 2xs:py-8">
 
         {/* Logo */}
         <FadeOnScroll direction="down" duration={1000}>
@@ -63,7 +63,7 @@ export default function Header() {
               ${index === 0 ? 'font-normal' : 'font-normal'}
               ${useWhiteHeader ? 'text-white' : 'text-iotc-text'}
             `;
-            const showSeparator = item.label === 'Company';
+            const showSeparator = item.label === 'About Us';
 
             return (
               <FadeOnScroll

@@ -15,14 +15,14 @@ export default function AboutUs() {
     <div className="bg-white text-gray-900">
 
       {/* About Section */}
-      <section className="w-full  px-0 md:px-0 lg:pt-8 3xs:pt-5 lg:pb-16 3xs:pb-10">
+      <section className="w-full  px-0 md:px-0 lg:pt-8 3md:pt-5 lg:pb-16 3xs:pb-10">
         <div className="flex lg:flex-row 3xs:flex-col px-[6%] justify-between items-start space-y-2">
           <FadeOnScroll direction="left" distance={40} duration={800}>
             <p className="text-[50%] font-sf-pro 2xl:text-[500%] md:text-[280%] 3xs:text-[200%] font-thin"
-              style={{ cursor: "default" }}>About us</p>
+              style={{ cursor: "default" }}>Who are we</p>
           </FadeOnScroll>
           <FadeOnScroll direction="up" delay={150} distance={30} duration={800}>
-            <p className="2xl:text-[250%] lg:text-[110%] 3xs:text-[100%] text-gray-600 lg:text-left 3xs:text-justify lg:leading-16 lg:max-w-2xl 2xl:max-w-7xl tracking-tight"
+            <p className="2xl:text-[250%] lg:text-[110%] 3xs:text-[100%] text-gray-600 lg:text-left 3xs:text-justify lg:leading-16 lg:max-w-3xl 2xl:max-w-7xl tracking-tight"
               style={{ cursor: "default" }}>
               IOTC Real Asset, a subsidiary of IOTC Investments Luxembourg, is committed to delivering superior performance across
               Residential, Commercial, and Logistics (Warehouse) asset classes.

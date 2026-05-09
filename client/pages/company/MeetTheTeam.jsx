@@ -34,40 +34,45 @@ export default function MeetTheTeam() {
             <div className="grid 3xs:grid-row-1 md:grid-cols-2 gap-x-8 gap-y-8 items-start content-start auto-rows-fr">
 
               <TeamMember
-                img="/Contact.png"
+                img="/Diego.webp"
                 name="Diego Fernández de Córdoba"
                 title="Chairman of IOTC, Senior Legal & Tax Expert"
                 bio="Renowned legal and taxation specialist with over 30 years of experience, advising global firms and institutions."
+                link="https://www.linkedin.com/in/diego-fern%C3%A1ndez-de-c%C3%B3rdova-a657861/"
               />
 
               <TeamMember
-                img="/Contact.png"
+                img="/Thinesh.webp"
                 name="Thinesh Ganeshakumaran"
                 title="Co-Founder of FT Capital | Group CEO of IOTC"
                 bio="Group leader with over 15 years of expertise in real economy investments and asset management, specializing in structuring and leading high-impact financial strategies."
+                link="https://www.linkedin.com/in/tg1909/"
               />
 
               <TeamMember
-                img="/Contact.png"
+                img="/Fillipo.webp"
                 name="Filippo De Toma"
                 title="Co-Founder of FT Capital"
                 bio="Managing Partner of IOTC Investments
 Wealth and asset management executive with over 10 years of expertise in private equity, strategic investments and capital growth.
 "
+                link="https://www.linkedin.com/in/filippo-de-toma-a4354886/"
               />
 
               <TeamMember
-                img="/Contact.png"
+                img="/Rob.webp"
                 name="Rob Willems"
                 title="Director of IOTC Real Asset Netherlands"
                 bio="Former advisor to the Dutch Finance Minister, specialized in fashion and real estate large-scale projects."
+                link="https://www.linkedin.com/in/rob-willems-b73241378/"
               />
 
               <TeamMember
-                img="/Contact.png"
+                img="/murug.webp"
                 name="Murugaraj Balakrishnan"
                 title="Head of IOTC Real Asset APAC & Middle East"
                 bio="Strategic finance leader with over 15 years of global experience in real estate investments, FDI structuring, and asset management across India, the US, and Germany."
+                link="https://www.linkedin.com/in/murugarajbalakrishnan/"
               />
 
             </div>
@@ -88,10 +93,11 @@ Wealth and asset management executive with over 10 years of expertise in private
                 name="Prof. Ashu Marasinghe"
                 title="Director of IOTC Ventures | Former Sri Lanka Presidential Advisor"
                 bio="PhD doctor, distinguished economist and policymaker, former MP, expert in infrastructure and economic development, Chairman of the State Engineering Corporation."
+                link="https://www.linkedin.com/in/ashu-marasinghe-7497ba1ab/?skipRedirect=true"
               />
 
               <TeamMember
-                img="/Contact.png"
+                img="/Omar.webp"
                 name="H.E. Omar Abdul Razzak"
                 title="Director of IOTC Ventures | Former State Minister & Ambassador"
                 bio="Senior diplomat and economic strategist with extensive experience in international relations. Former State Minister and Ambassador to the European Union, with extensive diplomatic and economic expertise."
