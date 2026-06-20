@@ -19,7 +19,7 @@ export default function MeetTheTeam() {
 
           <FadeOnScroll direction="up" delay={150} distance={30} duration={800}>
             <p className="2xl:text-[250%] lg:text-[120%] 3xs:text-[110%] text-gray-600 mt-3 3xs:mb-10">
-              We understand that property Development and Asset Managment can be challenging, and investors face roadblocks at different stages of the journey. We have a dedicated team of professionals who are committed to supporting investors on their investment journey.
+              We understand that property Development and Asset Managment can be challenging at different stages of the journey. We have a dedicated team of professionals who are committed to supporting projects on their investment journey.
             </p>
           </FadeOnScroll>
 
@@ -36,7 +36,7 @@ export default function MeetTheTeam() {
               <TeamMember
                 img="/Diego.webp"
                 name="Diego Fernández de Córdoba"
-                title="Chairman of IOTC, Senior Legal & Tax Expert"
+                title="Chairman of IOTC, Senior Legal &<br /> Tax Expert"
                 bio="Renowned legal and taxation specialist with over 30 years of experience, advising global firms and institutions."
                 link="https://www.linkedin.com/in/diego-fern%C3%A1ndez-de-c%C3%B3rdova-a657861/"
               />
@@ -44,7 +44,7 @@ export default function MeetTheTeam() {
               <TeamMember
                 img="/Thinesh.webp"
                 name="Thinesh Ganeshakumaran"
-                title="Co-Founder of FT Capital | Group CEO of IOTC"
+                title="Co-Founder of FT Capital | <br />Group CEO of IOTC"
                 bio="Group leader with over 15 years of expertise in real economy investments and asset management, specializing in structuring and leading high-impact financial strategies."
                 link="https://www.linkedin.com/in/tg1909/"
               />
@@ -70,7 +70,7 @@ Wealth and asset management executive with over 10 years of expertise in private
               <TeamMember
                 img="/murug.webp"
                 name="Murugaraj Balakrishnan"
-                title="Head of IOTC Real Asset APAC & Middle East"
+                title="Head of IOTC Real Asset APAC & <br /> Middle East"
                 bio="Strategic finance leader with over 15 years of global experience in real estate investments, FDI structuring, and asset management across India, the US, and Germany."
                 link="https://www.linkedin.com/in/murugarajbalakrishnan/"
               />
@@ -79,8 +79,8 @@ Wealth and asset management executive with over 10 years of expertise in private
           </FadeOnScroll>
 
           {/* Advisory Committee */}
-          <FadeOnScroll direction="up" distance={40}>
-            <h2 className="3xl:text-[400%] lg:text-[250%] 3xs:text-[200%] font-normal lg:mt-20 3xs:mt-5">
+          {/* <FadeOnScroll direction="up" distance={40}>
+            <h2 className="3xl:text-[400%] lg:text-[250%] 3xs:text-[200%] font-normal lg:mt-10 3xs:mt-5">
               Advisory Committee
             </h2>
           </FadeOnScroll>
@@ -104,7 +104,7 @@ Wealth and asset management executive with over 10 years of expertise in private
               />
 
             </div>
-          </FadeOnScroll>
+          </FadeOnScroll> */}
 
         </div>
       </section>

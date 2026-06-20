@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import World from "./World";
@@ -12,17 +13,15 @@ export default function ContactUs() {
 
   // country data
   const countryData = {
-    Netherlands: {
-      title: "IOTC Real Asset B.V. ",
-      tagline: "We are always happy to assist you",
-      email: "nl@iotc-group.com",
-      // address split into lines for explicit <br/> rendering
-      address: [
-        "Lage Ham 182,",
-        "5102 AE Dongen, The Netherlands"
-      ],
-      number: "+311 6224 2792",
-    },
+    title: "IOTC Real Asset B.V. ",
+    tagline: "We are always happy to assist you",
+    email: "nl@iotc-ra.com",
+    address: [
+      "Lage Ham 182,",
+      "5102 AE Dongen, The Netherlands"
+    ],
+    number: "+311 6224 2792",
+  },
     India: {
       title: "IOTC Real Asset India Private Limited",
       tagline: "We are always happy to assist you",
@@ -40,60 +39,79 @@ export default function ContactUs() {
     SriLanka: {
       title: "IOTC Real Asset Private Limited",
       tagline: "We are always happy to assist you",
-      email: "lk@iotc-group.com",
-      address: ["No.28, Battaramulla Road,", "Kotte,", "Sri Lanka"],
-      number: "+94 77 1234567",
+      email: "lk@iotc-ra.com",
+      address: ["No.300, Old Colombo Road,", "Uswetakeiyawa,", "Sri Lanka"],
+      number: "+94 117 555 666",
     },
     Luxembourg: {
-      title: "IOTC Real Asset",
+      title: "IOTC Real Asset S.C.S",
       tagline: "We are always happy to assist you",
       email: "lu@iotc-ra.com",
-      address: ["Rue Schiller 9,",
-        "L-2519, Luxembourg,", " Grand-Duché de Luxembourg"],
+      address: ["31,",
+        " Boulevard Prince Henri", " 1724 Luxembourg, Luxembourg"],
       number: "+352 2767 6012",
     },
     UK: {
-      title: "IOTC Real Asset",
+      title: "IOTC Real Asset Ltd",
       tagline: "We are always happy to assist you",
-      email: "lu@iotc-ra.com",
-      address: ["Rue Schiller 9,",
-        "L-2519, Luxembourg,", " Grand-Duché de Luxembourg"],
-      number: "+352 2767 6012",
+      email: "uk@iotc-ra.com",
+      address: ["The Riverside Inn,",
+        "Torrington Road,", "  Ashford, England,", " TN23 7TG"],
+      number: "+44 7879 355989",
     },
+    France: {
+      title: "IOTC Real Asset S.C.S",
+      tagline: "We are always happy to assist you",
+      email: "fr@iotc-ra.com",
+      address: ["19 Avenue du Clocher,", "Noisy-le-Sec, France"],
+      number: "+33 769 538104",
+    },
+};
+
+// Resize listener
+useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth < 640) {
+      setSize(3.5);
+    } else if (window.innerWidth <= 768) {
+      setSize(6);
+    }
+    else if (window.innerWidth <= 1024) {
+      setSize(7.5);
+    } else if (window.innerWidth <= 1280) {
+      setSize(11);
+    } else if (window.innerWidth <= 1536) {
+      setSize(12);
+    } else {
+      setSize(20);
+    }
   };
 
-  // Resize listener
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 640) {
-        setSize(3.5);
-      } else if (window.innerWidth <= 768) {
-        setSize(6);
-      }
-      else if (window.innerWidth <= 1024) {
-        setSize(7.5);
-      } else if (window.innerWidth <= 1280) {
-        setSize(11);
-      } else if (window.innerWidth <= 1536) {
-        setSize(12);
-      } else {
-        setSize(20);
-      }
-    };
+  handleResize();
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
 
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+// ✅ scroll handler
+const handleCountrySelect = (country) => {
+  setSelectedCountry(country);
+  // scroll to address section smoothly
+  addressRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 
-  // ✅ scroll handler
-  const handleCountrySelect = (country) => {
-    setSelectedCountry(country);
-    // scroll to address section smoothly
-    addressRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
-  return (
+return (
+  <>
+    <Helmet>
+      <title>Contact Us | IOTC - Get in Touch</title>
+      <meta
+        name="description"
+        content="Contact IOTC for inquiries about investments, partnerships, or services. Find our offices and reach out to our global team."
+      />
+      <meta
+        name="keywords"
+        content="contact us, IOTC, inquiries, support, global offices"
+      />
+    </Helmet>
     <div className="min-h-screen bg-white">
       <Header />
 
@@ -133,7 +151,7 @@ export default function ContactUs() {
 
           {/* Netherlands */}
           <div
-            className="absolute 3xs:hidden xl:block 2xl:hidden"
+            className="absolute 3xs:hidden xl:block 2xl:hidden h-1"
             style={{ top: "30.8%", left: "47.6%" }}
             onClick={() => handleCountrySelect("Netherlands")}
           >
@@ -145,7 +163,7 @@ export default function ContactUs() {
             />
           </div>
           <div
-            className="absolute md:hidden 3xs:block"
+            className="absolute md:hidden 3xs:block h-1"
             style={{ top: "24.3%", left: "47.6%" }}
             onClick={() => handleCountrySelect("Netherlands")}
           >
@@ -157,7 +175,7 @@ export default function ContactUs() {
             />
           </div>
           <div
-            className="absolute xl:hidden 3xs:hidden lg:block"
+            className="absolute xl:hidden 3xs:hidden lg:block h-1"
             style={{ top: "30.5%", left: "47.7%" }}
             onClick={() => handleCountrySelect("Netherlands")}
           >
@@ -169,7 +187,7 @@ export default function ContactUs() {
             />
           </div>
           <div
-            className="absolute 3xs:hidden  2xl:block"
+            className="absolute 3xs:hidden  2xl:block h-1"
             style={{ top: "32%", left: "47.7%" }}
             onClick={() => handleCountrySelect("Netherlands")}
           >
@@ -182,48 +200,61 @@ export default function ContactUs() {
           </div>
 
           <div
-            className="absolute 3xs:hidden xl:block 2xl:hidden"
+            className="absolute lg:hidden 3xs:hidden md:block h-1"
+            style={{ top: "28.3%", left: "47.7%" }}
+            onClick={() => handleCountrySelect("Netherlands")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset B.V."
+              content={<span>Netherlands</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+
+          <div
+            className="absolute 3xs:hidden xl:block 2xl:hidden h-1"
             style={{ top: "28.1%", left: "46.9%" }}
             onClick={() => handleCountrySelect("Luxembourg")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset S.C.S"
               content={<span>Luxembourg</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute md:hidden 3xs:block"
+            className="absolute md:hidden 3xs:block h-1"
             style={{ top: "21.6%", left: "46.9%" }}
             onClick={() => handleCountrySelect("Luxembourg")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset S.C.S"
               content={<span>Luxembourg</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute xl:hidden 3xs:hidden lg:block"
+            className="absolute xl:hidden 3xs:hidden lg:block h-1"
             style={{ top: "27.7%", left: "46.9%" }}
             onClick={() => handleCountrySelect("Luxembourg")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset S.C.S"
               content={<span>Luxembourg</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute 3xs:hidden  2xl:block"
+            className="absolute 3xs:hidden  2xl:block h-1"
             style={{ top: "29%", left: "47%" }}
             onClick={() => handleCountrySelect("Luxembourg")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset S.C.S"
               content={<span>Luxembourg</span>}
               size={size}
               cardPosition="top"
@@ -231,110 +262,136 @@ export default function ContactUs() {
           </div>
 
           <div
-            className="absolute 3xs:hidden xl:block 2xl:hidden"
+            className="absolute lg:hidden 3xs:hidden md:block h-1"
+            style={{ top: "25.6%", left: "46.9%" }}
+            onClick={() => handleCountrySelect("Luxembourg")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset S.C.S"
+              content={<span>Luxembourg</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+
+          <div
+            className="absolute 3xs:hidden xl:block 2xl:hidden h-1"
             style={{ top: "25.2%", left: "44.8%" }}
             onClick={() => handleCountrySelect("UK")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Ltd"
               content={<span>UK</span>}
               size={size - 2}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute md:hidden 3xs:block"
+            className="absolute md:hidden 3xs:block h-1"
             style={{ top: "18.9%", left: "44.6%" }}
             onClick={() => handleCountrySelect("UK")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Ltd"
               content={<span>UK</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute xl:hidden 3xs:hidden lg:block"
+            className="absolute xl:hidden 3xs:hidden lg:block h-1"
             style={{ top: "24.8%", left: "44.8%" }}
             onClick={() => handleCountrySelect("UK")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Ltd"
               content={<span>UK</span>}
               size={size - 2}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute 3xs:hidden  2xl:block"
+            className="absolute 3xs:hidden  2xl:block h-1"
             style={{ top: "26.4%", left: "44.8%" }}
             onClick={() => handleCountrySelect("UK")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Ltd"
               content={<span>UK</span>}
               size={size - 2}
+              cardPosition="top"
+            />
+          </div>
+
+          <div
+            className="absolute lg:hidden 3xs:hidden md:block h-1"
+            style={{ top: "22.7%", left: "44.8%" }}
+            onClick={() => handleCountrySelect("UK")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset Ltd"
+              content={<span>UK</span>}
+              size={size - 1}
               cardPosition="top"
             />
           </div>
 
           {/* India */}
           <div
-            className="absolute xl:block 3xs:hidden 2xl:hidden"
+            className="absolute xl:block 3xs:hidden 2xl:hidden h-1"
             style={{ top: "45.8%", left: "65.9%" }}
             onClick={() => handleCountrySelect("India")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Private Limited"
               content={<span>India</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute md:hidden 3xs:block"
+            className="absolute md:hidden 3xs:block h-1"
             style={{ top: "39.3%", left: "66%" }}
             onClick={() => handleCountrySelect("India")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Private Limited"
               content={<span>India</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute xl:hidden 3xs:hidden lg:block"
-            style={{ top: "45.5%", left: "66%" }}
+            className="absolute xl:hidden 3xs:hidden lg:block h-1"
+            style={{ top: "45.5%", left: "65.9%" }}
             onClick={() => handleCountrySelect("India")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Private Limited"
               content={<span>India</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute lg:hidden 3xs:hidden md:block"
+            className="absolute lg:hidden 3xs:hidden md:block h-1"
             style={{ top: "43.5%", left: "66%" }}
             onClick={() => handleCountrySelect("India")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Private Limited"
               content={<span>India</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute 3xs:hidden 2xl:block"
+            className="absolute 3xs:hidden 2xl:block  h-1"
             style={{ top: "47%", left: "66%" }}
             onClick={() => handleCountrySelect("India")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Private Limited"
               content={<span>India</span>}
               size={size}
               cardPosition="top"
@@ -343,49 +400,110 @@ export default function ContactUs() {
 
           {/* Sri Lanka */}
           <div
-            className="absolute xl:block 3xs:hidden 2xl:hidden"
+            className="absolute xl:block 3xs:hidden 2xl:hidden  h-1"
             style={{ top: "57.4%", left: "67.6%" }}
             onClick={() => handleCountrySelect("SriLanka")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Private Limited"
               content={<span>Sri Lanka</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute xl:hidden 3xs:hidden lg:block"
+            className="absolute xl:hidden 3xs:hidden lg:block  h-1"
             style={{ top: "57.3%", left: "67.6%" }}
             onClick={() => handleCountrySelect("SriLanka")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
-              content={<span>Sri langa</span>}
+              title="IOTC Real Asset Private Limited"
+              content={<span>Sri Lanka</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
-            className="absolute md:hidden 3xs:block"
+            className="absolute md:hidden 3xs:block  h-1"
             style={{ top: "51%", left: "67.7%" }}
             onClick={() => handleCountrySelect("SriLanka")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
+              title="IOTC Real Asset Private Limited"
               content={<span>Sri Lanka</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+          <div
+            className="absolute lg:hidden 3xs:hidden md:block  h-1"
+            style={{ top: "55%", left: "67.6%" }}
+            onClick={() => handleCountrySelect("SriLanka")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset Private Limited"
+              content={<span>Sri Lanka</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+          <div
+            className="absolute 3xs:hidden 2xl:block  h-1"
+            style={{ top: "58.5%", left: "67.6%" }}
+            onClick={() => handleCountrySelect("SriLanka")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset Private Limited"
+              content={<span>Sri Lanka</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+
+          <div
+            className="absolute xl:block 3xs:hidden 2xl:hidden h-1"
+            style={{ top: "33.6%", left: "46.89%" }}
+            onClick={() => handleCountrySelect("France")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset S.C.S"
+              content={<span>France</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+          <div
+            className="absolute xl:hidden 3xs:hidden lg:block h-1"
+            style={{ top: "33.3%", left: "46.89%" }}
+            onClick={() => handleCountrySelect("France")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset S.C.S"
+              content={<span>France</span>}
+              size={size}
+              cardPosition="top"
+            />
+          </div>
+          <div
+            className="absolute xl:hidden md:hidden 3xs:block h-1"
+            style={{ top: "26.9%", left: "46.9%" }}
+            onClick={() => handleCountrySelect("France")}
+          >
+            <HexagonWithPopup
+              title="IOTC Real Asset S.C.S"
+              content={<span>France</span>}
               size={size}
               cardPosition="top"
             />
           </div>
           <div
             className="absolute lg:hidden 3xs:hidden md:block"
-            style={{ top: "55%", left: "67.8%" }}
-            onClick={() => handleCountrySelect("SriLanka")}
+            style={{ top: "31.1%", left: "46.9%" }}
+            onClick={() => handleCountrySelect("France")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
-              content={<span>Sri langa</span>}
+              title="IOTC Real Asset S.C.S"
+              content={<span>France</span>}
               size={size}
               cardPosition="top"
             />
@@ -393,11 +511,11 @@ export default function ContactUs() {
           <div
             className="absolute 3xs:hidden 2xl:block"
             style={{ top: "58.5%", left: "67.6%" }}
-            onClick={() => handleCountrySelect("SriLanka")}
+            onClick={() => handleCountrySelect("France")}
           >
             <HexagonWithPopup
-              title="IOTC Real Asset B.V."
-              content={<span>Sri langa</span>}
+              title="IOTC Real Asset S.C.S"
+              content={<span>France</span>}
               size={size}
               cardPosition="top"
             />
@@ -410,12 +528,12 @@ export default function ContactUs() {
           ref={addressRef} // ✅ reference target
           className="w-full p-[2%] pb-[2%] bg-[#707A87]/5 relative 2xl:mt-[5%] lg:mt-[5%]"
         >
-          <div className="absolute w-[20%] bottom-0 left-[4%] opacity-5">
+          <div className="absolute w-[20%] lg:w-[20%] xl:w-[18%] 2xl:w-[16%] 2xs:w-[60%] md:w-[30%] bottom-0 left-[4%] opacity-5">
             <img src="/IOTC Real Asset logo blue 1 (1).png" alt="" />
           </div>
           <div>
             <div className="flex justify-around  lg:flex-row 3xs:flex-col gap-2 3xs:pl-4 md:pl-0">
-              <p className="text-iotc-blue-bg 2xl:text-[280%] lg:text-[250%] 3xs:text-[130%] font-[400] font-sf-pro">
+              <p className="text-iotc-blue-bg 2xl:text-[280%] lg:text-[200%] 3xs:text-[130%] font-[400] font-sf-pro">
                 {countryData[selectedCountry].title}
               </p>
               <div className="flex flex-col lg:w-[35%] lg:ml-4">
@@ -472,5 +590,6 @@ export default function ContactUs() {
 
       <Footer />
     </div>
-  );
+  </>
+);
 }

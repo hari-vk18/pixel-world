@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import AnimatedSections from "../components/AnimatedSections";
@@ -9,31 +10,44 @@ import Footer from "../components/Footer";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-iotc-primary flex flex-col overflow-x-hidden">
-      <div className="flex-grow relative">
-        {/* Header Navigation */}
-        <Header />
+    <>
+      <Helmet>
+        <title>IOTC | Real Estate & Asset Management Investment Company</title>
+        <meta
+          name="description"
+          content="IOTC is a leading investment platform specializing in real estate, asset management, and sustainable financial strategies. Explore opportunities for high-impact investments."
+        />
+        <meta
+          name="keywords"
+          content="real estate investment, asset management, IOTC, sustainable investments, financial strategies"
+        />
+      </Helmet>
+      <div className="min-h-screen bg-iotc-primary flex flex-col overflow-x-hidden">
+        <div className="flex-grow relative">
+          {/* Header Navigation */}
+          <Header />
 
-        {/* Hero Section */}
-        <HeroSection />
+          {/* Hero Section */}
+          <HeroSection />
 
-        {/* Animated Sections (Bridging Purpose, Building Communities, Sustaining Future) */}
-        <AnimatedSections />
+          {/* Animated Sections (Bridging Purpose, Building Communities, Sustaining Future) */}
+          <AnimatedSections />
 
-        {/* Investment Horizons Content Section */}
-        <InvestmentHorizons />
+          {/* Investment Horizons Content Section */}
+          <InvestmentHorizons />
 
-        {/* Designing for Today Feature Section */}
-        <DesigningToday />
+          {/* Designing for Today Feature Section */}
+          <DesigningToday />
 
-        {/* Investor Spotlight Blog Cards */}
-        {/* <InvestorSpotlight /> */}
+          {/* Investor Spotlight Blog Cards */}
+          {/* <InvestorSpotlight /> */}
+        </div>
+
+        {/* Footer */}
+        <div className="-mt-24 relative z-20">
+          <Footer />
+        </div>
       </div>
-
-      {/* Footer */}
-      <div className="-mt-24 relative z-20">
-        <Footer />
-      </div>
-    </div>
+    </>
   );
 }

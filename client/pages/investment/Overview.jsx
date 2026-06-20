@@ -58,13 +58,13 @@ export default function Overview() {
             <div className="mb-8 2xl:w-[100%] lg:w-[80%] 3xs:w-[100%] lg:ml-[11%] 2xl:ml-[15%] mt-3">
               <FadeOnScroll direction="up" delay={150} distance={30} duration={800}>
                 <h2
-                  className="lg:text-[110%] 3xs:text-[100%] 2xl:text-[200%] text-[#6C6C6C] lg:text-left 3xs:text-justify font-normal mb-6"
+                  className="lg:text-[110%] 3xs:text-[100%] 2xl:text-[200%] text-[#6C6C6C] lg:text-justify 3xs:text-justify font-normal mb-6"
                   style={{
                     cursor: "default",
                     lineHeight: "1.5",
                   }}
                 >
-                  IOTC Real Asset a professionally managed Development and Asset Management firm aims to create an entire spectrum of investment products in real estate, we are launching first investment product focused in Residential, Commercial, Industrial and Warehouse across Europe, APAC (Sri Lanka and India) and Middle East (UAE and Saudi Arabia) to deliver the best performance to our investors.
+                  IOTC Real Asset a professionally managed Development and Asset Management, we are launching first investment product focused in Residential, Commercial, Industrial and Warehouse across Europe, APAC (Sri Lanka and India) and UAE to deliver the best performance to our investors.
                 </h2>
               </FadeOnScroll>
             </div>
@@ -101,10 +101,10 @@ export default function Overview() {
               <p className="2xl:text-[500%] lg:text-[300%] 3xs:text-[180%] font-sf-pro font-normal text-[#B89B7A] mt-4">
                 Vision
               </p>
-              <p className="2xl:text-[180%] lg:text-[110%] 3xs:text-[100%] font-sf-pro font-normal lg:text-left 
+              <p className="2xl:text-[180%] lg:text-[110%] 3xs:text-[100%] font-sf-pro font-normal lg:text-justify 
               3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]"
                 style={{ letterSpacing: "0.03em" }}>
-                We create sustainable solutions for CREATING A BETTER WORLD that connect
+                We create sustainable projects for CREATING A BETTER WORLD that connect
                 to development, investments, property management, technology to design,
                 deliver and operate the sustainable projects.
               </p>
@@ -119,7 +119,7 @@ export default function Overview() {
                 Value
               </p>
               <p className="2xl:text-[180%] lg:text-[110%] 3xs:text-[100%] font-sf-pro font-normal 
-              lg:text-left 3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]"
+              lg:text-justify 3xs:text-justify lg:mt-4 mr-8 text-[#6C6C6C]"
                 style={{ letterSpacing: "0.03em" }}>
                 Our values are the essence of our company’s identity. They represent how
                 we act, speak and behave together, and how we engage with our clients and
@@ -143,7 +143,7 @@ export default function Overview() {
           <p className="ml-[4%] mr-[4%] mt-[2%] 2xl:text-[300%] lg:text-[110%] 3xs:text-[100%] 
           text-[#6C6C6C] lg:text-left 3xs:text-justify font-light font-sf-pro"
             style={{ letterSpacing: "0.03em" }}>
-            IOTC Real Asset delivers a distinct advantage to investors through a holistic asset management approach that integrates.
+            IOTC Real Asset delivers a distinct advantage to investors through a turn-key asset management approach that integrates.
           </p>
         </FadeOnScroll>
       </section>
@@ -166,7 +166,7 @@ export default function Overview() {
 
           <div className="lg:pt-8 2xl:pt-16 3xs:pl-[5%]">
             <FadeOnScroll direction="left" delay={100}>
-              <p className="2xl:text-[500%] lg:text-[180%] 3xs:text-[150%] font-normal lg:mb-[4%] font-sf-pro text-[#B89B7A]">
+              <p className="2xl:text-[500%] lg:text-[180%] font-normal lg:mb-[4%] font-sf-pro text-[#B89B7A]">
                 Advanced trend analysis
               </p>
             </FadeOnScroll>
@@ -206,14 +206,13 @@ export default function Overview() {
       {/* ============================= */}
       {/* SECTION 4: Integrated Investment Structure */}
       {/* ============================= */}
-      <section ref={integratedRef} className="px-[4%] lg:pb-16 sm:pb-12 3xs:pb-4">
+      {/* <section ref={integratedRef} className="px-[4%] lg:pb-16 sm:pb-12 3xs:pb-4">
         <FadeOnScroll direction="up" distance={30} duration={900}>
           <p className="2xl:text-[510%] lg:text-[200%] 3xs:text-[160%] font-[300] font-sf-pro">
             Integrated Investment Structure
           </p>
         </FadeOnScroll>
 
-        {/* Example: animate bullet points one by one */}
         <ul className="pl-6">
           {[
             "Direct holdings of high-performing investment properties",
@@ -228,7 +227,7 @@ export default function Overview() {
             </FadeOnScroll>
           ))}
         </ul>
-      </section>
+      </section> */}
 
       {/* ============================= */}
       {/* SECTION 5: Real Estate Investment */}

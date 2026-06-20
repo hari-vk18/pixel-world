@@ -22,10 +22,10 @@ export default function AboutUs() {
               style={{ cursor: "default" }}>Who are we</p>
           </FadeOnScroll>
           <FadeOnScroll direction="up" delay={150} distance={30} duration={800}>
-            <p className="2xl:text-[250%] lg:text-[110%] 3xs:text-[100%] text-gray-600 lg:text-left 3xs:text-justify lg:leading-16 lg:max-w-3xl 2xl:max-w-7xl"
+            <p className="2xl:text-[250%] lg:text-[110%] 3xs:text-[100%] text-gray-600 lg:text-justify 3xs:text-justify lg:leading-16 lg:max-w-3xl 2xl:max-w-7xl"
               style={{ cursor: "default" }}>
               IOTC Real Asset, a subsidiary of IOTC Investments Luxembourg, is committed to delivering superior performance across
-              Residential, Commercial, and Logistics (Warehouse) asset classes.
+              asset classes.
             </p>
           </FadeOnScroll>
         </div>
@@ -56,7 +56,7 @@ export default function AboutUs() {
       </section>
 
       {/* Strategic Allocation */}
-      <section className="">
+      {/* <section className="">
         <FadeOnScroll direction="up" distance={40}>
           <div className="mx-[6%]">
             <h2 className="2xl:text-[500%] xl:text-[300%] lg:text-[2rem] 3xs:text-[1.80rem] font-sf-pro md:text-[300%] 3xs:text-[200%] font-normal lg:mb-4"
@@ -70,17 +70,17 @@ export default function AboutUs() {
             </p>
           </div>
         </FadeOnScroll>
-      </section>
+      </section> */}
 
       {/* Assets Under Management */}
-      <section className="lg:py-20 flex flex-col md:flex-row gap-0 items-stretch mx-[6%] ">
+      <section className="lg:py-10 flex flex-col md:flex-row gap-0 items-stretch mx-[6%] ">
         <FadeOnScroll direction="left" distance={40} duration={800} className="lg:w-[55%]">
           <div className="lg:pt-0 3xs:pt-5 flex flex-col justify-center">
             <h2 className="2xl:text-[500%] xl:text-[300%] lg:text-[2rem] 3xs:text-[1.80rem] font-normal lg:mb-4 font-sf-pro"
               style={{
                 cursor: "default",
               }}>Assets Under Management</h2>
-            <p className="text-gray-600 2xl:text-[250%] xl:text-[150%] lg:text-[110%] 3xs:text-[100%] lg:text-left 3xs:text-justify xl:max-w-[90%] lg:max-w-[90%] leading-relaxed "
+            <p className="text-gray-600 2xl:text-[250%] xl:text-[150%] lg:text-[110%] 3xs:text-[100%] lg:text-justify 3xs:text-justify xl:max-w-[90%] lg:max-w-[90%] leading-relaxed "
               style={{
                 cursor: "default",
               }}>
@@ -134,14 +134,14 @@ export default function AboutUs() {
                   className="object-cover h-auto ml-0 md:ml-2 lg:ml-5 w-[90vw] md:w-[80vw] xl:w-[96vw] 2xl:w-[105vw]" />
               </div>
             </div>
-            <div className="flex md:justify-center 2xl:justify-start lg:w-[70%] xl:w-[80%] 3xs:mt-[55%] lg:mt-[20%] lg:mb-8 xl:mb-0 2xs:mb-4">
+            <div className="flex md:justify-center 2xl:justify-start lg:w-[70%] xl:w-[80%] 3xs:mt-[55%] lg:mt-[25%] lg:mb-16 2xl:mt-[13%] xl:mb-0 2xl:mb-8 2xs:mb-12">
               <p
                 className="text-white font-sf-pro text-xl 3xs:-mt-[53%] lg:-mt-[20%] 2xl:-mt-[10%] md:text-2xl 2xl:text-5xl font-normal italic leading-9 2xs:leading-6 tracking-[-0.5px] w-35%"
                 style={{ cursor: "default" }}
               >
                 ESG focus ensures every project drives value not just for investors, but also for society and the environment.
               </p>
-              <div className="absolute lg:bottom-32 2xs:bottom-[15%] right-10">
+              <div className="absolute lg:bottom-32 2xs:bottom-[19%] md:right-20 2xs:right-10">
                 <button className="group flex items-center space-x-3 text-white font-sf-pro text-xl md:text-2xl 2xl:text-4xl font-light hover:text-iotc-gold transition-colors duration-300">
                   <span>Know more</span>
                   <svg

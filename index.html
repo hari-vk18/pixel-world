@@ -1,22 +1,40 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-<link rel="icon" href="/public/IOTC Real Asset logo blue 1 (1).png" />
-<link rel="stylesheet" href="/assets/index.css?v=1.0.3">
-
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="IODzwQo7MTw1xFCLA0bkpC9Ra1bTU8EItc51VQbgOTg" />
+
   <title>IOTC</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/favicon-180x180.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/index.css?v=1.0.3" />
+
+  <!-- Hero Image -->
   <link rel="preload" as="image" href="/modern-multistory-residential-building-with-balconies-greenery.webp"
     type="image/webp" fetchpriority="high" />
+
   <script>
     (function (l) {
       if (l.search[1] === '/') {
-        var decoded = l.search.slice(1).split('&').map(function (s) {
-          return s.replace(/~and~/g, '&')
-        }).join('?');
-        window.history.replaceState(null, null,
+        var decoded = l.search
+          .slice(1)
+          .split('&')
+          .map(function (s) {
+            return s.replace(/~and~/g, '&')
+          })
+          .join('?');
+
+        window.history.replaceState(
+          null,
+          null,
           l.pathname.slice(0, -1) + decoded + l.hash
         );
       }

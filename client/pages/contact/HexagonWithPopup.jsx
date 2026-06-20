@@ -37,7 +37,7 @@ export default function HexagonWithPopup({
 
   return (
     <div
-      className={`relative inline-block ${className}`}
+      className={`relative inline-block h-1 ${className}`}
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
@@ -68,8 +68,8 @@ export default function HexagonWithPopup({
       {/* Popup Card */}
       <div
         className={`absolute z-10 ${posClasses[cardPosition]} transition-all duration-300 ${open
-            ? 'opacity-100 scale-100 pointer-events-auto'
-            : 'opacity-0 scale-95 pointer-events-none'
+          ? 'opacity-100 scale-100 pointer-events-auto'
+          : 'opacity-0 scale-95 pointer-events-none'
           }`}
       >
         <div className="bg-white shadow-lg border border-gray-200 rounded-lg p-3 w-44 sm:w-52 text-left">

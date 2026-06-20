@@ -74,7 +74,7 @@ export default function DesigningToday() {
             whileHover={{ x: 10, color: "#C5A96D" }}
             transition={{ duration: 0.3 }}
             className="group flex items-center space-x-3 text-white font-sf-pro 
-            text-xl md:text-2xl 2xl:text-5xl font-light py-6 w-[12%] lg:w-[12%] md:w-[30%] 3xs:w-[40%]"
+            text-xl md:text-2xl 2xl:text-5xl font-light py-6 w-[12%] lg:w-[16%] md:w-[30%] 3xs:w-[40%]"
           >
             <span>Know more</span>
             <svg

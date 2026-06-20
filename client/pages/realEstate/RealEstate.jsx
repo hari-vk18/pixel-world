@@ -50,12 +50,12 @@ export default function RealEstate() {
                         <div className="mb-8 lg:w-[80%] lg:ml-[5%] lg:mt-5">
                             <FadeOnScroll direction="up" delay={150} distance={30} duration={800}>
                                 <h2 className="2xl:text-[250%] lg:text-[100%] 3xs:text-[100%] 
-                  lg:text-left 3xs:text-justify text-[#6C6C6C] font-normal lg:mb-6"
+                  lg:text-justify 3xs:text-justify text-[#6C6C6C] font-normal lg:mb-6"
                                     style={{ lineHeight: "1.5" }}
                                 >
                                     IOTC Real Asset embarked on a journey with vision of CREATING A BETTER WORLD
-                                    delivering superior, yet affordable, living for residents and designing the sustainable industrial
-                                    park globally,build a NET ZERO integrated smart city living.
+                                    delivering superior, yet affordable, living for residents and designing the sustainable projects
+                                    globally,build a NET ZERO integrated smart city living.
                                 </h2>
                             </FadeOnScroll>
                         </div>
@@ -98,11 +98,11 @@ export default function RealEstate() {
                         <p className="ml-[4%] 2xl:text-[500%] lg:text-[250%] 3xs:text-[200%] font-light font-sf-pro">
                             Development
                         </p>
-                        <p className="ml-[4%] mt-[1%] 2xl:text-[250%] lg:text-[110%] lg:text-left 
+                        <p className="ml-[4%] mt-[1%] 2xl:text-[250%] lg:text-[110%] lg:text-justify 
                         3xs:text-justify 3xs:text-[110%] text-[#6C6C6C]">
                             IOTC Real Asset is redefining the future of cities  - setting the benchmark for transformative
                             development through local insight, global expertise, and
-                            a steadfast commitment to sustainable value creation.
+                            a steadfast commitment to sustainable creation.
                         </p>
                     </section>
                 </FadeOnScroll>
@@ -132,23 +132,23 @@ export default function RealEstate() {
                                 <p className="2xl:text-[250%] lg:text-[150%] 3xs:text-[150%] font-normal mb-[1%] font-sf-pro text-[#B89B7A]" style={{ cursor: "default", lineHeight: "1.5", }} >
                                     Residential
                                 </p>
-                                <p className="mb-[3%] font-sf-pro lg:text-left 3xs:text-justify 2xl:text-[200%] lg:text-[100%] 
+                                <p className="mb-[3%] font-sf-pro lg:text-justify 3xs:text-justify 2xl:text-[200%] lg:text-[100%] 
                                 3xs:text-[100%] text-[#6C6C6C]"
                                     style={{ cursor: "default", lineHeight: "1.8", letterSpacing: "0.03rem" }} >
-                                    Residential real estate remains one of the most resilient and scalable asset classes globally (particularly in the UAE). Fuelled by demographic growth, urbanization, and shifting lifestyle needs, housing demand consistently outpaces supply in major urban centers. Whether through build-to-sell, build-to-rent, or co-living formats, residential platforms offer strong potential for capital appreciation, stable yields, and portfolio diversification.
+                                    Residential real estate remains one of the most resilient and scalable asset classes globally. Fuelled by demographic growth, urbanization, and shifting lifestyle needs, housing demand consistently outpaces supply in major urban centers. Whether through build-to-sell, build-to-rent, or co-living formats, residential platforms offer strong potential for capital appreciation, stable yields, and portfolio diversification.
                                 </p>
                                 <p className="2xl:text-[250%] lg:text-[150%] 3xs:text-[150%] font-normal my-[2%] font-sf-pro text-[#B89B7A]" style={{ cursor: "default", lineHeight: "1.5", }} >
                                     Commercial/Office Parks
                                 </p>
-                                <p className="mb-[4%] font-sf-pro lg:text-left 3xs:text-justify 2xl:text-[200%] 
+                                <p className="mb-[4%] font-sf-pro lg:text-justify 3xs:text-justify 2xl:text-[200%] 
                                 lg:text-[100%] 3xs:text-[100%] text-[#6C6C6C]"
                                     style={{ cursor: "default", lineHeight: "1.5", letterSpacing: "0.03rem" }} >
-                                    IOTC Real Asset designs future-ready workspaces that foster community, catalyse cross-sector collaboration, and anchor growth industries from trade to Information and Communications Technology (ITC) in vibrant, amenity-rich environments.
+                                    IOTC Real Asset designs future-ready workspaces that foster community, catalyse cross-sector collaboration, and anchor growth industries from trade to Information and Communications Technology in vibrant, amenity-rich environments.
                                 </p>
                                 <p className="2xl:text-[250%] lg:text-[150%] 3xs:text-[150%] font-normal my-[1%] font-sf-pro text-[#B89B7A]" style={{ cursor: "default", lineHeight: "1.5", letterSpacing: "-0.03em", }} >
                                     Industrial & Warehousing
                                 </p>
-                                <p className="lg:mb-[5%] font-sf-pro lg:text-left 3xs:text-justify 2xl:text-[200%] 
+                                <p className="lg:mb-[5%] font-sf-pro lg:text-justify 3xs:text-justify 2xl:text-[200%] 
                                 lg:text-[100%] 3xs:text-[100%] text-[#6C6C6C]"
                                     style={{ cursor: "default", lineHeight: "1.5", letterSpacing: "0.03rem" }} >
                                     Forms one of the three foundational pillars of institutional portfolios driven by macro resilience, operational scalability, and regulatory clarity

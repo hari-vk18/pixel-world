@@ -4,38 +4,24 @@ export default function TeamMember({ img, name, title, bio, link }) {
     return (
         <div className="flex lg:flex-row items-start gap-4 h-full">
 
-            {/* FIXED SIZE IMAGE */}
-            <div
-                className="
+            <div>
+                {/* FIXED SIZE IMAGE */}
+                <div
+                    className="
           bg-[#B89B7A] rounded-xl overflow-hidden border-2 border-iotc-gold
           w-[120px] h-[180px]
           lg:w-[150px] lg:h-[190px]
-          2xl:w-[200px] 2xl:h-[200px]
+          2xl:w-[400px] 2xl:h-[450px]
           flex-shrink-0
         "
-            >
-                <img
-                    src={img}
-                    alt={name}
-                    className="w-full h-full object-cover rounded-lg"
-                />
-            </div>
-
-            {/* TEXT SECTION */}
-            <div className="3xs:pl-4 md:pl-8 font-sf-pro flex-1">
-                <p className="2xl:text-[300%] lg:text-[150%] 3xs:text-[110%] font-normal leading-tight">
-                    {name}
-                </p>
-
-                <p className="2xl:text-[250%] xl:text-[150%] lg:text-[100%] 3xs:text-[80%] font-normal text-[#B89B7A] mt-1">
-                    {title}
-                </p>
-
-                <p className="2xl:text-[250%] lg:text-[115%] 3xs:text-[80%] text-gray-500 mt-2 leading-snug">
-                    {bio}
-                </p>
-
-                <div className="flex items-center mt-4" href={link}>
+                >
+                    <img
+                        src={img}
+                        alt={name}
+                        className="w-full h-full object-cover rounded-lg"
+                    />
+                </div>
+                <div className="flex items-center md:mt-4 2xs:mt-2 ml-2" href={link}>
                     <a
                         href={link}
                         className="
@@ -62,6 +48,24 @@ export default function TeamMember({ img, name, title, bio, link }) {
                         READ PROFILE
                     </a>
                 </div>
+
+            </div>
+
+            {/* TEXT SECTION */}
+            <div className="3xs:pl-4 md:pl-8 font-sf-pro flex-1">
+                <p className="2xl:text-[300%] lg:text-[150%] 3xs:text-[110%] font-normal leading-tight">
+                    {name}
+                </p>
+
+                <p className="2xl:text-[250%] xl:text-[150%] lg:text-[100%] 3xs:text-[80%] font-normal text-[#B89B7A] mt-1"
+                    dangerouslySetInnerHTML={{ __html: title }}
+                />
+
+
+                <p className="2xl:text-[250%] lg:text-[115%] 3xs:text-[80%] text-gray-500 mt-2 leading-snug text-justify">
+                    {bio}
+                </p>
+
             </div>
         </div>
     );

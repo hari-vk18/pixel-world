@@ -33,7 +33,7 @@ export default function Header() {
   const navItems = [
     { label: 'Investment Management', href: '/investment-management' },
     { label: 'Real Estate Service', href: '/real-estate-service' },
-    { label: 'Portfolio', href: '/portfolio' },
+    { label: 'Projects', href: '/portfolio' },
     { label: 'About Us', href: '/company' },
     // { label: 'Investor Login', href: '/investor-portal' },
     { label: 'Contact Us', href: '/contact-us' },
