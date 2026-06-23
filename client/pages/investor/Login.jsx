@@ -22,7 +22,7 @@ export default function Login() {
                 <div className='m-8 w-full rounded-2xl bg-gradient-to-b from-gray-100 to-gray-300'>
                     {/* Logo */}
                     <div className="ml-8 mt-8">
-                        <img src="/IOTC Real Asset logo blue 1.svg" alt="III" />
+                        <img src="/IOTC Real Asset logo blue 1.svg" alt="IOTC Real Asset company logo" />
                     </div>
                 </div>
                 {/* <div className="mb-20">
@@ -50,7 +50,7 @@ export default function Login() {
                     {/* Mobile Logo */}
                     <div className="lg:hidden mb-8 text-center item-center">
                         <div className='flex justify-center item-center'>
-                            <img src="/IOTC Real Asset logo blue 1.svg" alt="" />
+                            <img src="/IOTC Real Asset logo blue 1.svg" alt="IOTC Real Asset company logo" />
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@ export default function Login() {
                     <div className="text-center mb-8">
                         <div className="hidden lg:flex items-center justify-center gap-2 mb-4">
 
-                            <img src="/IOTC Real Asset logo blue 1.svg" alt="IIII" />
+                            <img src="/IOTC Real Asset logo blue 1.svg" alt="IOTC Real Asset company logo" />
                         </div>
                         <h2 className="text-3xl font-normal text-gray-900 mb-1">IOTC Real Asset</h2>
                         <p className="text-gray-600">Investor Login</p>

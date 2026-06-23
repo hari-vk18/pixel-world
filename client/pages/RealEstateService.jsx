@@ -29,6 +29,11 @@ export default function RealEstateService() {
           name="keywords"
           content="real estate services, property investment, IOTC, asset management, real estate development"
         />
+        <meta property="og:title" content="IOTC Real Estate Services" />
+        <meta property="og:description" content="Comprehensive property development and asset management solutions across Europe, Asia, and the Middle East." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iotc-ra.com/real-estate-service" />
+        <link rel="canonical" href="https://iotc-ra.com/real-estate-service" />
       </Helmet>
       <div className="min-h-screen bg-white">
         <Header />

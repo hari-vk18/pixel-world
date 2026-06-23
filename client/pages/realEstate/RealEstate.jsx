@@ -125,7 +125,7 @@ export default function RealEstate() {
                                 <img
                                     className="2xl:w-[90%] lg:w-[80%] sm:w-[85%]"
                                     src="/image (20).jpg"
-                                    alt=""
+                                    alt="Residential property development project showcase"
                                 />
                             </div>
                             <div className="lg:pt-8 lg:pr-4">

@@ -16,6 +16,11 @@ export default function News() {
           name="keywords"
           content="news, insights, IOTC, real estate trends, investment insights, industry news"
         />
+        <meta property="og:title" content="IOTC News & Insights" />
+        <meta property="og:description" content="Latest news, insights, and expert analysis on real estate and investment trends." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iotc-ra.com/news" />
+        <link rel="canonical" href="https://iotc-ra.com/news" />
       </Helmet>
       <div className="min-h-screen bg-white">
         <Header />

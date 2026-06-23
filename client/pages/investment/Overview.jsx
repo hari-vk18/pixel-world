@@ -159,7 +159,7 @@ export default function Overview() {
               <img
                 className="2xl:w-[150%]"
                 src="/image (15).webp"
-                alt=""
+                alt="Advanced trend analysis graph and data visualization"
               />
             </div>
           </FadeOnScroll>

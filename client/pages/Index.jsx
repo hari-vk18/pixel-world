@@ -21,6 +21,24 @@ export default function Index() {
           name="keywords"
           content="real estate investment, asset management, IOTC, sustainable investments, financial strategies"
         />
+        <meta property="og:title" content="IOTC | Real Estate & Asset Management" />
+        <meta property="og:description" content="Leading investment platform specializing in real estate, asset management, and sustainable financial strategies." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iotc-ra.com/" />
+        <link rel="canonical" href="https://iotc-ra.com/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "IOTC Real Asset",
+            "url": "https://iotc-ra.com",
+            "logo": "https://iotc-ra.com/IOTC Real Asset logo blue 1.svg",
+            "description": "Leading investment platform specializing in real estate, asset management, and sustainable financial strategies",
+            "sameAs": [
+              "https://www.linkedin.com/company/iotc-real-asset"
+            ]
+          })}
+        </script>
       </Helmet>
       <div className="min-h-screen bg-iotc-primary flex flex-col overflow-x-hidden">
         <div className="flex-grow relative">

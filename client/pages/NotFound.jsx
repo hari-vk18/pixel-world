@@ -11,6 +11,9 @@ const NotFound = () => {
           name="description"
           content="The page you're looking for could not be found. Return to the homepage or explore IOTC's other sections."
         />
+        <meta property="og:title" content="Page Not Found" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://iotc-ra.com/" />
       </Helmet>
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <div className="text-center">

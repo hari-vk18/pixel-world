@@ -24,6 +24,11 @@ export default function ProjectsInvestment() {
           name="keywords"
           content="projects, investment opportunities, IOTC, Europe, Asia Pacific, real estate projects"
         />
+        <meta property="og:title" content="IOTC Projects - Investment Portfolio" />
+        <meta property="og:description" content="Explore our ongoing and upcoming investment projects across Europe and Asia Pacific." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iotc-ra.com/projects-investment" />
+        <link rel="canonical" href="https://iotc-ra.com/projects-investment" />
       </Helmet>
       <div className="min-h-screen bg-white">
         <Header />

@@ -30,6 +30,11 @@ export default function Company() {
           name="keywords"
           content="IOTC company, meet the team, careers, ESG, about us, leadership"
         />
+        <meta property="og:title" content="IOTC Company - Leadership & Team" />
+        <meta property="og:description" content="Meet our expert leadership team and learn about IOTC's commitment to ESG and sustainable investments." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iotc-ra.com/company" />
+        <link rel="canonical" href="https://iotc-ra.com/company" />
       </Helmet>
       <div className="min-h-screen bg-white relative">
         <Header />

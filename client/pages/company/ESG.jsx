@@ -67,9 +67,9 @@ const ESG = () => (
 
       <FadeOnScroll direction="up" distance={40} delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
-          <img src="/Group lang.webp" alt="" className="absolute right-0 top-0 3xs:h-[650px]" />
+          <img src="/Group lang.webp" alt="ESG sustainability graphics and badges" className="absolute right-0 top-0 3xs:h-[650px]" />
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Green Certificate.webp" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Green Certificate.webp" alt="Green Certificate environmental sustainability badge"
               style={{
                 cursor: "default",
               }} />
@@ -89,7 +89,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Integrated waste Management.webp" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Integrated waste Management.webp" alt="Integrated waste management sustainability feature"
               style={{
                 cursor: "default",
               }} />
@@ -109,7 +109,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Smart Energy System.webp" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Smart Energy System.webp" alt="Smart Energy System technology icon"
               style={{
                 cursor: "default",
               }} />
@@ -133,7 +133,7 @@ const ESG = () => (
       <FadeOnScroll direction="up" distance={40} delay={150}>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%]">
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Green Energy.webp" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Green Energy.webp" alt="Green Energy renewable power icon"
               style={{
                 cursor: "default",
               }} />
@@ -153,7 +153,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Roof top solar.webp" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Roof top solar.webp" alt="Roof top solar panel installation icon"
               style={{
                 cursor: "default",
               }} />
@@ -173,7 +173,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/EV Enabled (1).webp" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/EV Enabled (1).webp" alt="Electric Vehicle EV charging enabled icon"
               style={{
                 cursor: "default",
               }} />
@@ -225,7 +225,7 @@ const ESG = () => (
       <FadeOnScroll direction="up" distance={40} delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] 3xs:w-[20%] xl:w-[20%]" src="/Talent Workspace.png" alt=""
+            <img className="3xs:w-[20%] 3xs:w-[20%] xl:w-[20%]" src="/Talent Workspace.png" alt="Talent Workspace employee development icon"
               style={{
                 cursor: "default",
               }} />
@@ -245,7 +245,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Health and Safety (1).webp" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Health and Safety (1).webp" alt="Health and Safety workplace protection icon"
               style={{
                 cursor: "default",
               }} />
@@ -265,7 +265,7 @@ const ESG = () => (
             </p>
           </div>
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Ethical Mangement.webp" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Ethical Mangement.webp" alt="Ethical Management business practices icon"
               style={{
                 cursor: "default",
               }} />
@@ -309,7 +309,7 @@ const ESG = () => (
       <FadeOnScroll direction="up" distance={40} delay={100}>
         <div className="grid grid-cols-1 md:grid-cols-3 glg:gap-8 3xs:gap-4 lg:mt-12 3xs:mt-6 px-[4%] relative">
           <div className="bg-white p-2 rounded-lg">
-            <img className="3xs:w-[20%] xl:w-[20%]" src="/Strong Governance.webp" alt=""
+            <img className="3xs:w-[20%] xl:w-[20%]" src="/Strong Governance.webp" alt="Strong Governance corporate leadership icon"
               style={{
                 cursor: "default",
               }} />

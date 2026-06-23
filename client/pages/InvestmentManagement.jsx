@@ -30,6 +30,11 @@ export default function InvestmentManagement() {
           name="keywords"
           content="investment management, IOTC, strategic investments, portfolio management"
         />
+        <meta property="og:title" content="IOTC Investment Management - Strategic Solutions" />
+        <meta property="og:description" content="Discover our integrated investment management services and strategic differentiation in real estate and asset management." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iotc-ra.com/investment-management" />
+        <link rel="canonical" href="https://iotc-ra.com/investment-management" />
       </Helmet>
       <div className="min-h-screen bg-white relative">
         <Header />
